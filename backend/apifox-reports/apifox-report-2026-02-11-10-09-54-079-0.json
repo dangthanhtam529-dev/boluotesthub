@@ -1,0 +1,628 @@
+{
+  "result": {
+    "stats": {
+      "steps": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0
+      },
+      "iterations": {
+        "total": 1,
+        "pending": 0,
+        "failed": 0
+      },
+      "items": {},
+      "scripts": {
+        "total": 0,
+        "pending": 0,
+        "failed": 0
+      },
+      "prerequests": {
+        "total": 1,
+        "pending": 0,
+        "failed": 0
+      },
+      "requests": {
+        "total": 1,
+        "pending": 0,
+        "failed": 0
+      },
+      "socketRequests": {
+        "total": 0,
+        "pending": 0,
+        "failed": 0
+      },
+      "tests": {
+        "total": 1,
+        "pending": 0,
+        "failed": 0
+      },
+      "assertions": {
+        "total": 0,
+        "pending": 0,
+        "failed": 0
+      },
+      "testScripts": {
+        "total": 0,
+        "pending": 0,
+        "failed": 0
+      },
+      "prerequestScripts": {
+        "total": 0,
+        "pending": 0,
+        "failed": 0
+      }
+    },
+    "timings": {
+      "responseTime": 31,
+      "responseAverage": 31,
+      "responseMin": 31,
+      "responseMax": 31,
+      "responseSd": 0,
+      "dnsAverage": 0,
+      "dnsMin": 0,
+      "dnsMax": 0,
+      "dnsSd": 0,
+      "firstByteAverage": 0,
+      "firstByteMin": 0,
+      "firstByteMax": 0,
+      "firstByteSd": 0,
+      "started": 1770775810073,
+      "completed": 1770775810168
+    },
+    "transfers": {
+      "responseTotal": 1045
+    },
+    "failures": [],
+    "stepTree": [
+      {
+        "ref": "56409d48-4884-48dc-913e-e93e4e1815fe",
+        "type": "http"
+      }
+    ],
+    "error": null
+  },
+  "isTestFlowControl": true,
+  "run": {
+    "stats": {
+      "steps": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0
+      },
+      "iterations": {
+        "total": 1,
+        "pending": 0,
+        "failed": 0
+      },
+      "items": {},
+      "scripts": {
+        "total": 0,
+        "pending": 0,
+        "failed": 0
+      },
+      "prerequests": {
+        "total": 1,
+        "pending": 0,
+        "failed": 0
+      },
+      "requests": {
+        "total": 1,
+        "pending": 0,
+        "failed": 0
+      },
+      "socketRequests": {
+        "total": 0,
+        "pending": 0,
+        "failed": 0
+      },
+      "tests": {
+        "total": 1,
+        "pending": 0,
+        "failed": 0
+      },
+      "assertions": {
+        "total": 0,
+        "pending": 0,
+        "failed": 0
+      },
+      "testScripts": {
+        "total": 0,
+        "pending": 0,
+        "failed": 0
+      },
+      "prerequestScripts": {
+        "total": 0,
+        "pending": 0,
+        "failed": 0
+      }
+    },
+    "timings": {
+      "responseTime": 31,
+      "responseAverage": 31,
+      "responseMin": 31,
+      "responseMax": 31,
+      "responseSd": 0,
+      "dnsAverage": 0,
+      "dnsMin": 0,
+      "dnsMax": 0,
+      "dnsSd": 0,
+      "firstByteAverage": 0,
+      "firstByteMin": 0,
+      "firstByteMax": 0,
+      "firstByteSd": 0,
+      "started": 1770775810073,
+      "completed": 1770775810168
+    },
+    "transfers": {
+      "responseTotal": 1045
+    },
+    "failures": [],
+    "stepTree": [
+      {
+        "ref": "56409d48-4884-48dc-913e-e93e4e1815fe",
+        "type": "http"
+      }
+    ],
+    "error": null
+  },
+  "options": {
+    "reporters": [
+      "json"
+    ],
+    "outDir": ".",
+    "outFile": "apifox-report-2026-02-11-10-09-54-079-0-随机签-2026-02-11-10-10-09-923-",
+    "globalVar": [],
+    "envVar": [],
+    "color": "auto",
+    "delayRequest": 0,
+    "timeoutRequest": 0,
+    "timeoutScript": 0,
+    "bigint": false,
+    "lang": "zh",
+    "disableRejectUnauthorized": false,
+    "testSuite": [
+      8145
+    ],
+    "project": 7822130,
+    "reporterOptions": {
+      "name": "山河",
+      "runnerId": "fb13b3da-640b-4410-b54e-9d34827f3489"
+    },
+    "reporter": {
+      "json": {}
+    },
+    "originalOutFile": "apifox-report-2026-02-11-10-09-54-079-0",
+    "accessToken": "afxp_5e19a7v30vQ1ijQUC2XT3FIyMNe5xLqM65Ne",
+    "isUploadReportSummary": false,
+    "apifoxVersion": "2.1.1",
+    "environment": {},
+    "globals": {},
+    "teamGlobals": {}
+  },
+  "collection": {
+    "apifoxCli": "1.2.21",
+    "item": [
+      {
+        "item": [
+          {
+            "id": "01d4e7f2-c4af-4079-b595-ae7129534d9c",
+            "name": "随机签(签)",
+            "request": {
+              "url": {
+                "protocol": "http",
+                "path": [
+                  "api",
+                  "za",
+                  "chouq.php"
+                ],
+                "host": [
+                  "shanhe",
+                  "kim"
+                ],
+                "query": [
+                  {
+                    "disabled": false,
+                    "key": "type",
+                    "value": "json"
+                  }
+                ],
+                "variable": []
+              },
+              "header": [
+                {
+                  "key": "User-Agent",
+                  "value": "app/1.0.0"
+                }
+              ],
+              "method": "GET",
+              "body": {},
+              "auth": {
+                "type": "noauth",
+                "noauth": []
+              },
+              "type": "http"
+            },
+            "response": [],
+            "event": [],
+            "type": "http",
+            "metaInfo": {
+              "blockId": "03ee90f0-5114-487a-93ac-e911e5b806e7",
+              "id": "03ee90f0-5114-487a-93ac-e911e5b806e7",
+              "type": "http",
+              "projectId": 7822130,
+              "relatedId": 417766308,
+              "environmentId": 42511515,
+              "blockNumber": 1,
+              "tags": [],
+              "httpApiId": 417766308,
+              "httpApiCaseId": 346790655,
+              "httpApiName": "随机签",
+              "httpApiPath": "http://shanhe.kim/api/za/chouq.php",
+              "httpApiMethod": "get",
+              "httpApiCaseName": "签",
+              "moduleId": 7121784,
+              "serverId": "default"
+            },
+            "protocolProfileBehavior": {
+              "useWhatWGUrlParser": false,
+              "disableUrlEncoding": false,
+              "disabledSystemHeaders": {},
+              "disableCookies": false
+            },
+            "responseDefinition": {
+              "name": "成功",
+              "code": 200,
+              "contentType": "json",
+              "jsonSchema": {
+                "type": "object",
+                "properties": {}
+              },
+              "itemSchema": {},
+              "tempId": "1770723865033",
+              "id": "181684474",
+              "schemaDefinitions": {}
+            },
+            "requestDefinition": {
+              "jsonSchema": {}
+            },
+            "overrideRequesterOptions": {
+              "strictSSL": false
+            }
+          }
+        ],
+        "name": "随机签"
+      }
+    ],
+    "info": {
+      "name": "随机签"
+    },
+    "dataSchemas": {},
+    "mockRules": {
+      "rules": [],
+      "enableSystemRule": true
+    },
+    "environment": {
+      "id": 42511515,
+      "name": "开发环境",
+      "type": "normal",
+      "baseUrls": {
+        "default": ""
+      },
+      "websocketBaseUrls": {},
+      "socketioBaseUrls": {},
+      "baseUrl": "",
+      "variable": {
+        "id": "8190033c-280f-4982-a235-a4071e5de42f",
+        "name": "开发环境",
+        "baseUrl": "",
+        "baseUrls": {
+          "default": ""
+        },
+        "values": []
+      },
+      "parameter": {
+        "header": [],
+        "query": [],
+        "body": [],
+        "cookie": []
+      },
+      "advancedSettings": {
+        "default": {
+          "requestProxySetting": {
+            "type": "default",
+            "agentId": 2
+          }
+        }
+      }
+    },
+    "globals": {
+      "baseUrls": {},
+      "websocketBaseUrls": {},
+      "socketioBaseUrls": {},
+      "baseUrl": "",
+      "variable": {
+        "id": "6025af6e-cbe2-4c51-aca5-efaa2afa00ef",
+        "baseUrl": "",
+        "baseUrls": {},
+        "values": []
+      },
+      "parameter": {
+        "header": [],
+        "query": [],
+        "body": [],
+        "cookie": []
+      }
+    },
+    "teamGlobals": {
+      "baseUrls": {},
+      "websocketBaseUrls": {},
+      "socketioBaseUrls": {},
+      "baseUrl": "",
+      "variable": {
+        "id": "51fe51a8-9be4-4915-9e76-ea867c33ee8b",
+        "baseUrl": "",
+        "baseUrls": {},
+        "values": []
+      },
+      "parameter": {
+        "header": [],
+        "query": [],
+        "body": [],
+        "cookie": []
+      }
+    },
+    "moduleVariablesMap": {
+      "7121784": []
+    },
+    "isServerBuild": true,
+    "isTestFlowControl": true,
+    "collectionDefinition": {
+      "apifoxCli": "1.2.21",
+      "item": [
+        {
+          "item": [
+            {
+              "id": "01d4e7f2-c4af-4079-b595-ae7129534d9c",
+              "name": "随机签(签)",
+              "request": {
+                "url": {
+                  "protocol": "http",
+                  "path": [
+                    "api",
+                    "za",
+                    "chouq.php"
+                  ],
+                  "host": [
+                    "shanhe",
+                    "kim"
+                  ],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "key": "type",
+                      "value": "json"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "User-Agent",
+                    "value": "app/1.0.0"
+                  }
+                ],
+                "method": "GET",
+                "body": {},
+                "auth": {
+                  "type": "noauth",
+                  "noauth": []
+                },
+                "type": "http"
+              },
+              "response": [],
+              "event": [],
+              "type": "http",
+              "metaInfo": {
+                "blockId": "03ee90f0-5114-487a-93ac-e911e5b806e7",
+                "id": "03ee90f0-5114-487a-93ac-e911e5b806e7",
+                "type": "http",
+                "projectId": 7822130,
+                "relatedId": 417766308,
+                "environmentId": 42511515,
+                "blockNumber": 1,
+                "tags": [],
+                "httpApiId": 417766308,
+                "httpApiCaseId": 346790655,
+                "httpApiName": "随机签",
+                "httpApiPath": "http://shanhe.kim/api/za/chouq.php",
+                "httpApiMethod": "get",
+                "httpApiCaseName": "签",
+                "moduleId": 7121784,
+                "serverId": "default"
+              },
+              "protocolProfileBehavior": {
+                "useWhatWGUrlParser": false,
+                "disableUrlEncoding": false,
+                "disabledSystemHeaders": {},
+                "disableCookies": false
+              },
+              "responseDefinition": {
+                "name": "成功",
+                "code": 200,
+                "contentType": "json",
+                "jsonSchema": {
+                  "type": "object",
+                  "properties": {}
+                },
+                "itemSchema": {},
+                "tempId": "1770723865033",
+                "id": "181684474",
+                "schemaDefinitions": {}
+              },
+              "requestDefinition": {
+                "jsonSchema": {}
+              },
+              "overrideRequesterOptions": {
+                "strictSSL": false
+              }
+            }
+          ],
+          "name": "随机签"
+        }
+      ],
+      "info": {
+        "name": "随机签"
+      },
+      "dataSchemas": {},
+      "mockRules": {
+        "rules": [],
+        "enableSystemRule": true
+      },
+      "environment": {
+        "id": 42511515,
+        "name": "开发环境",
+        "type": "normal",
+        "baseUrls": {
+          "default": ""
+        },
+        "websocketBaseUrls": {},
+        "socketioBaseUrls": {},
+        "baseUrl": "",
+        "variable": {
+          "id": "8190033c-280f-4982-a235-a4071e5de42f",
+          "name": "开发环境",
+          "baseUrl": "",
+          "baseUrls": {
+            "default": ""
+          },
+          "values": []
+        },
+        "parameter": {
+          "header": [],
+          "query": [],
+          "body": [],
+          "cookie": []
+        },
+        "advancedSettings": {
+          "default": {
+            "requestProxySetting": {
+              "type": "default",
+              "agentId": 2
+            }
+          }
+        }
+      },
+      "globals": {
+        "baseUrls": {},
+        "websocketBaseUrls": {},
+        "socketioBaseUrls": {},
+        "baseUrl": "",
+        "variable": {
+          "id": "6025af6e-cbe2-4c51-aca5-efaa2afa00ef",
+          "baseUrl": "",
+          "baseUrls": {},
+          "values": []
+        },
+        "parameter": {
+          "header": [],
+          "query": [],
+          "body": [],
+          "cookie": []
+        }
+      },
+      "teamGlobals": {
+        "baseUrls": {},
+        "websocketBaseUrls": {},
+        "socketioBaseUrls": {},
+        "baseUrl": "",
+        "variable": {
+          "id": "51fe51a8-9be4-4915-9e76-ea867c33ee8b",
+          "baseUrl": "",
+          "baseUrls": {},
+          "values": []
+        },
+        "parameter": {
+          "header": [],
+          "query": [],
+          "body": [],
+          "cookie": []
+        }
+      },
+      "moduleVariablesMap": {
+        "7121784": []
+      },
+      "defaultModuleId": 7121784,
+      "isServerBuild": true,
+      "isTestFlowControl": true,
+      "testDataMap": {},
+      "databaseConnectionMap": {}
+    },
+    "runOptions": {
+      "environmentId": 42511515,
+      "useDataSetId": -1,
+      "threadCount": 1,
+      "iterationCount": 1,
+      "delayItem": 0,
+      "saveVariables": true,
+      "saveReportDetail": "all",
+      "readGlobalCookie": false,
+      "saveGlobalCookie": false,
+      "onError": "ignore",
+      "runnerId": 0
+    },
+    "projectOptions": {
+      "enableJsonc": false,
+      "enableBigint": false,
+      "responseValidate": true,
+      "enableTestScenarioSetting": false,
+      "enableYAPICompatScript": false,
+      "isDefaultUrlEncoding": 2,
+      "publishedDocUrlRules": {
+        "defaultRule": "RESOURCE_KEY_ONLY",
+        "resourceKeyStandard": "NEW"
+      },
+      "mockSettings": {},
+      "language": "zh-CN"
+    },
+    "ciRunningOptions": {
+      "environmentId": 42511515,
+      "useDataSetId": -1,
+      "threadCount": 1,
+      "iterationCount": 1,
+      "delayItem": 0,
+      "saveVariables": true,
+      "saveReportDetail": "all",
+      "readGlobalCookie": false,
+      "saveGlobalCookie": false,
+      "onError": "ignore",
+      "runnerId": 0
+    },
+    "projectId": 7822130,
+    "databaseConnectionMap": {},
+    "reportUrlTemplate": "https://app.apifox.com/link/project/{{projectId}}/api-test/test-report/{{id}}",
+    "reportExtra": {
+      "runOptions": {
+        "environmentId": 42511515,
+        "useDataSetId": -1,
+        "threadCount": 1,
+        "iterationCount": 1,
+        "delayItem": 0,
+        "saveVariables": true,
+        "saveReportDetail": "all",
+        "readGlobalCookie": false,
+        "saveGlobalCookie": false,
+        "onError": "ignore",
+        "runnerId": 0
+      },
+      "endpoint": {
+        "id": 417766308,
+        "name": "随机签",
+        "path": "http://shanhe.kim/api/za/chouq.php",
+        "method": "get"
+      }
+    },
+    "runnerId": "2b59b643-56c5-4cc7-9faa-274e6b2306fc",
+    "name": "随机签"
+  }
+}

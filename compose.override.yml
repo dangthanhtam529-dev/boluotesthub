@@ -1,0 +1,176 @@
+# ============================================
+# Docker Compose 开发环境覆盖配置
+#
+# 此文件自动叠加到 compose.yml 上，用于本地开发
+# 主要功能：
+# 1. 代码热重载（修改代码自动生效）
+# 2. 端口映射（方便本地访问）
+# 3. 邮件捕获（Mailcatcher）
+# 4. 调试工具（Traefik Dashboard）
+# ============================================
+
+services:
+
+  # ============================================
+  # Traefik 反向代理（本地开发版）
+  # ============================================
+  # 如果你想使用子域名访问，修改 .env 中的 DOMAIN：
+  # DOMAIN=localhost.tiangolo.com
+  # 然后访问：
+  # http://api.localhost.tiangolo.com - 后端
+  # http://dashboard.localhost.tiangolo.com - 前端
+  # ============================================
+  proxy:
+    image: traefik:3.6
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+      - "80:80"       # HTTP 入口
+      - "8090:8080"   # Traefik Dashboard
+    command:
+      # 启用 Docker 服务发现
+      - --providers.docker
+      # 只处理带有 traefik-public 标签的服务
+      - --providers.docker.constraints=Label(`traefik.constraint-label`, `traefik-public`)
+      # 默认不暴露所有服务
+      - --providers.docker.exposedbydefault=false
+      # HTTP 入口（端口 80）
+      - --entrypoints.http.address=:80
+      # HTTPS 入口（端口 443）
+      - --entrypoints.https.address=:443
+      # 启用访问日志
+      - --accesslog
+      # 启用 Traefik 日志
+      - --log
+      # 调试日志级别
+      - --log.level=DEBUG
+      # 启用 Dashboard
+      - --api
+      # 开发模式：不安全的 Dashboard（本地使用）
+      - --api.insecure=true
+    labels:
+      - traefik.enable=true
+      - traefik.constraint-label=traefik-public
+      # 虚拟的重定向中间件（本地开发用）
+      - traefik.http.middlewares.https-redirect.contenttype.autodetect=false
+    networks:
+      - traefik-public
+      - default
+
+  # ============================================
+  # MySQL 数据库（开发环境）
+  # ============================================
+  db:
+    restart: "no"
+    # 映射端口到主机，方便外部工具连接
+    ports:
+      - "3306:3306"
+
+  # ============================================
+  # phpMyAdmin - 数据库管理工具
+  # 访问地址：http://localhost:8080
+  # ============================================
+  phpmyadmin:
+    restart: "no"
+    ports:
+      - "8080:80"
+
+  # ============================================
+  # 后端 API 服务（开发模式）
+  # ============================================
+  backend:
+    restart: "no"
+    ports:
+      - "8000:8000"   # API 端口
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    # 开发命令：启用热重载
+    command:
+      - fastapi
+      - run
+      - --reload
+      - "app/main.py"
+    # 文件同步配置（Docker Desktop 的 Watch 功能）
+    develop:
+      watch:
+        - path: ./backend
+          action: sync
+          target: /app/backend
+          ignore:
+            - ./backend/.venv
+            - .venv
+        - path: ./backend/pyproject.toml
+          action: rebuild
+    # 覆盖率报告目录映射
+    volumes:
+      - ./backend/htmlcov:/app/backend/htmlcov
+    # 开发环境邮件配置：使用 Mailcatcher
+    environment:
+      SMTP_HOST: "mailcatcher"
+      SMTP_PORT: "1025"
+      SMTP_TLS: "false"
+      EMAILS_FROM_EMAIL: "noreply@example.com"
+
+  # ============================================
+  # Mailcatcher - 邮件捕获工具
+  # 
+  # 功能：捕获所有发出的邮件，在 Web 界面查看
+  # Web UI：http://localhost:1080
+  # SMTP：localhost:1025
+  # ============================================
+  mailcatcher:
+    image: schickling/mailcatcher
+    ports:
+      - "1080:1080"   # Web 界面
+      - "1025:1025"   # SMTP 端口
+
+  # ============================================
+  # 前端应用（开发模式）
+  # ============================================
+  frontend:
+    restart: "no"
+    ports:
+      - "5173:80"     # 前端端口
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+      args:
+        - VITE_API_URL=http://localhost:8000
+        - NODE_ENV=development
+
+  # ============================================
+  # Playwright - E2E 测试工具
+  # ============================================
+  playwright:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile.playwright
+      args:
+        - VITE_API_URL=http://backend:8000
+        - NODE_ENV=production
+    ipc: host
+    depends_on:
+      - backend
+      - mailcatcher
+    env_file:
+      - .env
+    environment:
+      - VITE_API_URL=http://backend:8000
+      - MAILCATCHER_HOST=http://mailcatcher:1080
+      # 测试报告配置
+      - PLAYWRIGHT_HTML_HOST=0.0.0.0
+      - CI=${CI}
+    volumes:
+      - ./frontend/blob-report:/app/frontend/blob-report
+      - ./frontend/test-results:/app/frontend/test-results
+    ports:
+      - 9323:9323     # Playwright 报告端口
+
+# ============================================
+# 网络配置
+# ============================================
+networks:
+  traefik-public:
+    # 本地开发：不期望外部网络，自动创建
+    external: false

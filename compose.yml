@@ -1,0 +1,245 @@
+# ============================================
+# Docker Compose 配置文件
+# 
+# 此文件定义了生产环境的所有服务配置
+# 开发环境会叠加 compose.override.yml 中的配置
+# ============================================
+
+services:
+
+  # ============================================
+  # MySQL 数据库服务
+  # ============================================
+  db:
+    # MySQL 8.0 官方镜像
+    image: mysql:8.0
+    # 容器退出时自动重启
+    restart: always
+    # 健康检查 - 确保数据库就绪后才启动依赖服务
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-p${MYSQL_ROOT_PASSWORD}"]
+      interval: 10s      # 检查间隔
+      retries: 5         # 失败重试次数
+      start_period: 30s  # 启动宽限期
+      timeout: 10s       # 检查超时时间
+    # 数据持久化 - 数据库文件保存到 Docker 卷
+    volumes:
+      - app-db-data:/var/lib/mysql
+    # 从 .env 文件加载环境变量
+    env_file:
+      - .env
+    # 环境变量设置
+    environment:
+      # MySQL root 密码（必须设置）
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD?Variable not set}
+      # 自动创建的数据库
+      - MYSQL_DATABASE=${MYSQL_DB?Variable not set}
+      # 自动创建的普通用户
+      - MYSQL_USER=${MYSQL_USER?Variable not set}
+      # 普通用户密码
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD?Variable not set}
+
+  # ============================================
+  # phpMyAdmin - 数据库管理工具
+  # 访问地址：http://phpmyadmin.${DOMAIN}
+  # ============================================
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    restart: always
+    # 连接的网络
+    networks:
+      - traefik-public  # 对外访问
+      - default         # 内部通信
+    # 依赖 db 服务
+    depends_on:
+      - db
+    environment:
+      # phpMyAdmin 连接的数据库主机
+      - PMA_HOST=db
+      - PMA_PORT=3306
+      # root 密码（用于登录 phpMyAdmin）
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD?Variable not set}
+    # Traefik 路由标签 - 自动配置反向代理
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=traefik-public
+      - traefik.constraint-label=traefik-public
+      # HTTP 路由 - 自动重定向到 HTTPS
+      - traefik.http.routers.${STACK_NAME?Variable not set}-phpmyadmin-http.rule=Host(`phpmyadmin.${DOMAIN?Variable not set}`)
+      - traefik.http.routers.${STACK_NAME?Variable not set}-phpmyadmin-http.entrypoints=http
+      - traefik.http.routers.${STACK_NAME?Variable not set}-phpmyadmin-http.middlewares=https-redirect
+      # HTTPS 路由
+      - traefik.http.routers.${STACK_NAME?Variable not set}-phpmyadmin-https.rule=Host(`phpmyadmin.${DOMAIN?Variable not set}`)
+      - traefik.http.routers.${STACK_NAME?Variable not set}-phpmyadmin-https.entrypoints=https
+      - traefik.http.routers.${STACK_NAME?Variable not set}-phpmyadmin-https.tls=true
+      - traefik.http.routers.${STACK_NAME?Variable not set}-phpmyadmin-https.tls.certresolver=le
+      # 服务端口
+      - traefik.http.services.${STACK_NAME?Variable not set}-phpmyadmin.loadbalancer.server.port=80
+
+  # ============================================
+  # 预启动服务 - 执行数据库迁移和初始化
+  # ============================================
+  prestart:
+    # 使用后端镜像
+    image: '${DOCKER_IMAGE_BACKEND?Variable not set}:${TAG-latest}'
+    # 构建配置
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    networks:
+      - traefik-public
+      - default
+    # 依赖数据库健康检查通过
+    depends_on:
+      db:
+        condition: service_healthy
+        restart: true
+    # 执行预启动脚本（迁移、初始化等）
+    command: bash scripts/prestart.sh
+    env_file:
+      - .env
+    # 覆盖部分环境变量（使用 Docker 服务名作为主机名）
+    environment:
+      - DOMAIN=${DOMAIN}
+      - FRONTEND_HOST=${FRONTEND_HOST?Variable not set}
+      - ENVIRONMENT=${ENVIRONMENT}
+      - BACKEND_CORS_ORIGINS=${BACKEND_CORS_ORIGINS}
+      - SECRET_KEY=${SECRET_KEY?Variable not set}
+      - FIRST_SUPERUSER=${FIRST_SUPERUSER?Variable not set}
+      - FIRST_SUPERUSER_PASSWORD=${FIRST_SUPERUSER_PASSWORD?Variable not set}
+      - SMTP_HOST=${SMTP_HOST}
+      - SMTP_USER=${SMTP_USER}
+      - SMTP_PASSWORD=${SMTP_PASSWORD}
+      - EMAILS_FROM_EMAIL=${EMAILS_FROM_EMAIL}
+      # 数据库连接使用服务名 "db" 作为主机
+      - MYSQL_SERVER=db
+      - MYSQL_PORT=${MYSQL_PORT}
+      - MYSQL_DB=${MYSQL_DB}
+      - MYSQL_USER=${MYSQL_USER?Variable not set}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD?Variable not set}
+      - SENTRY_DSN=${SENTRY_DSN}
+
+  # ============================================
+  # 后端 API 服务
+  # 访问地址：https://api.${DOMAIN}
+  # ============================================
+  backend:
+    image: '${DOCKER_IMAGE_BACKEND?Variable not set}:${TAG-latest}'
+    restart: always
+    networks:
+      - traefik-public
+      - default
+    # 依赖数据库和预启动服务
+    depends_on:
+      db:
+        condition: service_healthy
+        restart: true
+      prestart:
+        condition: service_completed_successfully
+    env_file:
+      - .env
+    environment:
+      - DOMAIN=${DOMAIN}
+      - FRONTEND_HOST=${FRONTEND_HOST?Variable not set}
+      - ENVIRONMENT=${ENVIRONMENT}
+      - BACKEND_CORS_ORIGINS=${BACKEND_CORS_ORIGINS}
+      - SECRET_KEY=${SECRET_KEY?Variable not set}
+      - FIRST_SUPERUSER=${FIRST_SUPERUSER?Variable not set}
+      - FIRST_SUPERUSER_PASSWORD=${FIRST_SUPERUSER_PASSWORD?Variable not set}
+      - SMTP_HOST=${SMTP_HOST}
+      - SMTP_USER=${SMTP_USER}
+      - SMTP_PASSWORD=${SMTP_PASSWORD}
+      - EMAILS_FROM_EMAIL=${EMAILS_FROM_EMAIL}
+      - MYSQL_SERVER=db
+      - MYSQL_PORT=${MYSQL_PORT}
+      - MYSQL_DB=${MYSQL_DB}
+      - MYSQL_USER=${MYSQL_USER?Variable not set}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD?Variable not set}
+      - SENTRY_DSN=${SENTRY_DSN}
+
+    # 健康检查 - 检查 API 是否可用
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/api/v1/utils/health-check/"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    # Traefik 路由配置
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=traefik-public
+      - traefik.constraint-label=traefik-public
+
+      # 负载均衡端口
+      - traefik.http.services.${STACK_NAME?Variable not set}-backend.loadbalancer.server.port=8000
+
+      # HTTP 路由
+      - traefik.http.routers.${STACK_NAME?Variable not set}-backend-http.rule=Host(`api.${DOMAIN?Variable not set}`)
+      - traefik.http.routers.${STACK_NAME?Variable not set}-backend-http.entrypoints=http
+
+      # HTTPS 路由
+      - traefik.http.routers.${STACK_NAME?Variable not set}-backend-https.rule=Host(`api.${DOMAIN?Variable not set}`)
+      - traefik.http.routers.${STACK_NAME?Variable not set}-backend-https.entrypoints=https
+      - traefik.http.routers.${STACK_NAME?Variable not set}-backend-https.tls=true
+      - traefik.http.routers.${STACK_NAME?Variable not set}-backend-https.tls.certresolver=le
+
+      # HTTP 自动重定向到 HTTPS
+      - traefik.http.routers.${STACK_NAME?Variable not set}-backend-http.middlewares=https-redirect
+
+  # ============================================
+  # 前端应用服务
+  # 访问地址：https://dashboard.${DOMAIN}
+  # ============================================
+  frontend:
+    image: '${DOCKER_IMAGE_FRONTEND?Variable not set}:${TAG-latest}'
+    restart: always
+    networks:
+      - traefik-public
+      - default
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+      # 构建参数 - 传递给 Dockerfile
+      args:
+        # API 地址（生产环境使用 HTTPS）
+        - VITE_API_URL=https://api.${DOMAIN?Variable not set}
+        - NODE_ENV=production
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=traefik-public
+      - traefik.constraint-label=traefik-public
+
+      # 负载均衡端口（Nginx 默认 80）
+      - traefik.http.services.${STACK_NAME?Variable not set}-frontend.loadbalancer.server.port=80
+
+      # HTTP 路由
+      - traefik.http.routers.${STACK_NAME?Variable not set}-frontend-http.rule=Host(`dashboard.${DOMAIN?Variable not set}`)
+      - traefik.http.routers.${STACK_NAME?Variable not set}-frontend-http.entrypoints=http
+
+      # HTTPS 路由
+      - traefik.http.routers.${STACK_NAME?Variable not set}-frontend-https.rule=Host(`dashboard.${DOMAIN?Variable not set}`)
+      - traefik.http.routers.${STACK_NAME?Variable not set}-frontend-https.entrypoints=https
+      - traefik.http.routers.${STACK_NAME?Variable not set}-frontend-https.tls=true
+      - traefik.http.routers.${STACK_NAME?Variable not set}-frontend-https.tls.certresolver=le
+
+      # HTTP 自动重定向到 HTTPS
+      - traefik.http.routers.${STACK_NAME?Variable not set}-frontend-http.middlewares=https-redirect
+
+# ============================================
+# 数据卷定义
+# ============================================
+volumes:
+  # MySQL 数据持久化卷
+  app-db-data:
+
+# ============================================
+# 网络定义
+# ============================================
+networks:
+  traefik-public:
+    # 外部网络 - 由 Traefik 反向代理创建和管理
+    # 允许多个服务共享同一个入口网关
+    external: true

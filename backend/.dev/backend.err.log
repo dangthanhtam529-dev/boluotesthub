@@ -1,0 +1,1369 @@
+G:\agent_eaplore\full-stack-fastapi-template-master\backend\app\core\config.py:227: UserWarning: The value of FIRST_SUPERUSER_PASSWORD is "changethis", for security, please change it, at least for deployments.
+  warnings.warn(message, stacklevel=1)
+2026-02-13 11:19:42,671 INFO app.mongodb request_id=None user_id=None mongodb_connected
+2026-02-13 11:19:42,749 INFO uvicorn.error request_id=None user_id=None Started server process [37092]
+2026-02-13 11:19:42,750 INFO uvicorn.error request_id=None user_id=None Waiting for application startup.
+2026-02-13 11:19:42,786 INFO uvicorn.error request_id=None user_id=None Application startup complete.
+2026-02-13 11:19:42,787 INFO uvicorn.error request_id=None user_id=None Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+G:\agent_eaplore\full-stack-fastapi-template-master\backend\app\core\config.py:227: UserWarning: The value of FIRST_SUPERUSER_PASSWORD is "changethis", for security, please change it, at least for deployments.
+  warnings.warn(message, stacklevel=1)
+2026-02-13 11:21:19,714 INFO app.mongodb request_id=None user_id=None mongodb_connected
+2026-02-13 11:21:19,802 INFO uvicorn.error request_id=None user_id=None Started server process [32020]
+2026-02-13 11:21:19,802 INFO uvicorn.error request_id=None user_id=None Waiting for application startup.
+2026-02-13 11:21:19,829 INFO uvicorn.error request_id=None user_id=None Application startup complete.
+2026-02-13 11:21:19,829 INFO uvicorn.error request_id=None user_id=None Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+G:\agent_eaplore\full-stack-fastapi-template-master\backend\app\core\config.py:227: UserWarning: The value of FIRST_SUPERUSER_PASSWORD is "changethis", for security, please change it, at least for deployments.
+  warnings.warn(message, stacklevel=1)
+2026-02-13 11:24:23,432 INFO app.mongodb request_id=None user_id=None mongodb_connected
+2026-02-13 11:24:23,500 INFO uvicorn.error request_id=None user_id=None Started server process [31840]
+2026-02-13 11:24:23,500 INFO uvicorn.error request_id=None user_id=None Waiting for application startup.
+2026-02-13 11:24:23,519 INFO uvicorn.error request_id=None user_id=None Application startup complete.
+2026-02-13 11:24:23,520 INFO uvicorn.error request_id=None user_id=None Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2026-02-13 11:28:42,086 INFO app.request request_id=99188d6163d9489f8bcd762ccdd67125 user_id=None request_completed
+2026-02-13 11:28:42,086 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61289 - "POST /api/v1/login/access-token HTTP/1.1" 200
+2026-02-13 11:28:42,152 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61289 - "OPTIONS /api/v1/users/me HTTP/1.1" 200
+2026-02-13 11:28:42,202 INFO app.request request_id=3f03a3be5ca2442496a32fd2e2fe0873 user_id=None request_completed
+2026-02-13 11:28:42,202 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61289 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-13 11:28:42,370 INFO app.request request_id=5b214a79a6544e018312445054e061b2 user_id=None request_completed
+2026-02-13 11:28:42,371 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61289 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-13 11:28:45,818 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61289 - "OPTIONS /api/v1/executions/?skip=0&limit=10 HTTP/1.1" 200
+2026-02-13 11:28:45,973 INFO app.request request_id=9f7497b57bf04db5b932e6d73a754f14 user_id=None request_completed
+2026-02-13 11:28:45,973 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61289 - "GET /api/v1/executions/?skip=0&limit=10 HTTP/1.1" 200
+2026-02-13 11:28:45,982 INFO app.request request_id=147f1cc7e4424ff187e3906178c2ca41 user_id=None request_completed
+2026-02-13 11:28:45,982 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61329 - "GET /api/v1/executions/?skip=0&limit=10 HTTP/1.1" 200
+2026-02-13 11:29:01,364 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61362 - "OPTIONS /api/v1/executions/ HTTP/1.1" 200
+2026-02-13 11:29:01,434 INFO app.request request_id=8ab87e6a8717444582c179f820925a8e user_id=None request_completed
+2026-02-13 11:29:01,434 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61362 - "POST /api/v1/executions/ HTTP/1.1" 200
+2026-02-13 11:29:01,449 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61362 - "OPTIONS /api/v1/executions/0fea51e2-7705-4500-8180-0e49601b022c/run HTTP/1.1" 200
+2026-02-13 11:29:01,672 INFO app.apifox request_id=1624678fb6ff4455b516327d7c075e09 user_id=None apifox_run_started
+2026-02-13 11:29:30,251 INFO app.apifox request_id=1624678fb6ff4455b516327d7c075e09 user_id=None apifox_report_file_found
+2026-02-13 11:29:30,252 INFO app.apifox request_id=1624678fb6ff4455b516327d7c075e09 user_id=None apifox_run_finished
+2026-02-13 11:29:31,207 INFO app.apifox request_id=1624678fb6ff4455b516327d7c075e09 user_id=None mongodb_report_save_started
+2026-02-13 11:29:31,211 INFO app.apifox request_id=1624678fb6ff4455b516327d7c075e09 user_id=None mongodb_report_save_ok
+2026-02-13 11:29:31,708 INFO app.request request_id=1624678fb6ff4455b516327d7c075e09 user_id=None request_completed
+2026-02-13 11:29:31,708 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61362 - "POST /api/v1/executions/0fea51e2-7705-4500-8180-0e49601b022c/run HTTP/1.1" 200
+2026-02-13 11:29:31,723 INFO app.request request_id=36e48458b80445adba58e28c6988dd67 user_id=None request_completed
+2026-02-13 11:29:31,723 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61362 - "GET /api/v1/executions/?skip=0&limit=10 HTTP/1.1" 200
+2026-02-13 11:29:45,332 INFO app.request request_id=a043cb9d5b444f58acc8016438bad6cb user_id=None request_completed
+2026-02-13 11:29:45,332 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61406 - "GET /api/v1/executions/?skip=0&limit=10 HTTP/1.1" 200
+2026-02-13 11:29:45,344 INFO app.request request_id=4f22fac5c6584a05848016e8e0c15ce7 user_id=None request_completed
+2026-02-13 11:29:45,344 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61407 - "GET /api/v1/executions/?skip=0&limit=10 HTTP/1.1" 200
+2026-02-13 11:29:50,223 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61407 - "OPTIONS /api/v1/executions/analytics/overview?days=30&collection_id=7936775 HTTP/1.1" 200
+2026-02-13 11:29:50,226 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61406 - "OPTIONS /api/v1/executions/analytics/trend?days=30&collection_id=7936775 HTTP/1.1" 200
+2026-02-13 11:29:50,227 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61412 - "OPTIONS /api/v1/executions/analytics/failed-apis?days=30&collection_id=7936775&limit=10 HTTP/1.1" 200
+2026-02-13 11:29:50,228 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61413 - "OPTIONS /api/v1/executions/analytics/performance?days=30&collection_id=7936775 HTTP/1.1" 200
+2026-02-13 11:29:50,230 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61414 - "OPTIONS /api/v1/executions/analytics/failure-signatures?days=30&collection_id=7936775&limit=10 HTTP/1.1" 200
+2026-02-13 11:29:50,231 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61415 - "OPTIONS /api/v1/executions/analytics/flaky?days=30&collection_id=7936775&limit=10 HTTP/1.1" 200
+2026-02-13 11:29:50,232 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61407 - "OPTIONS /api/v1/executions/analytics/slow-apis?days=30&collection_id=7936775&limit=10 HTTP/1.1" 200
+2026-02-13 11:29:50,233 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61406 - "OPTIONS /api/v1/executions?skip=0&limit=50 HTTP/1.1" 200
+2026-02-13 11:29:50,408 INFO app.request request_id=c3b77df7c84543cb82f78a5dc6497537 user_id=None request_completed
+2026-02-13 11:29:50,408 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61407 - "GET /api/v1/executions/analytics/overview?days=30&collection_id=7936775 HTTP/1.1" 200
+2026-02-13 11:29:50,421 INFO app.request request_id=d10cb5637e0748ce8041021f94599907 user_id=None request_completed
+2026-02-13 11:29:50,421 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61413 - "GET /api/v1/executions/analytics/performance?days=30&collection_id=7936775 HTTP/1.1" 200
+2026-02-13 11:29:50,422 INFO app.request request_id=20859e0ae82c490e962dd084f76607ef user_id=None request_completed
+2026-02-13 11:29:50,422 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61414 - "GET /api/v1/executions/analytics/failed-apis?days=30&collection_id=7936775&limit=10 HTTP/1.1" 200
+2026-02-13 11:29:50,449 INFO app.request request_id=ba162301d6044b1499a96a6e30670632 user_id=None request_completed
+2026-02-13 11:29:50,449 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61406 - "GET /api/v1/executions/analytics/failure-signatures?days=30&collection_id=7936775&limit=10 HTTP/1.1" 200
+2026-02-13 11:29:50,452 INFO app.request request_id=148b6c5fb0f148faac3d5ac3be0d3b9d user_id=None request_completed
+2026-02-13 11:29:50,452 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61415 - "GET /api/v1/executions/analytics/trend?days=30&collection_id=7936775 HTTP/1.1" 200
+2026-02-13 11:29:50,453 INFO app.request request_id=0e928b6a46d243c1ad5010e84854c48f user_id=None request_completed
+2026-02-13 11:29:50,453 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61413 - "GET /api/v1/executions?skip=0&limit=50 HTTP/1.1" 307
+2026-02-13 11:29:50,456 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61413 - "OPTIONS /api/v1/executions/?skip=0&limit=50 HTTP/1.1" 200
+2026-02-13 11:29:50,459 INFO app.request request_id=a1786afc39c0472691ef6d6e9df572f3 user_id=None request_completed
+2026-02-13 11:29:50,459 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61412 - "GET /api/v1/executions/analytics/flaky?days=30&collection_id=7936775&limit=10 HTTP/1.1" 200
+2026-02-13 11:29:50,459 INFO app.request request_id=192de9911d3c46b793dbc007e6f3650f user_id=None request_completed
+2026-02-13 11:29:50,459 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61407 - "GET /api/v1/executions/analytics/slow-apis?days=30&collection_id=7936775&limit=10 HTTP/1.1" 200
+2026-02-13 11:29:50,469 INFO app.request request_id=da02fa1d016e4887bf509e89958ecbb3 user_id=None request_completed
+2026-02-13 11:29:50,469 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61415 - "GET /api/v1/executions/?skip=0&limit=50 HTTP/1.1" 200
+2026-02-13 11:30:00,149 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61431 - "OPTIONS /api/v1/executions?skip=0&limit=1&collection_id=7936775 HTTP/1.1" 200
+2026-02-13 11:30:00,152 INFO app.request request_id=cb8195a308dc47d59792bf962b5172d8 user_id=None request_completed
+2026-02-13 11:30:00,153 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61431 - "GET /api/v1/executions?skip=0&limit=1&collection_id=7936775 HTTP/1.1" 307
+2026-02-13 11:30:00,154 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61431 - "OPTIONS /api/v1/executions/?skip=0&limit=1&collection_id=7936775 HTTP/1.1" 200
+2026-02-13 11:30:00,166 INFO app.request request_id=b084f3ad54a148d6985ed1d22b9c2de8 user_id=None request_completed
+2026-02-13 11:30:00,166 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61431 - "GET /api/v1/executions/?skip=0&limit=1&collection_id=7936775 HTTP/1.1" 200
+2026-02-13 11:30:00,172 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61431 - "OPTIONS /api/v1/executions/0fea51e2-7705-4500-8180-0e49601b022c/report HTTP/1.1" 200
+2026-02-13 11:30:00,213 INFO app.request request_id=099f6d77d3c04818841d551229bba9fe user_id=None request_completed
+2026-02-13 11:30:00,213 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61431 - "GET /api/v1/executions/0fea51e2-7705-4500-8180-0e49601b022c/report HTTP/1.1" 200
+2026-02-13 11:30:17,602 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61479 - "OPTIONS /api/v1/items/?skip=0&limit=100 HTTP/1.1" 200
+2026-02-13 11:30:17,645 INFO app.request request_id=d665f428995e4698ab65658694a7218e user_id=None request_completed
+2026-02-13 11:30:17,645 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61479 - "GET /api/v1/items/?skip=0&limit=100 HTTP/1.1" 200
+2026-02-13 11:30:18,888 INFO app.request request_id=224f5a5a8bd1491084eef7579d27ce46 user_id=None request_completed
+2026-02-13 11:30:18,888 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61479 - "GET /api/v1/executions/?skip=0&limit=10 HTTP/1.1" 200
+2026-02-13 11:30:18,901 INFO app.request request_id=8fe60ca3e54c4275be1a43ab9efff939 user_id=None request_completed
+2026-02-13 11:30:18,901 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61481 - "GET /api/v1/executions/?skip=0&limit=10 HTTP/1.1" 200
+2026-02-13 11:30:29,054 INFO app.request request_id=d79c7b240d1a4b4288ed905cb81a5b26 user_id=None request_completed
+2026-02-13 11:30:29,055 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61498 - "GET /api/v1/executions/0fea51e2-7705-4500-8180-0e49601b022c/report HTTP/1.1" 200
+2026-02-13 11:30:36,977 INFO app.request request_id=39e2d57121bb47948bacdbc108d55376 user_id=None request_completed
+2026-02-13 11:30:36,977 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61506 - "GET /api/v1/executions/?skip=0&limit=10 HTTP/1.1" 200
+2026-02-13 11:30:36,990 INFO app.request request_id=9d0fc3aa6da34ea8afc8104059d4d9d1 user_id=None request_completed
+2026-02-13 11:30:36,990 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61507 - "GET /api/v1/executions/?skip=0&limit=10 HTTP/1.1" 200
+G:\agent_eaplore\full-stack-fastapi-template-master\backend\app\core\config.py:227: UserWarning: The value of FIRST_SUPERUSER_PASSWORD is "changethis", for security, please change it, at least for deployments.
+  warnings.warn(message, stacklevel=1)
+2026-02-13 15:05:18,697 INFO app.mongodb request_id=None user_id=None mongodb_connected
+2026-02-13 15:05:18,830 INFO uvicorn.error request_id=None user_id=None Started server process [35752]
+2026-02-13 15:05:18,831 INFO uvicorn.error request_id=None user_id=None Waiting for application startup.
+2026-02-13 15:05:18,878 INFO uvicorn.error request_id=None user_id=None Application startup complete.
+2026-02-13 15:05:18,879 INFO uvicorn.error request_id=None user_id=None Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+G:\agent_eaplore\full-stack-fastapi-template-master\backend\app\core\config.py:227: UserWarning: The value of FIRST_SUPERUSER_PASSWORD is "changethis", for security, please change it, at least for deployments.
+  warnings.warn(message, stacklevel=1)
+2026-02-13 15:06:52,453 INFO app.mongodb request_id=None user_id=None mongodb_connected
+2026-02-13 15:06:52,524 INFO uvicorn.error request_id=None user_id=None Started server process [36104]
+2026-02-13 15:06:52,524 INFO uvicorn.error request_id=None user_id=None Waiting for application startup.
+2026-02-13 15:06:52,543 INFO uvicorn.error request_id=None user_id=None Application startup complete.
+2026-02-13 15:06:52,544 INFO uvicorn.error request_id=None user_id=None Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2026-02-13 15:07:42,988 INFO app.request request_id=9be5186fbd6f47c6af68c8a065a2f62e user_id=None request_completed
+2026-02-13 15:07:42,988 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60758 - "GET /docs?ide_webview_request_time=1770966462932 HTTP/1.1" 200
+2026-02-13 15:07:51,061 INFO app.request request_id=75606600f31f4fa6a2a49bd83773b8d4 user_id=None request_completed
+2026-02-13 15:07:51,061 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60772 - "GET /api/v1/openapi.json HTTP/1.1" 200
+2026-02-13 15:07:51,062 INFO app.request request_id=e7db63f1ed34463d9d71d2c2fa7ff2e7 user_id=None request_completed
+2026-02-13 15:07:51,063 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60773 - "GET /%40vite/client HTTP/1.1" 404
+2026-02-13 15:12:42,093 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61326 - "OPTIONS /api/v1/users/me HTTP/1.1" 200
+2026-02-13 15:12:42,266 INFO app.request request_id=34481c665f9d4441a0b446d8db15e077 user_id=None request_completed
+2026-02-13 15:12:42,266 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61326 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-13 15:12:47,132 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61326 - "OPTIONS /api/v1/items/?skip=0&limit=100 HTTP/1.1" 200
+2026-02-13 15:12:47,171 INFO app.request request_id=161dd5f024004acf99efa80c331d22c5 user_id=None request_completed
+2026-02-13 15:12:47,171 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61326 - "GET /api/v1/items/?skip=0&limit=100 HTTP/1.1" 200
+2026-02-13 15:12:50,794 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61326 - "OPTIONS /api/v1/executions/?skip=0&limit=10 HTTP/1.1" 200
+2026-02-13 15:12:50,904 INFO app.request request_id=6b60985cf2da4bb081cd7a5f1f3a5bc2 user_id=None request_completed
+2026-02-13 15:12:50,905 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61326 - "GET /api/v1/executions/?skip=0&limit=10 HTTP/1.1" 200
+2026-02-13 15:12:50,914 INFO app.request request_id=a77742e1e8564085957af943c1488078 user_id=None request_completed
+2026-02-13 15:12:50,914 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61370 - "GET /api/v1/executions/?skip=0&limit=10 HTTP/1.1" 200
+2026-02-13 15:16:21,986 INFO app.request request_id=6b2971704c8543f0b89add72d6c81482 user_id=None request_completed
+2026-02-13 15:16:21,986 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:62385 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-13 15:19:17,478 INFO app.request request_id=6e9484112c594eaf9ff43fe4eb1b24de user_id=None request_completed
+2026-02-13 15:19:17,479 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:62940 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-13 15:19:39,627 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:63015 - "OPTIONS /api/v1/executions/ HTTP/1.1" 200
+2026-02-13 15:19:39,825 INFO app.request request_id=1811660b0edc4ca98637f3f04b503c91 user_id=None request_completed
+2026-02-13 15:19:39,825 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:63015 - "POST /api/v1/executions/ HTTP/1.1" 200
+2026-02-13 15:19:39,828 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:63015 - "OPTIONS /api/v1/executions/98ab03fa-22de-4637-a017-3452ddf6776d/run HTTP/1.1" 200
+2026-02-13 15:19:40,078 INFO app.apifox request_id=c59b64a2e1a94a47920cb1eff93957d1 user_id=None apifox_run_started
+2026-02-13 15:20:09,946 WARNING app.apifox request_id=c59b64a2e1a94a47920cb1eff93957d1 user_id=None apifox_run_failed
+2026-02-13 15:20:10,862 INFO app.request request_id=c59b64a2e1a94a47920cb1eff93957d1 user_id=None request_completed
+2026-02-13 15:20:10,862 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:63015 - "POST /api/v1/executions/98ab03fa-22de-4637-a017-3452ddf6776d/run HTTP/1.1" 200
+2026-02-13 15:20:10,874 INFO app.request request_id=b405d27b91a8444196b398263b9ee391 user_id=None request_completed
+2026-02-13 15:20:10,874 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:63015 - "GET /api/v1/executions/?skip=0&limit=10 HTTP/1.1" 200
+2026-02-13 15:20:24,723 INFO app.request request_id=d60e8ce387d74ca28f595b44852ce107 user_id=None request_completed
+2026-02-13 15:20:24,723 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:63213 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-13 15:20:24,985 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:63213 - "OPTIONS /api/v1/audit-logs/?skip=0&limit=200 HTTP/1.1" 200
+2026-02-13 15:20:24,986 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:63219 - "OPTIONS /api/v1/audit-logs/?skip=0&limit=200 HTTP/1.1" 200
+2026-02-13 15:20:25,023 INFO app.request request_id=ad5f0f23e206465380a97288f9ccf3f9 user_id=None request_completed
+2026-02-13 15:20:25,024 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:63219 - "GET /api/v1/audit-logs/?skip=0&limit=200 HTTP/1.1" 200
+2026-02-13 15:20:25,069 INFO app.request request_id=25ef4cda66844c949daad3e67449df63 user_id=None request_completed
+2026-02-13 15:20:25,069 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:63213 - "GET /api/v1/audit-logs/?skip=0&limit=200 HTTP/1.1" 200
+2026-02-13 15:20:53,305 INFO app.request request_id=41b8d988bff24f148c0c465d6e424cdd user_id=None request_completed
+2026-02-13 15:20:53,305 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:63272 - "GET /api/v1/executions/?skip=0&limit=10 HTTP/1.1" 200
+2026-02-13 15:20:53,315 INFO app.request request_id=e8b7779548924f12ab00f420e4d58e3a user_id=None request_completed
+2026-02-13 15:20:53,316 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:63273 - "GET /api/v1/executions/?skip=0&limit=10 HTTP/1.1" 200
+2026-02-13 15:21:16,976 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:63309 - "OPTIONS /api/v1/executions/98ab03fa-22de-4637-a017-3452ddf6776d/report HTTP/1.1" 200
+2026-02-13 15:21:16,983 INFO app.request request_id=8a21351e3959462ca106e39bc3a33409 user_id=None request_completed
+2026-02-13 15:21:16,983 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:63309 - "GET /api/v1/executions/98ab03fa-22de-4637-a017-3452ddf6776d/report HTTP/1.1" 404
+2026-02-13 15:21:19,304 INFO app.request request_id=a78ffd0742a44eb89641731980996aab user_id=None request_completed
+2026-02-13 15:21:19,304 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:63309 - "GET /api/v1/executions/98ab03fa-22de-4637-a017-3452ddf6776d/report HTTP/1.1" 404
+2026-02-13 15:21:22,786 INFO app.request request_id=606ee4c5863f442883af7024c1645698 user_id=None request_completed
+2026-02-13 15:21:22,786 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:63309 - "GET /api/v1/executions/?skip=0&limit=10 HTTP/1.1" 200
+2026-02-13 15:21:22,797 INFO app.request request_id=9a482a88036144af9784041cb99c483a user_id=None request_completed
+2026-02-13 15:21:22,798 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:63317 - "GET /api/v1/executions/?skip=0&limit=10 HTTP/1.1" 200
+2026-02-13 15:21:35,275 INFO app.request request_id=97e14dd2320e46758d6f7900dcee2077 user_id=None request_completed
+2026-02-13 15:21:35,275 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:63339 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-13 15:53:10,609 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60160 - "OPTIONS /api/v1/users/me HTTP/1.1" 200
+2026-02-13 15:53:10,654 INFO app.request request_id=8cd028bac4a547f0a20c9816e6dc244c user_id=None request_completed
+2026-02-13 15:53:10,654 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60160 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-13 15:53:11,640 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60160 - "OPTIONS /api/v1/executions/?skip=0&limit=10 HTTP/1.1" 200
+2026-02-13 15:53:11,677 INFO app.request request_id=f1d8d14f986f4b728de6a95ec45b66eb user_id=None request_completed
+2026-02-13 15:53:11,678 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60160 - "GET /api/v1/executions/?skip=0&limit=10 HTTP/1.1" 200
+2026-02-13 15:53:11,703 INFO app.request request_id=3f77cf7846d046c595c3c786cccd6a59 user_id=None request_completed
+2026-02-13 15:53:11,704 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:55888 - "GET /api/v1/executions/?skip=0&limit=10 HTTP/1.1" 200
+2026-02-13 15:53:11,715 INFO app.request request_id=89ccabe439864bbdbc22e121673c12ad user_id=None request_completed
+2026-02-13 15:53:11,716 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60160 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-13 15:53:16,096 INFO app.request request_id=f3ed817c294a4aad943508047a76f541 user_id=None request_completed
+2026-02-13 15:53:16,097 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60160 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-13 15:53:16,220 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60160 - "OPTIONS /api/v1/audit-logs/?skip=0&limit=200 HTTP/1.1" 200
+2026-02-13 15:53:16,245 INFO app.request request_id=0b34f11bda2346ca8d789454450612fa user_id=None request_completed
+2026-02-13 15:53:16,245 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60160 - "GET /api/v1/audit-logs/?skip=0&limit=200 HTTP/1.1" 200
+2026-02-13 15:53:16,267 INFO app.request request_id=12fe5db4e47b4ae1b3dbd32fc6961cce user_id=None request_completed
+2026-02-13 15:53:16,268 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:55888 - "GET /api/v1/audit-logs/?skip=0&limit=200 HTTP/1.1" 200
+G:\agent_eaplore\full-stack-fastapi-template-master\backend\app\core\config.py:227: UserWarning: The value of FIRST_SUPERUSER_PASSWORD is "changethis", for security, please change it, at least for deployments.
+  warnings.warn(message, stacklevel=1)
+2026-02-16 10:38:07,050 INFO app.mongodb request_id=None user_id=None mongodb_connected
+2026-02-16 10:38:07,299 INFO uvicorn.error request_id=None user_id=None Started server process [21728]
+2026-02-16 10:38:07,299 INFO uvicorn.error request_id=None user_id=None Waiting for application startup.
+2026-02-16 10:38:07,980 INFO uvicorn.error request_id=None user_id=None Application startup complete.
+2026-02-16 10:38:07,981 INFO uvicorn.error request_id=None user_id=None Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2026-02-16 10:38:32,977 INFO app.request request_id=db7f8e60bf884a30a51813a0b63c7f8c user_id=None request_completed
+2026-02-16 10:38:32,977 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:50774 - "GET /api/v1/utils/health-check/ HTTP/1.1" 200
+2026-02-16 10:40:06,715 INFO app.request request_id=648feff437c748569c621677dfc4a68f user_id=None request_completed
+2026-02-16 10:40:06,715 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:50831 - "GET /api/v1/utils/health-check/ HTTP/1.1" 200
+2026-02-16 10:41:29,036 INFO app.request request_id=bd95ccc71a584a89bd784a7063544a61 user_id=None request_completed
+2026-02-16 10:41:29,037 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:50910 - "GET /api/v1/utils/health-check/ HTTP/1.1" 200
+2026-02-16 10:43:08,081 INFO app.request request_id=5b3b525cd69746f1bacbb7b48f76e9d9 user_id=None request_completed
+2026-02-16 10:43:08,081 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:50958 - "GET /docs HTTP/1.1" 200
+uest_id=None user_id=None Waiting for application startup.
+2026-02-16 10:41:16,086 INFO uvicorn.error request_id=None user_id=None Application startup complete.
+2026-02-16 10:41:16,087 ERROR uvicorn.error request_id=None user_id=None [Errno 10048] error while attempting to bind on address ('127.0.0.1', 8000): 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。
+2026-02-16 10:41:16,088 INFO uvicorn.error request_id=None user_id=None Waiting for application shutdown.
+2026-02-16 10:41:16,089 INFO app.mongodb request_id=None user_id=None mongodb_connection_closed
+2026-02-16 10:41:16,089 INFO uvicorn.error request_id=None user_id=None Application shutdown complete.
+G:\agent_eaplore\full-stack-fastapi-template-master\backend\app\core\config.py:227: UserWarning: The value of FIRST_SUPERUSER_PASSWORD is "changethis", for security, please change it, at least for deployments.
+  warnings.warn(message, stacklevel=1)
+2026-02-16 11:20:15,118 INFO app.mongodb request_id=None user_id=None mongodb_connected
+2026-02-16 11:20:15,286 INFO uvicorn.error request_id=None user_id=None Started server process [35592]
+2026-02-16 11:20:15,287 INFO uvicorn.error request_id=None user_id=None Waiting for application startup.
+2026-02-16 11:20:15,324 INFO uvicorn.error request_id=None user_id=None Application startup complete.
+2026-02-16 11:20:15,326 INFO uvicorn.error request_id=None user_id=None Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2026-02-16 11:27:59,631 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:52981 - "OPTIONS /api/v1/users/me HTTP/1.1" 200
+2026-02-16 11:27:59,893 INFO app.request request_id=c6f3180e28154800942a00922b9a8eaa user_id=None request_completed
+2026-02-16 11:27:59,893 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:52981 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-16 11:28:01,630 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:52981 - "OPTIONS /api/v1/executions/?skip=0&limit=10 HTTP/1.1" 200
+2026-02-16 11:28:01,798 INFO app.request request_id=2677b57f17f24d818843598f68f9e8b6 user_id=None request_completed
+2026-02-16 11:28:01,799 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53000 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-16 11:28:01,867 INFO app.request request_id=d56d05982bde45798df69d5b7d08ee7c user_id=None request_completed
+2026-02-16 11:28:01,867 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:52981 - "GET /api/v1/executions/?skip=0&limit=10 HTTP/1.1" 200
+2026-02-16 11:28:01,975 INFO app.request request_id=ae3a6e6b2437413f9c88eafb9abc52fa user_id=None request_completed
+2026-02-16 11:28:01,975 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53000 - "GET /api/v1/executions/?skip=0&limit=10 HTTP/1.1" 200
+2026-02-16 11:28:06,203 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53000 - "OPTIONS /api/v1/projects/ HTTP/1.1" 200
+2026-02-16 11:28:06,344 INFO app.request request_id=19fe534fed9c4a3ba04d35d56a30fc47 user_id=None request_completed
+2026-02-16 11:28:06,344 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53000 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-16 11:28:06,403 INFO app.request request_id=0757fcf9b8e94889aae4ca5eb43a68ad user_id=None request_completed
+2026-02-16 11:28:06,403 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:52981 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-16 11:28:12,187 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53015 - "OPTIONS /api/v1/projects/eaf5835f-88d3-4d0e-80d9-1189ff8f5115/sync HTTP/1.1" 200
+2026-02-16 11:28:13,574 INFO httpx request_id=1ee7383afc254920a930c1eff68b22b5 user_id=None HTTP Request: GET https://api.apifox.com/api/v1/projects/%207822130/test-suites "HTTP/1.1 200 OK"
+2026-02-16 11:28:13,580 WARNING app.apifox request_id=1ee7383afc254920a930c1eff68b22b5 user_id=None 获取测试套件失败: Expecting value: line 1 column 1 (char 0)
+2026-02-16 11:28:13,816 INFO httpx request_id=1ee7383afc254920a930c1eff68b22b5 user_id=None HTTP Request: GET https://api.apifox.com/api/v1/projects/%207822130/test-scenarios "HTTP/1.1 200 OK"
+2026-02-16 11:28:13,821 WARNING app.apifox request_id=1ee7383afc254920a930c1eff68b22b5 user_id=None 获取测试场景失败: Expecting value: line 1 column 1 (char 0)
+2026-02-16 11:28:13,927 INFO app.request request_id=1ee7383afc254920a930c1eff68b22b5 user_id=None request_completed
+2026-02-16 11:28:13,927 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53015 - "POST /api/v1/projects/eaf5835f-88d3-4d0e-80d9-1189ff8f5115/sync HTTP/1.1" 200
+2026-02-16 11:28:13,942 INFO app.request request_id=53e48b7a5c4e40959700b1b5f820b476 user_id=None request_completed
+2026-02-16 11:28:13,942 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53015 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-16 16:30:35,231 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:52513 - "OPTIONS /api/v1/users/me HTTP/1.1" 200
+2026-02-16 16:30:35,323 INFO app.request request_id=08674d4fef0f4e859ca1071ba756df70 user_id=None request_completed
+2026-02-16 16:30:35,323 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:52513 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-16 16:30:37,545 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:52513 - "OPTIONS /api/v1/projects/ HTTP/1.1" 200
+2026-02-16 16:30:37,548 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:52535 - "OPTIONS /api/v1/projects/ HTTP/1.1" 200
+2026-02-16 16:30:38,071 INFO app.request request_id=310b5f68e88943b58a3b27870aa7f976 user_id=None request_completed
+2026-02-16 16:30:38,071 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:52535 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-16 16:30:38,166 INFO app.request request_id=362a23c65378477a82a999159554ca84 user_id=None request_completed
+2026-02-16 16:30:38,167 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:52536 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-16 16:30:38,446 INFO app.request request_id=99b69ce99d68431a8ac40549174138bc user_id=None request_completed
+2026-02-16 16:30:38,447 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:52535 - "GET /api/v1/projects/ HTTP/1.1" 200
+G:\agent_eaplore\full-stack-fastapi-template-master\backend\app\core\config.py:227: UserWarning: The value of FIRST_SUPERUSER_PASSWORD is "changethis", for security, please change it, at least for deployments.
+  warnings.warn(message, stacklevel=1)
+2026-02-16 16:38:47,196 INFO app.mongodb request_id=None user_id=None mongodb_connected
+2026-02-16 16:38:47,407 INFO uvicorn.error request_id=None user_id=None Started server process [24552]
+2026-02-16 16:38:47,407 INFO uvicorn.error request_id=None user_id=None Waiting for application startup.
+2026-02-16 16:38:47,446 INFO uvicorn.error request_id=None user_id=None Application startup complete.
+2026-02-16 16:38:47,447 INFO uvicorn.error request_id=None user_id=None Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2026-02-16 17:00:41,753 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:64968 - "OPTIONS /api/v1/users/me HTTP/1.1" 200
+2026-02-16 17:00:41,757 ERROR asyncio request_id=None user_id=None Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python312\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python312\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2026-02-16 17:00:42,696 INFO app.request request_id=2398e25bae504ec6b5a1dd5d4de258f9 user_id=None request_completed
+2026-02-16 17:00:44,299 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:65006 - "OPTIONS /api/v1/projects/ HTTP/1.1" 200
+2026-02-16 17:00:44,300 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:65007 - "OPTIONS /api/v1/projects/ HTTP/1.1" 200
+2026-02-16 17:00:44,303 ERROR asyncio request_id=None user_id=None Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python312\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python312\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2026-02-16 17:00:44,388 INFO app.request request_id=b1a567886d9647cbac3226f04c95d894 user_id=None request_completed
+2026-02-16 17:00:44,388 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:65008 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-16 17:00:44,882 INFO app.request request_id=e1c8477a4acc42569842c30e5965e25a user_id=None request_completed
+2026-02-16 17:00:44,882 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:65006 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-16 17:00:45,011 INFO app.request request_id=ed0d5aa35b7a4dbdb76ee8b07b970989 user_id=None request_completed
+2026-02-16 17:00:45,011 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:65008 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-16 17:00:49,614 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:65008 - "OPTIONS /api/v1/projects/eaf5835f-88d3-4d0e-80d9-1189ff8f5115/sync HTTP/1.1" 200
+2026-02-16 17:01:02,700 INFO httpx request_id=bd1c178bd6184cd98742b651aa843101 user_id=None HTTP Request: GET https://api.apifox.com/api/v1/projects/%207822130/test-suites "HTTP/1.1 200 OK"
+2026-02-16 17:01:02,707 WARNING app.apifox request_id=bd1c178bd6184cd98742b651aa843101 user_id=None 获取测试套件失败: Expecting value: line 1 column 1 (char 0)
+2026-02-16 17:01:02,957 INFO httpx request_id=bd1c178bd6184cd98742b651aa843101 user_id=None HTTP Request: GET https://api.apifox.com/api/v1/projects/%207822130/test-scenarios "HTTP/1.1 200 OK"
+2026-02-16 17:01:02,963 WARNING app.apifox request_id=bd1c178bd6184cd98742b651aa843101 user_id=None 获取测试场景失败: Expecting value: line 1 column 1 (char 0)
+2026-02-16 17:01:03,489 INFO app.request request_id=bd1c178bd6184cd98742b651aa843101 user_id=None request_completed
+2026-02-16 17:01:03,489 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:65008 - "POST /api/v1/projects/eaf5835f-88d3-4d0e-80d9-1189ff8f5115/sync HTTP/1.1" 200
+2026-02-16 17:01:03,899 INFO app.request request_id=60ad463d72bc4c2ab5bd3abdfd268c13 user_id=None request_completed
+2026-02-16 17:01:03,899 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:65008 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-16 17:01:04,385 INFO app.request request_id=70a64c71ac414bbc93983fc7955a57eb user_id=None request_completed
+2026-02-16 17:01:04,385 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:65008 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-16 17:01:17,226 INFO httpx request_id=a8ad0f4c76054294b1b20bf924e0ad44 user_id=None HTTP Request: GET https://api.apifox.com/api/v1/projects/%207822130/test-suites "HTTP/1.1 200 OK"
+2026-02-16 17:01:17,232 WARNING app.apifox request_id=a8ad0f4c76054294b1b20bf924e0ad44 user_id=None 获取测试套件失败: Expecting value: line 1 column 1 (char 0)
+2026-02-16 17:01:17,477 INFO httpx request_id=a8ad0f4c76054294b1b20bf924e0ad44 user_id=None HTTP Request: GET https://api.apifox.com/api/v1/projects/%207822130/test-scenarios "HTTP/1.1 200 OK"
+2026-02-16 17:01:17,483 WARNING app.apifox request_id=a8ad0f4c76054294b1b20bf924e0ad44 user_id=None 获取测试场景失败: Expecting value: line 1 column 1 (char 0)
+2026-02-16 17:01:17,877 INFO app.request request_id=a8ad0f4c76054294b1b20bf924e0ad44 user_id=None request_completed
+2026-02-16 17:01:17,877 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:65492 - "POST /api/v1/projects/eaf5835f-88d3-4d0e-80d9-1189ff8f5115/sync HTTP/1.1" 200
+2026-02-16 17:01:17,969 INFO app.request request_id=58d3acafdabc4f78a617739f3f7d0de1 user_id=None request_completed
+2026-02-16 17:01:17,969 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:65492 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-16 17:01:45,819 INFO app.request request_id=1b80846b113242ad85a93cddd91b2515 user_id=None request_completed
+2026-02-16 17:01:45,819 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:65531 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-16 17:01:47,968 INFO app.request request_id=1388d66de0074399afeaca23ba812f6f user_id=None request_completed
+2026-02-16 17:01:47,968 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:65531 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-16 17:01:47,970 INFO app.request request_id=1e0b45e3566140e9b152eba9647b7f04 user_id=None request_completed
+2026-02-16 17:01:47,970 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:49162 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-16 17:01:48,213 INFO app.request request_id=44b52b7f46a04b88a254a98893b264d4 user_id=None request_completed
+2026-02-16 17:01:48,214 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:49164 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-16 17:01:54,043 INFO httpx request_id=10517e7abab64806b2cdcd75b55ef1a3 user_id=None HTTP Request: GET https://api.apifox.com/api/v1/projects/%207822130/test-suites "HTTP/1.1 200 OK"
+2026-02-16 17:01:54,049 WARNING app.apifox request_id=10517e7abab64806b2cdcd75b55ef1a3 user_id=None 获取测试套件失败: Expecting value: line 1 column 1 (char 0)
+2026-02-16 17:01:54,290 INFO httpx request_id=10517e7abab64806b2cdcd75b55ef1a3 user_id=None HTTP Request: GET https://api.apifox.com/api/v1/projects/%207822130/test-scenarios "HTTP/1.1 200 OK"
+2026-02-16 17:01:54,297 WARNING app.apifox request_id=10517e7abab64806b2cdcd75b55ef1a3 user_id=None 获取测试场景失败: Expecting value: line 1 column 1 (char 0)
+2026-02-16 17:01:54,421 INFO app.request request_id=10517e7abab64806b2cdcd75b55ef1a3 user_id=None request_completed
+2026-02-16 17:01:54,421 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:49164 - "POST /api/v1/projects/eaf5835f-88d3-4d0e-80d9-1189ff8f5115/sync HTTP/1.1" 200
+2026-02-16 17:01:54,434 INFO app.request request_id=cdd7482956b34bd1a8d1d053e711d2a9 user_id=None request_completed
+2026-02-16 17:01:54,436 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:49164 - "GET /api/v1/projects/ HTTP/1.1" 200
+G:\agent_eaplore\full-stack-fastapi-template-master\backend\app\core\config.py:227: UserWarning: The value of FIRST_SUPERUSER_PASSWORD is "changethis", for security, please change it, at least for deployments.
+  warnings.warn(message, stacklevel=1)
+2026-02-16 17:05:22,024 INFO app.mongodb request_id=None user_id=None mongodb_connected
+2026-02-16 17:05:22,149 INFO uvicorn.error request_id=None user_id=None Started server process [29940]
+2026-02-16 17:05:22,149 INFO uvicorn.error request_id=None user_id=None Waiting for application startup.
+2026-02-16 17:05:22,170 INFO uvicorn.error request_id=None user_id=None Application startup complete.
+2026-02-16 17:05:22,170 INFO uvicorn.error request_id=None user_id=None Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2026-02-16 17:07:03,707 INFO app.request request_id=1e52b721bdba412791e16bcaad576ae9 user_id=None request_completed
+2026-02-16 17:07:03,708 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:50180 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-16 17:07:03,713 INFO app.request request_id=b00b3e75058a4a1db39813594fdec1bc user_id=None request_completed
+2026-02-16 17:07:03,713 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:50181 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-16 17:07:03,777 INFO app.request request_id=b68fe9f98ad4432ab6f3abab3bcdba7f user_id=None request_completed
+2026-02-16 17:07:03,777 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:50184 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-16 17:07:12,221 INFO httpx request_id=f0711858097c42cb9f1bddbaf7d0d8bc user_id=None HTTP Request: GET https://api.apifox.com/api/v1/projects/7822130/test-suites "HTTP/1.1 200 OK"
+2026-02-16 17:07:12,227 WARNING app.apifox request_id=f0711858097c42cb9f1bddbaf7d0d8bc user_id=None 获取测试套件失败: Expecting value: line 1 column 1 (char 0)
+2026-02-16 17:07:12,533 INFO httpx request_id=f0711858097c42cb9f1bddbaf7d0d8bc user_id=None HTTP Request: GET https://api.apifox.com/api/v1/projects/7822130/test-scenarios "HTTP/1.1 200 OK"
+2026-02-16 17:07:12,540 WARNING app.apifox request_id=f0711858097c42cb9f1bddbaf7d0d8bc user_id=None 获取测试场景失败: Expecting value: line 1 column 1 (char 0)
+2026-02-16 17:07:14,084 INFO app.request request_id=f0711858097c42cb9f1bddbaf7d0d8bc user_id=None request_completed
+2026-02-16 17:07:14,084 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:50191 - "POST /api/v1/projects/eaf5835f-88d3-4d0e-80d9-1189ff8f5115/sync HTTP/1.1" 200
+2026-02-16 17:07:14,475 INFO app.request request_id=e12112676c4448ee9dc67bc5acea9079 user_id=None request_completed
+2026-02-16 17:07:14,476 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:50191 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-16 17:07:29,855 INFO httpx request_id=292901899d0a4a56ab8436ed9e54f802 user_id=None HTTP Request: GET https://api.apifox.com/api/v1/projects/7822130/test-suites "HTTP/1.1 200 OK"
+2026-02-16 17:07:29,862 WARNING app.apifox request_id=292901899d0a4a56ab8436ed9e54f802 user_id=None 获取测试套件失败: Expecting value: line 1 column 1 (char 0)
+2026-02-16 17:07:30,098 INFO httpx request_id=292901899d0a4a56ab8436ed9e54f802 user_id=None HTTP Request: GET https://api.apifox.com/api/v1/projects/7822130/test-scenarios "HTTP/1.1 200 OK"
+2026-02-16 17:07:30,103 WARNING app.apifox request_id=292901899d0a4a56ab8436ed9e54f802 user_id=None 获取测试场景失败: Expecting value: line 1 column 1 (char 0)
+2026-02-16 17:07:31,374 INFO app.request request_id=292901899d0a4a56ab8436ed9e54f802 user_id=None request_completed
+2026-02-16 17:07:31,375 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:50209 - "POST /api/v1/projects/eaf5835f-88d3-4d0e-80d9-1189ff8f5115/sync HTTP/1.1" 200
+2026-02-16 17:07:31,846 INFO app.request request_id=6357649be4c7499a9e162660e6244ef3 user_id=None request_completed
+2026-02-16 17:07:31,847 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:50209 - "GET /api/v1/projects/ HTTP/1.1" 200
+G:\agent_eaplore\full-stack-fastapi-template-master\backend\app\core\config.py:227: UserWarning: The value of FIRST_SUPERUSER_PASSWORD is "changethis", for security, please change it, at least for deployments.
+  warnings.warn(message, stacklevel=1)
+2026-02-16 17:12:01,874 INFO app.mongodb request_id=None user_id=None mongodb_connected
+2026-02-16 17:12:02,180 INFO uvicorn.error request_id=None user_id=None Started server process [5888]
+2026-02-16 17:12:02,180 INFO uvicorn.error request_id=None user_id=None Waiting for application startup.
+2026-02-16 17:12:02,382 INFO uvicorn.error request_id=None user_id=None Application startup complete.
+2026-02-16 17:12:02,383 ERROR uvicorn.error request_id=None user_id=None [Errno 10048] error while attempting to bind on address ('127.0.0.1', 8000): 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。
+2026-02-16 17:12:02,384 INFO uvicorn.error request_id=None user_id=None Waiting for application shutdown.
+2026-02-16 17:12:02,385 INFO app.mongodb request_id=None user_id=None mongodb_connection_closed
+2026-02-16 17:12:02,385 INFO uvicorn.error request_id=None user_id=None Application shutdown complete.
+G:\agent_eaplore\full-stack-fastapi-template-master\backend\app\core\config.py:227: UserWarning: The value of FIRST_SUPERUSER_PASSWORD is "changethis", for security, please change it, at least for deployments.
+  warnings.warn(message, stacklevel=1)
+2026-02-16 17:13:04,496 INFO app.mongodb request_id=None user_id=None mongodb_connected
+2026-02-16 17:13:04,742 INFO uvicorn.error request_id=None user_id=None Started server process [6920]
+2026-02-16 17:13:04,742 INFO uvicorn.error request_id=None user_id=None Waiting for application startup.
+2026-02-16 17:13:04,843 INFO uvicorn.error request_id=None user_id=None Application startup complete.
+2026-02-16 17:13:04,844 INFO uvicorn.error request_id=None user_id=None Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2026-02-16 17:33:51,053 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:51795 - "OPTIONS /api/v1/users/me HTTP/1.1" 200
+2026-02-16 17:33:51,320 INFO app.request request_id=73c81b7d937a40ae9d2f4b1cf581730e user_id=None request_completed
+2026-02-16 17:33:51,321 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:51795 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-16 17:33:53,830 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:51795 - "OPTIONS /api/v1/projects/ HTTP/1.1" 200
+2026-02-16 17:33:54,105 INFO app.request request_id=21d5a022957249a39cde8c02d7a45320 user_id=None request_completed
+2026-02-16 17:33:54,106 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:51795 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-16 17:33:54,108 INFO app.request request_id=2764b6fd5d3b4a209c217e5ca399a5e5 user_id=None request_completed
+2026-02-16 17:33:54,108 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:51814 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-16 17:33:54,300 INFO app.request request_id=661de5073f374216bdfbdd91c1b9d0c5 user_id=None request_completed
+2026-02-16 17:33:54,300 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:51816 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-16 17:33:58,104 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:51816 - "OPTIONS /api/v1/projects/eaf5835f-88d3-4d0e-80d9-1189ff8f5115/sync HTTP/1.1" 200
+2026-02-16 17:33:59,567 INFO httpx request_id=09443b51e0b148b2897c8a7a9302897e user_id=None HTTP Request: GET https://api.apifox.com/api/v1/projects/7822130/test-suites "HTTP/1.1 200 OK"
+2026-02-16 17:33:59,573 WARNING app.apifox request_id=09443b51e0b148b2897c8a7a9302897e user_id=None 获取测试套件失败: Expecting value: line 1 column 1 (char 0)
+2026-02-16 17:33:59,824 INFO httpx request_id=09443b51e0b148b2897c8a7a9302897e user_id=None HTTP Request: GET https://api.apifox.com/api/v1/projects/7822130/test-scenarios "HTTP/1.1 200 OK"
+2026-02-16 17:33:59,830 WARNING app.apifox request_id=09443b51e0b148b2897c8a7a9302897e user_id=None 获取测试场景失败: Expecting value: line 1 column 1 (char 0)
+2026-02-16 17:33:59,908 INFO app.request request_id=09443b51e0b148b2897c8a7a9302897e user_id=None request_completed
+2026-02-16 17:33:59,908 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:51816 - "POST /api/v1/projects/eaf5835f-88d3-4d0e-80d9-1189ff8f5115/sync HTTP/1.1" 200
+2026-02-16 17:33:59,920 INFO app.request request_id=0d9d4e8f787a4388a734cbd35a6b9d5c user_id=None request_completed
+2026-02-16 17:33:59,920 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:51816 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-16 17:34:07,180 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:51844 - "OPTIONS /api/v1/executions/?skip=0&limit=10 HTTP/1.1" 200
+2026-02-16 17:34:07,206 INFO app.request request_id=2588d097c3784ac49a350d0cfff32d6d user_id=None request_completed
+2026-02-16 17:34:07,206 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:51844 - "GET /api/v1/executions/?skip=0&limit=10 HTTP/1.1" 200
+2026-02-16 17:34:07,222 INFO app.request request_id=109b552e599d4ab385ef6a9b616c5760 user_id=None request_completed
+2026-02-16 17:34:07,222 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:51845 - "GET /api/v1/executions/?skip=0&limit=10 HTTP/1.1" 200
+2026-02-16 17:34:40,793 INFO app.request request_id=140b934f1a0c4ef79b44c37d7741ba91 user_id=None request_completed
+2026-02-16 17:34:40,793 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:51874 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-16 17:34:41,001 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:51874 - "OPTIONS /api/v1/audit-logs/?skip=0&limit=200 HTTP/1.1" 200
+2026-02-16 17:34:41,049 INFO app.request request_id=7e845feaf99b420b88ebd199320a215e user_id=None request_completed
+2026-02-16 17:34:41,050 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:51874 - "GET /api/v1/audit-logs/?skip=0&limit=200 HTTP/1.1" 200
+2026-02-16 17:34:41,070 INFO app.request request_id=370e9385b2a24369bd2c5c436c4a451e user_id=None request_completed
+2026-02-16 17:34:41,070 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:51876 - "GET /api/v1/audit-logs/?skip=0&limit=200 HTTP/1.1" 200
+2026-02-16 17:34:57,825 INFO app.request request_id=46d6b6e38aff48449e197f26519b38e1 user_id=None request_completed
+2026-02-16 17:34:57,826 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:51890 - "GET /api/v1/executions/?skip=0&limit=10 HTTP/1.1" 200
+2026-02-16 17:34:57,847 INFO app.request request_id=17a2cf8bcdc14ce98975b7aed1f2fe76 user_id=None request_completed
+2026-02-16 17:34:57,847 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:51890 - "GET /api/v1/executions/?skip=0&limit=10 HTTP/1.1" 200
+2026-02-16 17:34:59,604 INFO app.request request_id=d9483accde8e40358c587d6734ddca65 user_id=None request_completed
+2026-02-16 17:34:59,604 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:51890 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-16 17:34:59,619 INFO app.request request_id=7c76445c856c40d7a4ab0f07c2af576b user_id=None request_completed
+2026-02-16 17:34:59,620 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:51891 - "GET /api/v1/projects/ HTTP/1.1" 200
+G:\agent_eaplore\full-stack-fastapi-template-master\backend\app\core\config.py:227: UserWarning: The value of FIRST_SUPERUSER_PASSWORD is "changethis", for security, please change it, at least for deployments.
+  warnings.warn(message, stacklevel=1)
+2026-02-16 17:38:39,964 INFO app.mongodb request_id=None user_id=None mongodb_connected
+2026-02-16 17:38:40,108 INFO uvicorn.error request_id=None user_id=None Started server process [38548]
+2026-02-16 17:38:40,108 INFO uvicorn.error request_id=None user_id=None Waiting for application startup.
+2026-02-16 17:38:40,133 INFO uvicorn.error request_id=None user_id=None Application startup complete.
+2026-02-16 17:38:40,134 INFO uvicorn.error request_id=None user_id=None Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2026-02-16 17:40:06,845 INFO app.request request_id=747a94f7b9224815908ead01cd783931 user_id=None request_completed
+2026-02-16 17:40:06,845 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:52220 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-16 17:49:52,777 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53156 - "OPTIONS /api/v1/users/me HTTP/1.1" 200
+2026-02-16 17:49:53,476 INFO app.request request_id=c6d5fb7f94df465195d3408ddb258ca7 user_id=None request_completed
+2026-02-16 17:49:53,476 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53156 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-16 17:50:07,352 INFO app.request request_id=b9e2464be63140178af36f1db7fe42f2 user_id=None request_completed
+2026-02-16 17:50:07,352 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53178 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-16 17:52:53,760 INFO app.request request_id=cf502fd9a3474b9ba06c3853af925337 user_id=None request_completed
+2026-02-16 17:52:53,760 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53415 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-16 17:56:03,305 INFO app.request request_id=808ed3df3cb24f08a3a0c1c114a1e061 user_id=None request_completed
+2026-02-16 17:56:03,305 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53582 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-16 17:58:52,120 INFO app.request request_id=18154cbed8c74df8b8754d823abe7439 user_id=None request_completed
+2026-02-16 17:58:52,120 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53695 - "GET /api/v1/users/me HTTP/1.1" 200
+G:\agent_eaplore\full-stack-fastapi-template-master\backend\app\core\config.py:227: UserWarning: The value of FIRST_SUPERUSER_PASSWORD is "changethis", for security, please change it, at least for deployments.
+  warnings.warn(message, stacklevel=1)
+2026-02-19 21:06:31,721 INFO app.mongodb request_id=None user_id=None mongodb_connected
+2026-02-19 21:06:31,934 INFO uvicorn.error request_id=None user_id=None Started server process [30836]
+2026-02-19 21:06:31,934 INFO uvicorn.error request_id=None user_id=None Waiting for application startup.
+2026-02-19 21:06:32,367 INFO apscheduler.scheduler request_id=None user_id=None Scheduler started
+2026-02-19 21:06:32,516 INFO apscheduler.scheduler request_id=None user_id=None Added job "每日回归" to job store "default"
+2026-02-19 21:06:32,531 WARNING apscheduler.executors.default request_id=None user_id=None Run time of job "每日回归 (trigger: date[2026-02-19 20:10:00 CST], next run at: 2026-02-19 20:10:00 CST)" was missed by 0:56:32.531007
+2026-02-19 21:06:32,622 INFO apscheduler.scheduler request_id=None user_id=None Removed job 0ace97a8-b6cc-4aa5-95e0-6df9cefd11a2
+2026-02-19 21:06:32,626 INFO uvicorn.error request_id=None user_id=None Application startup complete.
+2026-02-19 21:06:32,627 INFO uvicorn.error request_id=None user_id=None Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2026-02-19 21:08:33,349 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:51017 - "OPTIONS /api/v1/users/me HTTP/1.1" 200
+2026-02-19 21:08:33,390 INFO app.request request_id=95dd6e70608f455db8ab57252911095c user_id=None request_completed
+2026-02-19 21:08:33,391 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:51017 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-19 21:08:35,164 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:51017 - "OPTIONS /api/v1/scheduled-tasks/ HTTP/1.1" 200
+2026-02-19 21:08:35,165 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:51035 - "OPTIONS /api/v1/scheduled-tasks/logs/all?limit=100 HTTP/1.1" 200
+2026-02-19 21:08:35,167 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:51036 - "OPTIONS /api/v1/projects/ HTTP/1.1" 200
+2026-02-19 21:08:35,168 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:51037 - "OPTIONS /api/v1/notifications/rules HTTP/1.1" 200
+2026-02-19 21:08:35,216 INFO app.request request_id=4a699656865b4df4bb19ab8beb16b55e user_id=None request_completed
+2026-02-19 21:08:35,217 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:51037 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-19 21:08:35,227 INFO app.request request_id=7ec7607ba06a4688a5c0c0a9f6869907 user_id=None request_completed
+2026-02-19 21:08:35,227 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:51035 - "GET /api/v1/scheduled-tasks/ HTTP/1.1" 200
+2026-02-19 21:08:35,229 INFO app.request request_id=536b4f6c9e7f4d2ba6b6302aea3533ef user_id=None request_completed
+2026-02-19 21:08:35,229 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:51017 - "GET /api/v1/scheduled-tasks/logs/all?limit=100 HTTP/1.1" 200
+2026-02-19 21:08:35,257 INFO app.request request_id=b42d4a44c6c043cea835b95cd470fea8 user_id=None request_completed
+2026-02-19 21:08:35,257 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:51042 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-19 21:08:35,259 INFO app.request request_id=b7802856ffcb48699da20aff6f5a5cd7 user_id=None request_completed
+2026-02-19 21:08:35,260 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:51038 - "GET /api/v1/notifications/rules HTTP/1.1" 200
+2026-02-19 21:08:35,271 INFO app.request request_id=c5a482b007114c1cb4877a63e2c7719b user_id=None request_completed
+2026-02-19 21:08:35,272 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:51043 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-19 21:08:35,281 INFO app.request request_id=0e40b7f3614f4a95a2ec00205f24261e user_id=None request_completed
+2026-02-19 21:08:35,282 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:51035 - "GET /api/v1/scheduled-tasks/logs/all?limit=100 HTTP/1.1" 200
+2026-02-19 21:08:35,287 INFO app.request request_id=f7a0e79b30c644afb572aa23b15ddc88 user_id=None request_completed
+2026-02-19 21:08:35,288 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:51037 - "GET /api/v1/scheduled-tasks/ HTTP/1.1" 200
+2026-02-19 21:08:35,290 INFO app.request request_id=de63e60464104974a9206ee0f96fbfe6 user_id=None request_completed
+2026-02-19 21:08:35,290 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:51042 - "GET /api/v1/notifications/rules HTTP/1.1" 200
+2026-02-19 21:08:37,289 INFO app.request request_id=4ef2e14ef9304450ab51649ee6bd1181 user_id=None request_completed
+2026-02-19 21:08:37,290 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:51046 - "GET /api/v1/defects/enums HTTP/1.1" 401
+2026-02-19 21:08:37,290 INFO app.request request_id=0c93cf3c76e5475b979b38f66a1fede9 user_id=None request_completed
+2026-02-19 21:08:37,290 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:51047 - "GET /api/v1/projects/ HTTP/1.1" 401
+2026-02-19 21:08:37,293 INFO app.request request_id=ce16ea675c59448fb6acae285ed51e13 user_id=None request_completed
+2026-02-19 21:08:37,293 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:51046 - "GET /api/v1/projects/ HTTP/1.1" 401
+2026-02-19 21:08:37,294 INFO app.request request_id=c77368d652114225a3a470e7f5c03a55 user_id=None request_completed
+2026-02-19 21:08:37,294 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:51047 - "GET /api/v1/defects/enums HTTP/1.1" 401
+2026-02-19 21:08:51,077 INFO app.request request_id=c6805b274a8a44adb46ebabb8e002d59 user_id=None request_completed
+2026-02-19 21:08:51,078 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:51087 - "GET /api/v1/projects/ HTTP/1.1" 401
+2026-02-19 21:08:51,080 INFO app.request request_id=7696a173ab534088af2d69a561386890 user_id=None request_completed
+2026-02-19 21:08:51,080 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:51088 - "GET /api/v1/defects/enums HTTP/1.1" 401
+2026-02-19 21:08:51,088 INFO app.request request_id=c75d7064ca8b4044ad918f132d72a991 user_id=None request_completed
+2026-02-19 21:08:51,089 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:51087 - "GET /api/v1/projects/ HTTP/1.1" 401
+2026-02-19 21:08:51,093 INFO app.request request_id=0c62a06bd4764578afdac38d2a9c1f55 user_id=None request_completed
+2026-02-19 21:08:51,093 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:51088 - "GET /api/v1/defects/enums HTTP/1.1" 401
+2026-02-19 21:08:51,162 INFO app.request request_id=62f31f02854c43e99d7ec355aefb8d9d user_id=None request_completed
+2026-02-19 21:08:51,163 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:51090 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-19 21:09:08,589 INFO app.request request_id=7f314067e9264e7d9d1eaf705070024b user_id=None request_completed
+2026-02-19 21:09:08,589 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:51116 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-19 21:15:47,110 INFO app.request request_id=c13604cf1b1b477eb51d4ac4c17fd279 user_id=None request_completed
+2026-02-19 21:15:47,110 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:51560 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-19 21:15:49,662 INFO app.request request_id=2660f0ef75ac40e38939a19d341f277f user_id=None request_completed
+2026-02-19 21:15:49,662 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:51578 - "GET /api/v1/defects/enums HTTP/1.1" 401
+2026-02-19 21:15:49,663 INFO app.request request_id=fcdc8d3a40a44b0f858ee639798a69e2 user_id=None request_completed
+2026-02-19 21:15:49,663 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:51577 - "GET /api/v1/projects/ HTTP/1.1" 401
+2026-02-19 21:15:49,668 INFO app.request request_id=240521218c434c428ab70661ae7c6480 user_id=None request_completed
+2026-02-19 21:15:49,668 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:51578 - "GET /api/v1/defects/enums HTTP/1.1" 401
+2026-02-19 21:15:49,669 INFO app.request request_id=e345d757f2564b28953c3c15906c5463 user_id=None request_completed
+2026-02-19 21:15:49,669 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:51577 - "GET /api/v1/projects/ HTTP/1.1" 401
+2026-02-19 21:15:49,745 INFO app.request request_id=eaa6eb5fea6e47edad58428389f01586 user_id=None request_completed
+2026-02-19 21:15:49,746 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:51560 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-19 21:16:10,958 INFO app.request request_id=a09377bdfc824c1aa893adcc1ce410bd user_id=None request_completed
+2026-02-19 21:16:10,958 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:51607 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-19 21:16:13,340 INFO app.request request_id=41896f698381400dbdc92ccfa7316ee5 user_id=None request_completed
+2026-02-19 21:16:13,341 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:51625 - "GET /api/v1/projects/ HTTP/1.1" 401
+2026-02-19 21:16:13,342 INFO app.request request_id=cd79ce04bdec417ba4b2264ebca297c9 user_id=None request_completed
+2026-02-19 21:16:13,342 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:51626 - "GET /api/v1/defects/enums HTTP/1.1" 401
+2026-02-19 21:16:13,357 INFO app.request request_id=e47e6e9bfbf84b9bb90cac5787205196 user_id=None request_completed
+2026-02-19 21:16:13,357 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:51626 - "GET /api/v1/defects/enums HTTP/1.1" 401
+2026-02-19 21:16:13,358 INFO app.request request_id=4440179cb8a44e38b12044b55d364c46 user_id=None request_completed
+2026-02-19 21:16:13,358 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:51625 - "GET /api/v1/projects/ HTTP/1.1" 401
+2026-02-19 21:16:13,404 INFO app.request request_id=79d53253eb664533a702e7a3d69f2d32 user_id=None request_completed
+2026-02-19 21:16:13,404 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:51607 - "GET /api/v1/users/me HTTP/1.1" 200
+G:\agent_eaplore\full-stack-fastapi-template-master\backend\app\core\config.py:227: UserWarning: The value of FIRST_SUPERUSER_PASSWORD is "changethis", for security, please change it, at least for deployments.
+  warnings.warn(message, stacklevel=1)
+2026-02-19 21:19:22,007 INFO app.mongodb request_id=None user_id=None mongodb_connected
+2026-02-19 21:19:22,142 INFO uvicorn.error request_id=None user_id=None Started server process [3868]
+2026-02-19 21:19:22,142 INFO uvicorn.error request_id=None user_id=None Waiting for application startup.
+2026-02-19 21:19:22,170 INFO apscheduler.scheduler request_id=None user_id=None Scheduler started
+2026-02-19 21:19:22,296 INFO apscheduler.scheduler request_id=None user_id=None Added job "每日回归" to job store "default"
+2026-02-19 21:19:22,304 WARNING apscheduler.executors.default request_id=None user_id=None Run time of job "每日回归 (trigger: date[2026-02-19 20:10:00 CST], next run at: 2026-02-19 20:10:00 CST)" was missed by 1:09:22.304690
+2026-02-19 21:19:22,346 INFO apscheduler.scheduler request_id=None user_id=None Removed job 0ace97a8-b6cc-4aa5-95e0-6df9cefd11a2
+2026-02-19 21:19:22,349 INFO uvicorn.error request_id=None user_id=None Application startup complete.
+2026-02-19 21:19:22,350 INFO uvicorn.error request_id=None user_id=None Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2026-02-19 21:21:32,350 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53031 - "OPTIONS /api/v1/users/me HTTP/1.1" 200
+2026-02-19 21:21:32,397 INFO app.request request_id=9b636a23fee4430296f15106bb7006eb user_id=None request_completed
+2026-02-19 21:21:32,397 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53031 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-19 21:21:34,662 INFO app.request request_id=b39893a7397f4530a4cf63367936b86b user_id=None request_completed
+2026-02-19 21:21:34,662 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53049 - "GET /api/v1/projects/ HTTP/1.1" 401
+2026-02-19 21:21:34,662 INFO app.request request_id=2a37afb1568f4bd78a461f5cc395bb40 user_id=None request_completed
+2026-02-19 21:21:34,663 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53050 - "GET /api/v1/defects/enums HTTP/1.1" 401
+2026-02-19 21:21:34,670 INFO app.request request_id=2d39fb6ae56d44f2b231edb51e8130ac user_id=None request_completed
+2026-02-19 21:21:34,670 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53049 - "GET /api/v1/projects/ HTTP/1.1" 401
+2026-02-19 21:21:34,672 INFO app.request request_id=1018e41170f4488a8a029440a41eb598 user_id=None request_completed
+2026-02-19 21:21:34,673 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53050 - "GET /api/v1/defects/enums HTTP/1.1" 401
+2026-02-19 21:21:34,759 INFO app.request request_id=1ba0a99ec6314ec285139e3b39b8ba05 user_id=None request_completed
+2026-02-19 21:21:34,760 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53031 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-19 21:21:37,668 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53031 - "OPTIONS /api/v1/projects/ HTTP/1.1" 200
+2026-02-19 21:21:37,688 INFO app.request request_id=f74322b0a0264c769066cf8782b40ee9 user_id=None request_completed
+2026-02-19 21:21:37,688 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53031 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-19 21:21:37,698 INFO app.request request_id=c240dbd880eb48db9e386eac67da2241 user_id=None request_completed
+2026-02-19 21:21:37,698 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53057 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-19 21:21:40,799 INFO app.request request_id=f62cbd9700e6496d963702a77c89f9b2 user_id=None request_completed
+2026-02-19 21:21:40,799 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53057 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-19 21:21:40,932 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53057 - "OPTIONS /api/v1/audit-logs/?skip=0&limit=200 HTTP/1.1" 200
+2026-02-19 21:21:40,946 INFO app.request request_id=9eac7feb484a4fb88a5548df42ac72d4 user_id=None request_completed
+2026-02-19 21:21:40,946 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53057 - "GET /api/v1/audit-logs/?skip=0&limit=200 HTTP/1.1" 200
+2026-02-19 21:21:40,955 INFO app.request request_id=ce2521891d184540b751f1108502a8a3 user_id=None request_completed
+2026-02-19 21:21:40,956 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53031 - "GET /api/v1/audit-logs/?skip=0&limit=200 HTTP/1.1" 200
+2026-02-19 21:21:43,239 INFO app.request request_id=f55b35f7854c4e65ae143e0b78c1bf93 user_id=None request_completed
+2026-02-19 21:21:43,240 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53031 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-19 21:21:43,462 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53031 - "OPTIONS /api/v1/users/?skip=0&limit=100 HTTP/1.1" 200
+2026-02-19 21:21:43,472 INFO app.request request_id=4fe152c7df7b49afad2a1889470856c2 user_id=None request_completed
+2026-02-19 21:21:43,472 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53031 - "GET /api/v1/users/?skip=0&limit=100 HTTP/1.1" 200
+2026-02-19 21:21:43,766 INFO app.request request_id=ab2419341bb540d79c181b6cdce8d1f4 user_id=None request_completed
+2026-02-19 21:21:43,766 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53031 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-19 21:21:46,224 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53031 - "OPTIONS /api/v1/notifications/channels HTTP/1.1" 200
+2026-02-19 21:21:46,225 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53074 - "OPTIONS /api/v1/notifications/rules HTTP/1.1" 200
+2026-02-19 21:21:46,226 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53075 - "OPTIONS /api/v1/notifications/logs?limit=50 HTTP/1.1" 200
+2026-02-19 21:21:46,249 INFO app.request request_id=3eab4813d6894f59bb1c7694f87670c3 user_id=None request_completed
+2026-02-19 21:21:46,249 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53075 - "GET /api/v1/notifications/rules HTTP/1.1" 200
+2026-02-19 21:21:46,261 INFO app.request request_id=daab70b218ae4d9f81f95427345084df user_id=None request_completed
+2026-02-19 21:21:46,263 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53074 - "GET /api/v1/notifications/channels HTTP/1.1" 200
+2026-02-19 21:21:46,269 INFO app.request request_id=8c9be18d12f9495598571ce37aef305c user_id=None request_completed
+2026-02-19 21:21:46,270 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53031 - "GET /api/v1/notifications/logs?limit=50 HTTP/1.1" 200
+2026-02-19 21:21:46,278 INFO app.request request_id=084ff970cafc49a1b9d98fb45cb2fe2d user_id=None request_completed
+2026-02-19 21:21:46,278 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53075 - "GET /api/v1/notifications/channels HTTP/1.1" 200
+2026-02-19 21:21:46,278 INFO app.request request_id=b6bf6b4eb5c842b3839cc3753c6f3eba user_id=None request_completed
+2026-02-19 21:21:46,279 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53078 - "GET /api/v1/notifications/rules HTTP/1.1" 200
+2026-02-19 21:21:46,282 INFO app.request request_id=8bab5d46a5294d7cb96469a9a172bb14 user_id=None request_completed
+2026-02-19 21:21:46,282 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53074 - "GET /api/v1/notifications/logs?limit=50 HTTP/1.1" 200
+2026-02-19 21:21:55,846 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53096 - "OPTIONS /api/v1/scheduled-tasks/ HTTP/1.1" 200
+2026-02-19 21:21:55,848 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53097 - "OPTIONS /api/v1/scheduled-tasks/logs/all?limit=100 HTTP/1.1" 200
+2026-02-19 21:21:55,876 INFO app.request request_id=4b9cd04c34924b1ba9a5082f088167eb user_id=None request_completed
+2026-02-19 21:21:55,877 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53097 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-19 21:21:55,898 INFO app.request request_id=49771c87b9a5484d923516d8a872af42 user_id=None request_completed
+2026-02-19 21:21:55,898 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53099 - "GET /api/v1/scheduled-tasks/logs/all?limit=100 HTTP/1.1" 200
+2026-02-19 21:21:55,899 INFO app.request request_id=c234c12fb68146cdae62f38d01476781 user_id=None request_completed
+2026-02-19 21:21:55,899 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53096 - "GET /api/v1/scheduled-tasks/ HTTP/1.1" 200
+2026-02-19 21:21:55,918 INFO app.request request_id=8170dfd601654575b0a10d46db097362 user_id=None request_completed
+2026-02-19 21:21:55,919 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53100 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-19 21:21:55,920 INFO app.request request_id=765203690bc347cd931cf13171df6fad user_id=None request_completed
+2026-02-19 21:21:55,920 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53098 - "GET /api/v1/notifications/rules HTTP/1.1" 200
+2026-02-19 21:21:55,937 INFO app.request request_id=aec2c04930d94d2d9037f674238ceeae user_id=None request_completed
+2026-02-19 21:21:55,937 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53097 - "GET /api/v1/scheduled-tasks/logs/all?limit=100 HTTP/1.1" 200
+2026-02-19 21:21:55,938 INFO app.request request_id=eea117d026c24d2da9df03556c6819a7 user_id=None request_completed
+2026-02-19 21:21:55,938 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53099 - "GET /api/v1/scheduled-tasks/ HTTP/1.1" 200
+2026-02-19 21:21:55,939 INFO app.request request_id=fe25a9d98b554a0e95c7d9b38191336b user_id=None request_completed
+2026-02-19 21:21:55,940 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53100 - "GET /api/v1/notifications/rules HTTP/1.1" 200
+2026-02-19 21:22:11,103 INFO app.request request_id=01d26865026f4a49be3d84e3411c0855 user_id=None request_completed
+2026-02-19 21:22:11,103 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53051 - "GET /api/v1/defects/enums HTTP/1.1" 401
+2026-02-19 21:22:11,103 INFO app.request request_id=b6e4ce81adb04171ad47b212c24a6877 user_id=None request_completed
+2026-02-19 21:22:11,103 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53123 - "GET /api/v1/projects/ HTTP/1.1" 401
+2026-02-19 21:22:11,106 INFO app.request request_id=d06af206dfc4427586074a2b79fd82c5 user_id=None request_completed
+2026-02-19 21:22:11,106 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53051 - "GET /api/v1/defects/enums HTTP/1.1" 401
+2026-02-19 21:22:11,106 INFO app.request request_id=1c9f0e4cb826418c8ce47a2fae569958 user_id=None request_completed
+2026-02-19 21:22:11,106 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53123 - "GET /api/v1/projects/ HTTP/1.1" 401
+2026-02-19 21:22:13,658 INFO app.request request_id=6b22205b03f0437eba57ef8a819f1467 user_id=None request_completed
+2026-02-19 21:22:13,658 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53051 - "GET /api/v1/defects/enums HTTP/1.1" 401
+2026-02-19 21:22:13,660 INFO app.request request_id=d886f24fb6bb412e8e0ed34dd686c375 user_id=None request_completed
+2026-02-19 21:22:13,660 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53123 - "GET /api/v1/projects/ HTTP/1.1" 401
+2026-02-19 21:22:13,671 INFO app.request request_id=993cc788f2944affb6836101b6623620 user_id=None request_completed
+2026-02-19 21:22:13,671 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53123 - "GET /api/v1/projects/ HTTP/1.1" 401
+2026-02-19 21:22:13,672 INFO app.request request_id=b8663b36eb26457ca461c00c41a95ec0 user_id=None request_completed
+2026-02-19 21:22:13,672 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53051 - "GET /api/v1/defects/enums HTTP/1.1" 401
+2026-02-19 21:22:13,740 INFO app.request request_id=a7563c3b9f1e4ad4b4a36cae50035da1 user_id=None request_completed
+2026-02-19 21:22:13,740 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53139 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-19 21:29:47,796 INFO app.request request_id=c519bfee966248e38b0653e4c12ac0ad user_id=None request_completed
+2026-02-19 21:29:47,797 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53807 - "GET /api/v1/defects/enums HTTP/1.1" 401
+2026-02-19 21:30:53,132 INFO app.request request_id=d16f5bb8a76940eca6e1cca7eaa9ddf8 user_id=None request_completed
+2026-02-19 21:30:53,133 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53916 - "GET /api/v1/projects/ HTTP/1.1" 401
+2026-02-19 21:30:53,133 INFO app.request request_id=330e1bacd17442069e1b2870fa081e52 user_id=None request_completed
+2026-02-19 21:30:53,133 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53917 - "GET /api/v1/defects/enums HTTP/1.1" 401
+2026-02-19 21:30:53,152 INFO app.request request_id=2862200777b946068960d7dee29dd180 user_id=None request_completed
+2026-02-19 21:30:53,152 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53917 - "GET /api/v1/projects/ HTTP/1.1" 401
+2026-02-19 21:30:53,152 INFO app.request request_id=f169e6882b78433b9ef3271bb98a0068 user_id=None request_completed
+2026-02-19 21:30:53,152 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53916 - "GET /api/v1/defects/enums HTTP/1.1" 401
+2026-02-19 21:30:53,267 INFO app.request request_id=b80b71ac384c4e548ede6e2eb3eebd7a user_id=None request_completed
+2026-02-19 21:30:53,268 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:53918 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-19 21:33:52,282 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:54970 - "OPTIONS /api/v1/users/me HTTP/1.1" 200
+2026-02-19 21:33:52,296 INFO app.request request_id=b81ed03f5c224e95a60f2a9dc5486325 user_id=None request_completed
+2026-02-19 21:33:52,296 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:54970 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-19 21:37:48,447 INFO app.request request_id=6d210984923d49178f450bb894f05ac2 user_id=None request_completed
+2026-02-19 21:37:48,448 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:55522 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-19 21:38:01,091 INFO app.request request_id=8b9a5b874ef847148825ace99db3810a user_id=None request_completed
+2026-02-19 21:38:01,091 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:55539 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-19 21:38:03,560 INFO app.request request_id=a9bb33560ae04e2cb80ce61e4a3a1831 user_id=None request_completed
+2026-02-19 21:38:03,561 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:55557 - "GET /api/v1/projects/ HTTP/1.1" 401
+2026-02-19 21:38:03,564 INFO app.request request_id=7f9c9d3dfcce4ab0a7b730d8909535e4 user_id=None request_completed
+2026-02-19 21:38:03,564 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:55558 - "GET /api/v1/defects/enums HTTP/1.1" 401
+2026-02-19 21:38:03,579 INFO app.request request_id=a6f6a5eaf4444f329590fe36aee6a4dc user_id=None request_completed
+2026-02-19 21:38:03,579 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:55557 - "GET /api/v1/defects/enums HTTP/1.1" 401
+2026-02-19 21:38:03,579 INFO app.request request_id=d0004da1558a43ccb7ef524a5a24b229 user_id=None request_completed
+2026-02-19 21:38:03,580 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:55558 - "GET /api/v1/projects/ HTTP/1.1" 401
+2026-02-19 21:38:03,638 INFO app.request request_id=bd78b57b12b64086ab9859327f42f04c user_id=None request_completed
+2026-02-19 21:38:03,639 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:55539 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-19 21:38:11,606 INFO app.request request_id=4c0ab59fb5bc43bab343960e9413bb97 user_id=None request_completed
+2026-02-19 21:38:11,606 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:55568 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-19 21:38:13,143 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:55568 - "OPTIONS /api/v1/projects/ HTTP/1.1" 200
+2026-02-19 21:38:13,171 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:55572 - "OPTIONS /api/v1/projects/ HTTP/1.1" 200
+2026-02-19 21:38:13,183 INFO app.request request_id=62adaaf611004f42948d9dd0e930dc92 user_id=None request_completed
+2026-02-19 21:38:13,183 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:55572 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-19 21:38:13,195 INFO app.request request_id=379873cb4a364468b233d0cd9aec1e31 user_id=None request_completed
+2026-02-19 21:38:13,196 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:55568 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-19 21:38:15,326 INFO app.request request_id=c32c977ba1394e9f9f4df693a9d4395f user_id=None request_completed
+2026-02-19 21:38:15,326 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:55568 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-19 21:38:15,342 INFO app.request request_id=83393105f2e045728d9518ad7a417c0a user_id=None request_completed
+2026-02-19 21:38:15,342 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:55572 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-19 21:38:15,348 INFO app.request request_id=46cbb46898e84171a591153d368f917a user_id=None request_completed
+2026-02-19 21:38:15,348 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:55572 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-19 21:38:19,490 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:55572 - "OPTIONS /api/v1/scheduled-tasks/ HTTP/1.1" 200
+2026-02-19 21:38:19,491 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:55568 - "OPTIONS /api/v1/scheduled-tasks/logs/all?limit=100 HTTP/1.1" 200
+2026-02-19 21:38:19,492 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:55590 - "OPTIONS /api/v1/notifications/rules HTTP/1.1" 200
+2026-02-19 21:38:19,503 INFO app.request request_id=98db8935d9b242a589fce8880899f3ac user_id=None request_completed
+2026-02-19 21:38:19,503 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:55591 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-19 21:38:19,522 INFO app.request request_id=4787a5a3ddc949e5bf0a2c84165a8840 user_id=None request_completed
+2026-02-19 21:38:19,523 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:55592 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-19 21:38:19,525 INFO app.request request_id=3868bb042383439b9241d09392a19655 user_id=None request_completed
+2026-02-19 21:38:19,525 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:55572 - "GET /api/v1/notifications/rules HTTP/1.1" 200
+2026-02-19 21:38:19,534 INFO app.request request_id=66c455431b0b4d75b9b2a22b0c6f683d user_id=None request_completed
+2026-02-19 21:38:19,534 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:55568 - "GET /api/v1/scheduled-tasks/logs/all?limit=100 HTTP/1.1" 200
+2026-02-19 21:38:19,535 INFO app.request request_id=c461f2318e8c47769a63c4ae52ebc9cf user_id=None request_completed
+2026-02-19 21:38:19,535 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:55590 - "GET /api/v1/scheduled-tasks/ HTTP/1.1" 200
+2026-02-19 21:38:19,545 INFO app.request request_id=4e5cf303505e4017812162e185d472df user_id=None request_completed
+2026-02-19 21:38:19,546 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:55592 - "GET /api/v1/notifications/rules HTTP/1.1" 200
+2026-02-19 21:38:19,550 INFO app.request request_id=52480c7be5a448b99b46c39b63553b09 user_id=None request_completed
+2026-02-19 21:38:19,551 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:55572 - "GET /api/v1/scheduled-tasks/logs/all?limit=100 HTTP/1.1" 200
+2026-02-19 21:38:19,551 INFO app.request request_id=14c57bba58834d75a888c2c27f88584d user_id=None request_completed
+2026-02-19 21:38:19,551 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:55568 - "GET /api/v1/scheduled-tasks/ HTTP/1.1" 200
+2026-02-19 21:38:21,243 INFO app.request request_id=a606224a03894fe7832325603bcab565 user_id=None request_completed
+2026-02-19 21:38:21,243 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:55595 - "GET /api/v1/projects/ HTTP/1.1" 401
+2026-02-19 21:38:21,244 INFO app.request request_id=2bc0743e156f4ced938943591a732220 user_id=None request_completed
+2026-02-19 21:38:21,244 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:55594 - "GET /api/v1/defects/enums HTTP/1.1" 401
+2026-02-19 21:38:21,247 INFO app.request request_id=be6929e4bbc34e42ab979aa0c62f16e9 user_id=None request_completed
+2026-02-19 21:38:21,248 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:55594 - "GET /api/v1/projects/ HTTP/1.1" 401
+2026-02-19 21:38:21,248 INFO app.request request_id=c66eee4efbbe4996925eb20c9b9f8375 user_id=None request_completed
+2026-02-19 21:38:21,248 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:55595 - "GET /api/v1/defects/enums HTTP/1.1" 401
+2026-02-19 21:39:35,822 INFO app.request request_id=b37379bd22964aa7a9a8a8d19b87fa78 user_id=None request_completed
+2026-02-19 21:39:35,822 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:55707 - "GET /api/v1/projects/ HTTP/1.1" 401
+2026-02-19 21:39:57,938 INFO app.request request_id=f771fc789e48440e978a29e1d9590e56 user_id=None request_completed
+2026-02-19 21:39:57,938 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:55730 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-19 21:40:07,214 INFO app.request request_id=74a1a80e344a4f038f68ac82172ecb17 user_id=None request_completed
+2026-02-19 21:40:07,214 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:55789 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-19 21:46:30,250 INFO app.request request_id=75bb538c4b9c454893e2a27ccefda29c user_id=None request_completed
+2026-02-19 21:46:30,251 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56159 - "GET /api/v1/projects/ HTTP/1.1" 401
+2026-02-19 21:46:30,251 INFO app.request request_id=8c7d8964d1b94aa4ba177a2eb4b3ef56 user_id=None request_completed
+2026-02-19 21:46:30,252 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56160 - "GET /api/v1/defects/enums HTTP/1.1" 401
+2026-02-19 21:46:30,262 INFO app.request request_id=29927fa86660435096c45f58773e5b97 user_id=None request_completed
+2026-02-19 21:46:30,262 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56160 - "GET /api/v1/projects/ HTTP/1.1" 401
+2026-02-19 21:46:30,263 INFO app.request request_id=a2635e6270684c06925d506c7956b4a7 user_id=None request_completed
+2026-02-19 21:46:30,263 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56159 - "GET /api/v1/defects/enums HTTP/1.1" 401
+2026-02-19 21:46:30,330 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56162 - "OPTIONS /api/v1/users/me HTTP/1.1" 200
+2026-02-19 21:46:30,338 INFO app.request request_id=5a5c09af2c344405ac51020dbd132b1c user_id=None request_completed
+2026-02-19 21:46:30,338 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56162 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-19 21:47:51,769 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:57377 - "OPTIONS /api/v1/defects/enums HTTP/1.1" 200
+2026-02-19 21:47:51,785 INFO app.request request_id=3a25ae6159a34b69ba6b4811564a553c user_id=None request_completed
+2026-02-19 21:47:51,786 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:57378 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-19 21:47:51,824 INFO app.request request_id=f1d3766778a94bb7ac1c2c0a8aa70713 user_id=None request_completed
+2026-02-19 21:47:51,825 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:57377 - "GET /api/v1/defects/enums HTTP/1.1" 200
+2026-02-19 21:47:51,837 INFO app.request request_id=9f628130d8c247ecafb587232bab8ef5 user_id=None request_completed
+2026-02-19 21:47:51,837 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:57379 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-19 21:47:51,841 INFO app.request request_id=dd0e7dc6ac6b42bea904f447100ca09a user_id=None request_completed
+2026-02-19 21:47:51,841 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:57378 - "GET /api/v1/defects/enums HTTP/1.1" 200
+2026-02-19 21:47:51,843 INFO app.request request_id=35afb4dfed774cac840d03905d99c58a user_id=None request_completed
+2026-02-19 21:47:51,844 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:57377 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-19 21:47:51,880 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:57377 - "OPTIONS /api/v1/defects/?project_id=eaf5835f-88d3-4d0e-80d9-1189ff8f5115 HTTP/1.1" 200
+2026-02-19 21:47:51,881 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:57378 - "OPTIONS /api/v1/defects/stats?project_id=eaf5835f-88d3-4d0e-80d9-1189ff8f5115 HTTP/1.1" 200
+2026-02-19 21:47:51,882 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:57379 - "OPTIONS /api/v1/defects/modules?project_id=eaf5835f-88d3-4d0e-80d9-1189ff8f5115 HTTP/1.1" 200
+2026-02-19 21:47:51,882 ERROR asyncio request_id=None user_id=None Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python312\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python312\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2026-02-19 21:47:51,908 INFO app.request request_id=368114a15a7d436f983e9b7d40aabbd9 user_id=None request_completed
+2026-02-19 21:47:51,908 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:57380 - "GET /api/v1/defects/?project_id=eaf5835f-88d3-4d0e-80d9-1189ff8f5115 HTTP/1.1" 200
+2026-02-19 21:47:51,941 INFO app.request request_id=a0d2ad6f681c40f88af1b0e242f6ff8f user_id=None request_completed
+2026-02-19 21:47:51,942 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:57378 - "GET /api/v1/defects/modules?project_id=eaf5835f-88d3-4d0e-80d9-1189ff8f5115 HTTP/1.1" 200
+2026-02-19 21:47:51,943 INFO app.request request_id=34eeeb4e4e4943a4a743f312980aeb3e user_id=None request_completed
+2026-02-19 21:47:51,943 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:57379 - "GET /api/v1/defects/stats?project_id=eaf5835f-88d3-4d0e-80d9-1189ff8f5115 HTTP/1.1" 200
+2026-02-19 21:49:15,277 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:57481 - "OPTIONS /api/v1/projects/ HTTP/1.1" 200
+2026-02-19 21:49:15,290 INFO app.request request_id=1d0136ee227e4ae1b57a52f8bb0ee6f9 user_id=None request_completed
+2026-02-19 21:49:15,291 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:57481 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-19 21:49:15,291 INFO app.request request_id=08e68a6ffebd4a58b3c07db5c1509a9e user_id=None request_completed
+2026-02-19 21:49:15,292 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:57482 - "GET /api/v1/defects/enums HTTP/1.1" 200
+2026-02-19 21:49:15,305 INFO app.request request_id=43ebac9b1c774804827bd0f3b1b833aa user_id=None request_completed
+2026-02-19 21:49:15,305 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:57483 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-19 21:49:15,307 INFO app.request request_id=3decb0a1363b4c6c9954d66f5b239c0a user_id=None request_completed
+2026-02-19 21:49:15,307 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:57481 - "GET /api/v1/defects/enums HTTP/1.1" 200
+2026-02-19 21:49:15,357 INFO app.request request_id=71614fd252614e87b87e99224e7f9aef user_id=None request_completed
+2026-02-19 21:49:15,358 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:57481 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-19 21:49:15,426 INFO app.request request_id=b01aa9bb42484d4c8bb64a7bee3d3434 user_id=None request_completed
+2026-02-19 21:49:15,426 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:57482 - "GET /api/v1/defects/modules?project_id=eaf5835f-88d3-4d0e-80d9-1189ff8f5115 HTTP/1.1" 200
+2026-02-19 21:49:15,432 INFO app.request request_id=299d60223f114159bd281dcaa035b8f7 user_id=None request_completed
+2026-02-19 21:49:15,432 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:57481 - "GET /api/v1/defects/?project_id=eaf5835f-88d3-4d0e-80d9-1189ff8f5115 HTTP/1.1" 200
+2026-02-19 21:49:15,434 INFO app.request request_id=151f338be2d740eeb554d14cc321251b user_id=None request_completed
+2026-02-19 21:49:15,434 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:57483 - "GET /api/v1/defects/stats?project_id=eaf5835f-88d3-4d0e-80d9-1189ff8f5115 HTTP/1.1" 200
+2026-02-19 21:49:43,691 INFO app.request request_id=0bfb879cb702443e9a3aa091fda7ed18 user_id=None request_completed
+2026-02-19 21:49:43,692 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:57517 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-19 21:49:43,693 INFO app.request request_id=ad995efc57e24e498064edfb4d260445 user_id=None request_completed
+2026-02-19 21:49:43,693 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:57518 - "GET /api/v1/defects/enums HTTP/1.1" 200
+2026-02-19 21:49:43,705 INFO app.request request_id=45f67404d0c94d499688ca2ac5a895d8 user_id=None request_completed
+2026-02-19 21:49:43,705 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:57519 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-19 21:49:43,707 INFO app.request request_id=927846e19f974fcfbe0f6f7ded78726d user_id=None request_completed
+2026-02-19 21:49:43,707 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:57517 - "GET /api/v1/defects/enums HTTP/1.1" 200
+2026-02-19 21:49:43,735 INFO app.request request_id=0f676e9cc1d14ac6aa1c8e54faec70bc user_id=None request_completed
+2026-02-19 21:49:43,736 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:57517 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-19 21:49:43,777 INFO app.request request_id=93d5dec2e7fb49558107affb180a00bf user_id=None request_completed
+2026-02-19 21:49:43,778 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:57518 - "GET /api/v1/defects/modules?project_id=eaf5835f-88d3-4d0e-80d9-1189ff8f5115 HTTP/1.1" 200
+2026-02-19 21:49:43,782 INFO app.request request_id=2532bddced164a3f882768fb029a4b5e user_id=None request_completed
+2026-02-19 21:49:43,783 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:57517 - "GET /api/v1/defects/?project_id=eaf5835f-88d3-4d0e-80d9-1189ff8f5115 HTTP/1.1" 200
+2026-02-19 21:49:43,784 INFO app.request request_id=bc7ce45b5fa344cdbb4c56bec10d7b9a user_id=None request_completed
+2026-02-19 21:49:43,784 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:57519 - "GET /api/v1/defects/stats?project_id=eaf5835f-88d3-4d0e-80d9-1189ff8f5115 HTTP/1.1" 200
+2026-02-19 21:50:15,206 INFO app.request request_id=ce80d7e3c8c04b0eb161c6de6d0aaf21 user_id=None request_completed
+2026-02-19 21:50:15,206 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:57589 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-19 21:50:24,917 INFO app.request request_id=1a7be61f85b14dc281118e3a30afe13b user_id=None request_completed
+2026-02-19 21:50:24,918 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:57616 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-19 21:50:24,922 INFO app.request request_id=a9b10a3f545f4d909d1c5b6702751cf6 user_id=None request_completed
+2026-02-19 21:50:24,923 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:57617 - "GET /api/v1/defects/enums HTTP/1.1" 200
+2026-02-19 21:50:24,954 INFO app.request request_id=9b7174dbc5204dfa82265aa3f64a8368 user_id=None request_completed
+2026-02-19 21:50:24,954 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:57618 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-19 21:50:24,957 INFO app.request request_id=c39243ef4e724507910eb376fc4ec40f user_id=None request_completed
+2026-02-19 21:50:24,958 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:57616 - "GET /api/v1/defects/enums HTTP/1.1" 200
+2026-02-19 21:50:25,008 INFO app.request request_id=336683b6b85c4fadb5559a3516f3da12 user_id=None request_completed
+2026-02-19 21:50:25,008 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:57616 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-19 21:50:25,293 INFO app.request request_id=933a54aff6824dc7a8e993701130806c user_id=None request_completed
+2026-02-19 21:50:25,293 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:57616 - "GET /api/v1/defects/?project_id=eaf5835f-88d3-4d0e-80d9-1189ff8f5115 HTTP/1.1" 200
+2026-02-19 21:50:25,298 INFO app.request request_id=f57f656b608f4503b7a9897f521bc284 user_id=None request_completed
+2026-02-19 21:50:25,299 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:57617 - "GET /api/v1/defects/modules?project_id=eaf5835f-88d3-4d0e-80d9-1189ff8f5115 HTTP/1.1" 200
+2026-02-19 21:50:25,311 INFO app.request request_id=ca4787fe07dd438e8bb3b25ae2870e24 user_id=None request_completed
+2026-02-19 21:50:25,311 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:57618 - "GET /api/v1/defects/stats?project_id=eaf5835f-88d3-4d0e-80d9-1189ff8f5115 HTTP/1.1" 200
+2026-02-19 21:50:52,268 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:57646 - "OPTIONS /api/v1/executions/?skip=0&limit=10 HTTP/1.1" 200
+2026-02-19 21:50:52,309 INFO app.request request_id=393df93bea2a40df890d73e2be1bb211 user_id=None request_completed
+2026-02-19 21:50:52,310 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:57647 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-19 21:50:52,328 INFO app.request request_id=9ebad32f05644df18adb90053cb6c52a user_id=None request_completed
+2026-02-19 21:50:52,328 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:57648 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-19 21:50:52,331 INFO app.request request_id=31ff8722c47b40f69cfb0c2081f31f6b user_id=None request_completed
+2026-02-19 21:50:52,331 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:57646 - "GET /api/v1/executions/?skip=0&limit=10 HTTP/1.1" 200
+2026-02-19 21:50:52,341 INFO app.request request_id=36f4e41abc054dcea1199a3570776e89 user_id=None request_completed
+2026-02-19 21:50:52,341 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:57648 - "GET /api/v1/executions/?skip=0&limit=10 HTTP/1.1" 200
+2026-02-19 21:51:05,139 INFO app.request request_id=e917c53335d74f52a644176e63442a30 user_id=None request_completed
+2026-02-19 21:51:05,140 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:57666 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-19 21:55:57,326 INFO app.request request_id=01b8b4f3ea614d98a8902318ea6def42 user_id=None request_completed
+2026-02-19 21:55:57,326 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:58807 - "GET /api/v1/users/me HTTP/1.1" 200
+G:\agent_eaplore\full-stack-fastapi-template-master\backend\app\core\config.py:227: UserWarning: The value of FIRST_SUPERUSER_PASSWORD is "changethis", for security, please change it, at least for deployments.
+  warnings.warn(message, stacklevel=1)
+2026-02-20 08:22:45,914 INFO app.mongodb request_id=None user_id=None mongodb_connected
+2026-02-20 08:22:46,043 INFO uvicorn.error request_id=None user_id=None Started server process [31208]
+2026-02-20 08:22:46,043 INFO uvicorn.error request_id=None user_id=None Waiting for application startup.
+2026-02-20 08:22:46,201 INFO apscheduler.scheduler request_id=None user_id=None Scheduler started
+2026-02-20 08:22:46,802 INFO apscheduler.scheduler request_id=None user_id=None Added job "每日回归" to job store "default"
+2026-02-20 08:22:46,811 WARNING apscheduler.executors.default request_id=None user_id=None Run time of job "每日回归 (trigger: date[2026-02-19 20:10:00 CST], next run at: 2026-02-19 20:10:00 CST)" was missed by 12:12:46.811790
+2026-02-20 08:22:47,332 INFO apscheduler.scheduler request_id=None user_id=None Removed job 0ace97a8-b6cc-4aa5-95e0-6df9cefd11a2
+2026-02-20 08:22:47,336 INFO uvicorn.error request_id=None user_id=None Application startup complete.
+2026-02-20 08:22:47,337 INFO uvicorn.error request_id=None user_id=None Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2026-02-20 08:28:18,088 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:55933 - "OPTIONS /api/v1/users/me HTTP/1.1" 200
+2026-02-20 08:28:18,261 INFO app.request request_id=0bc9c67c71e34a14958ba5b8026c498f user_id=None request_completed
+2026-02-20 08:28:18,261 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:55933 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-20 08:28:51,026 INFO app.request request_id=da2cbefdacfb476cb469133c53c7166e user_id=None request_completed
+2026-02-20 08:28:51,026 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56003 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-20 08:28:54,003 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56003 - "OPTIONS /api/v1/projects/ HTTP/1.1" 200
+2026-02-20 08:28:54,004 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56015 - "OPTIONS /api/v1/defects/enums HTTP/1.1" 200
+2026-02-20 08:28:54,144 INFO app.request request_id=f1c7b980dd824ea580404f1f1dcdf6b3 user_id=None request_completed
+2026-02-20 08:28:54,144 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56015 - "GET /api/v1/defects/enums HTTP/1.1" 200
+2026-02-20 08:28:54,245 INFO app.request request_id=d6c527b9d9bb4dc980939cce8fd81a7a user_id=None request_completed
+2026-02-20 08:28:54,245 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56003 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-20 08:28:54,248 INFO app.request request_id=4d02c7c9ec864b3db864198b22a675b0 user_id=None request_completed
+2026-02-20 08:28:54,248 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56015 - "GET /api/v1/defects/enums HTTP/1.1" 200
+2026-02-20 08:28:54,287 INFO app.request request_id=1902e0d014da4676a952c9a70c9a9bc1 user_id=None request_completed
+2026-02-20 08:28:54,287 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56021 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-20 08:28:54,307 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56021 - "OPTIONS /api/v1/defects/?project_id=eaf5835f-88d3-4d0e-80d9-1189ff8f5115 HTTP/1.1" 200
+2026-02-20 08:28:54,308 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56015 - "OPTIONS /api/v1/defects/stats?project_id=eaf5835f-88d3-4d0e-80d9-1189ff8f5115 HTTP/1.1" 200
+2026-02-20 08:28:54,309 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56003 - "OPTIONS /api/v1/defects/modules?project_id=eaf5835f-88d3-4d0e-80d9-1189ff8f5115 HTTP/1.1" 200
+2026-02-20 08:28:54,375 INFO app.request request_id=cf041ba946434561b3de2ecfb2f5a99b user_id=None request_completed
+2026-02-20 08:28:54,375 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56021 - "GET /api/v1/defects/modules?project_id=eaf5835f-88d3-4d0e-80d9-1189ff8f5115 HTTP/1.1" 200
+2026-02-20 08:28:54,384 INFO app.request request_id=80bfd065f28346ffb92786e377f06ebf user_id=None request_completed
+2026-02-20 08:28:54,385 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56003 - "GET /api/v1/defects/?project_id=eaf5835f-88d3-4d0e-80d9-1189ff8f5115 HTTP/1.1" 200
+2026-02-20 08:28:54,386 INFO app.request request_id=d39bcf4160f64b34a2a8447e8385bee6 user_id=None request_completed
+2026-02-20 08:28:54,387 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56015 - "GET /api/v1/defects/stats?project_id=eaf5835f-88d3-4d0e-80d9-1189ff8f5115 HTTP/1.1" 200
+2026-02-20 08:30:46,022 INFO app.request request_id=0b9b96db247f410b8b314882506eaf6a user_id=None request_completed
+2026-02-20 08:30:46,023 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56211 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-20 08:32:11,744 INFO app.request request_id=000bc01a70704ff0a0bc248e61990e64 user_id=None request_completed
+2026-02-20 08:32:11,744 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56304 - "POST /api/v1/defects/?project_id=eaf5835f-88d3-4d0e-80d9-1189ff8f5115 HTTP/1.1" 200
+2026-02-20 08:32:11,758 INFO app.request request_id=b5dc6799ed684efda6169f3c460d0f2c user_id=None request_completed
+2026-02-20 08:32:11,759 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56304 - "GET /api/v1/defects/?project_id=eaf5835f-88d3-4d0e-80d9-1189ff8f5115 HTTP/1.1" 200
+2026-02-20 08:32:11,782 INFO app.request request_id=66f4350238d246ae9e0581d33f21d816 user_id=None request_completed
+2026-02-20 08:32:11,782 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56306 - "GET /api/v1/defects/stats?project_id=eaf5835f-88d3-4d0e-80d9-1189ff8f5115 HTTP/1.1" 200
+2026-02-20 08:32:48,576 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56357 - "OPTIONS /api/v1/notifications/channels HTTP/1.1" 200
+2026-02-20 08:32:48,577 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56358 - "OPTIONS /api/v1/notifications/rules HTTP/1.1" 200
+2026-02-20 08:32:48,578 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56359 - "OPTIONS /api/v1/notifications/logs?limit=50 HTTP/1.1" 200
+2026-02-20 08:32:48,648 INFO app.request request_id=2ba4a6b700664df6814d8dbfa4668f1b user_id=None request_completed
+2026-02-20 08:32:48,649 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56359 - "GET /api/v1/notifications/channels HTTP/1.1" 200
+2026-02-20 08:32:48,653 INFO app.request request_id=5042a8fcf8f340a5bf5d38cd1f50c572 user_id=None request_completed
+2026-02-20 08:32:48,654 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56358 - "GET /api/v1/notifications/rules HTTP/1.1" 200
+2026-02-20 08:32:48,659 INFO app.request request_id=ad8bd22c8d4d44b2a13bf0c22de81793 user_id=None request_completed
+2026-02-20 08:32:48,659 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56357 - "GET /api/v1/notifications/logs?limit=50 HTTP/1.1" 200
+2026-02-20 08:32:48,669 INFO app.request request_id=b7bc4539051a4a06aeb8ee369f61bf82 user_id=None request_completed
+2026-02-20 08:32:48,670 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56360 - "GET /api/v1/notifications/channels HTTP/1.1" 200
+2026-02-20 08:32:48,673 INFO app.request request_id=41f7914c5f244fbca20eda9efaf60f33 user_id=None request_completed
+2026-02-20 08:32:48,673 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56359 - "GET /api/v1/notifications/rules HTTP/1.1" 200
+2026-02-20 08:32:48,681 INFO app.request request_id=febb0660e6594f6f9f56d65d8b067cb8 user_id=None request_completed
+2026-02-20 08:32:48,681 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56358 - "GET /api/v1/notifications/logs?limit=50 HTTP/1.1" 200
+2026-02-20 08:32:51,410 INFO app.request request_id=846a83d76d38424bbe7e9eee5a92c6e0 user_id=None request_completed
+2026-02-20 08:32:51,410 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56358 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-20 08:32:51,412 INFO app.request request_id=3dab975a7ed941cea06f32215b000185 user_id=None request_completed
+2026-02-20 08:32:51,412 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56359 - "GET /api/v1/defects/enums HTTP/1.1" 200
+2026-02-20 08:32:51,422 INFO app.request request_id=ab47e6bc82ac414698e23dd4fe129c32 user_id=None request_completed
+2026-02-20 08:32:51,422 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56360 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-20 08:32:51,424 INFO app.request request_id=8672a65f7e254bf69315a65267e793d3 user_id=None request_completed
+2026-02-20 08:32:51,424 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56358 - "GET /api/v1/defects/enums HTTP/1.1" 200
+2026-02-20 08:32:51,487 INFO app.request request_id=0ea34e5fc5154f1b96e8622d0edb4372 user_id=None request_completed
+2026-02-20 08:32:51,487 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56359 - "GET /api/v1/defects/modules?project_id=eaf5835f-88d3-4d0e-80d9-1189ff8f5115 HTTP/1.1" 200
+2026-02-20 08:32:51,493 INFO app.request request_id=0ce07fbbf60b4e25aa8870a1406ca63b user_id=None request_completed
+2026-02-20 08:32:51,493 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56358 - "GET /api/v1/defects/?project_id=eaf5835f-88d3-4d0e-80d9-1189ff8f5115 HTTP/1.1" 200
+2026-02-20 08:32:51,493 INFO app.request request_id=5aaf7fa90d2f4081b9c4b019046287b8 user_id=None request_completed
+2026-02-20 08:32:51,493 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56360 - "GET /api/v1/defects/stats?project_id=eaf5835f-88d3-4d0e-80d9-1189ff8f5115 HTTP/1.1" 200
+2026-02-20 08:32:53,799 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56360 - "OPTIONS /api/v1/scheduled-tasks/ HTTP/1.1" 200
+2026-02-20 08:32:53,800 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56358 - "OPTIONS /api/v1/scheduled-tasks/logs/all?limit=100 HTTP/1.1" 200
+2026-02-20 08:32:53,849 INFO app.request request_id=f9ed588ba44c4f70b1d9b790290359b9 user_id=None request_completed
+2026-02-20 08:32:53,850 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56359 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-20 08:32:53,860 INFO app.request request_id=9bd675c0da0046c8babab887f1b7ba0d user_id=None request_completed
+2026-02-20 08:32:53,860 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56368 - "GET /api/v1/notifications/rules HTTP/1.1" 200
+2026-02-20 08:32:53,874 INFO app.request request_id=a088ba83dff4462db5a3b9fa91573777 user_id=None request_completed
+2026-02-20 08:32:53,875 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56369 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-20 08:32:53,876 INFO app.request request_id=dfeb14e1dbfd484b9fe990322fa5e862 user_id=None request_completed
+2026-02-20 08:32:53,876 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56358 - "GET /api/v1/scheduled-tasks/ HTTP/1.1" 200
+2026-02-20 08:32:53,878 INFO app.request request_id=42ce987511304c3d829aff67db954653 user_id=None request_completed
+2026-02-20 08:32:53,878 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56360 - "GET /api/v1/scheduled-tasks/logs/all?limit=100 HTTP/1.1" 200
+2026-02-20 08:32:53,885 INFO app.request request_id=faf6c2c3c8514deba5ae420301f8640f user_id=None request_completed
+2026-02-20 08:32:53,885 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56359 - "GET /api/v1/notifications/rules HTTP/1.1" 200
+2026-02-20 08:32:53,893 INFO app.request request_id=08db843529694809a4c178946de4f91f user_id=None request_completed
+2026-02-20 08:32:53,893 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56368 - "GET /api/v1/scheduled-tasks/logs/all?limit=100 HTTP/1.1" 200
+2026-02-20 08:32:53,894 INFO app.request request_id=2598126f681b4c3187d797b95a70fdd0 user_id=None request_completed
+2026-02-20 08:32:53,894 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56369 - "GET /api/v1/scheduled-tasks/ HTTP/1.1" 200
+2026-02-20 08:32:56,646 INFO app.request request_id=777112174d374f8a8a8bd82685af2a1b user_id=None request_completed
+2026-02-20 08:32:56,646 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56369 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-20 08:32:56,649 INFO app.request request_id=2039f365602d434a8e45209002321d63 user_id=None request_completed
+2026-02-20 08:32:56,649 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56368 - "GET /api/v1/defects/enums HTTP/1.1" 200
+2026-02-20 08:32:56,661 INFO app.request request_id=b2219b6c22f64abeb1509d2e62b3caa1 user_id=None request_completed
+2026-02-20 08:32:56,661 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56359 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-20 08:32:56,662 INFO app.request request_id=c9f9c3ac3778469a8abca0aa01070f72 user_id=None request_completed
+2026-02-20 08:32:56,662 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56369 - "GET /api/v1/defects/enums HTTP/1.1" 200
+2026-02-20 08:32:56,725 INFO app.request request_id=9f6eb6ebc1e24ff19d303196f3323c4c user_id=None request_completed
+2026-02-20 08:32:56,725 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56368 - "GET /api/v1/defects/modules?project_id=eaf5835f-88d3-4d0e-80d9-1189ff8f5115 HTTP/1.1" 200
+2026-02-20 08:32:56,731 INFO app.request request_id=e7981a3a99db4e6e8c153e41872b66ed user_id=None request_completed
+2026-02-20 08:32:56,731 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56369 - "GET /api/v1/defects/?project_id=eaf5835f-88d3-4d0e-80d9-1189ff8f5115 HTTP/1.1" 200
+2026-02-20 08:32:56,733 INFO app.request request_id=b089919e10b242c5b41c0c7ee194bf81 user_id=None request_completed
+2026-02-20 08:32:56,733 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56359 - "GET /api/v1/defects/stats?project_id=eaf5835f-88d3-4d0e-80d9-1189ff8f5115 HTTP/1.1" 200
+2026-02-20 08:33:08,207 INFO app.request request_id=9137777a40a548228452f30b7b057a4a user_id=None request_completed
+2026-02-20 08:33:08,208 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56383 - "GET /api/v1/defects/?project_id=eaf5835f-88d3-4d0e-80d9-1189ff8f5115 HTTP/1.1" 200
+2026-02-20 08:37:51,640 INFO app.request request_id=6237277ebe1a4ca2b855c1c56027ca79 user_id=None request_completed
+2026-02-20 08:37:51,640 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56684 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-20 08:38:14,729 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56703 - "OPTIONS /api/v1/executions/analytics/overview?days=30 HTTP/1.1" 200
+2026-02-20 08:38:14,731 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56704 - "OPTIONS /api/v1/executions/analytics/trend?days=30 HTTP/1.1" 200
+2026-02-20 08:38:14,731 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56705 - "OPTIONS /api/v1/executions/analytics/failed-apis?days=30&limit=10 HTTP/1.1" 200
+2026-02-20 08:38:14,732 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56706 - "OPTIONS /api/v1/executions/analytics/performance?days=30 HTTP/1.1" 200
+2026-02-20 08:38:14,733 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56707 - "OPTIONS /api/v1/executions/analytics/failure-signatures?days=30&limit=10 HTTP/1.1" 200
+2026-02-20 08:38:14,734 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56708 - "OPTIONS /api/v1/executions/analytics/flaky?days=30&limit=10 HTTP/1.1" 200
+2026-02-20 08:38:14,734 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56703 - "OPTIONS /api/v1/executions/analytics/slow-apis?days=30&limit=10 HTTP/1.1" 200
+2026-02-20 08:38:14,734 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56704 - "OPTIONS /api/v1/executions?skip=0&limit=50 HTTP/1.1" 200
+2026-02-20 08:38:14,837 ERROR asyncio request_id=None user_id=None Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python312\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python312\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2026-02-20 08:38:15,127 INFO app.request request_id=46f9b6bafc154f5cbda5aadfa436e893 user_id=None request_completed
+2026-02-20 08:38:15,128 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56706 - "GET /api/v1/executions/analytics/performance?days=30 HTTP/1.1" 200
+2026-02-20 08:38:15,281 INFO app.request request_id=1c2bbecd0f99484381d1e5f50a73f22e user_id=None request_completed
+2026-02-20 08:38:15,282 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56705 - "GET /api/v1/executions/analytics/failure-signatures?days=30&limit=10 HTTP/1.1" 200
+2026-02-20 08:38:15,282 INFO app.request request_id=02c0b54086a44c07951a4d744ed95f7e user_id=None request_completed
+2026-02-20 08:38:15,282 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56704 - "GET /api/v1/executions/analytics/trend?days=30 HTTP/1.1" 200
+2026-02-20 08:38:15,285 INFO app.request request_id=f016fb8d34084bf6aedc75e44c9ecb7f user_id=None request_completed
+2026-02-20 08:38:15,285 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56703 - "GET /api/v1/executions/analytics/failed-apis?days=30&limit=10 HTTP/1.1" 200
+2026-02-20 08:38:15,286 INFO app.request request_id=f0ac726d3289427c9cb9c599e18c20dc user_id=None request_completed
+2026-02-20 08:38:15,286 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56705 - "GET /api/v1/executions?skip=0&limit=50 HTTP/1.1" 307
+2026-02-20 08:38:15,289 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56705 - "OPTIONS /api/v1/executions/?skip=0&limit=50 HTTP/1.1" 200
+2026-02-20 08:38:15,301 INFO app.request request_id=41ba381de502485492f83a95158d8664 user_id=None request_completed
+2026-02-20 08:38:15,301 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56709 - "GET /api/v1/executions/analytics/flaky?days=30&limit=10 HTTP/1.1" 200
+2026-02-20 08:38:15,307 INFO app.request request_id=bdce90323e1c41e894f96555d6f2e9e0 user_id=None request_completed
+2026-02-20 08:38:15,307 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56706 - "GET /api/v1/executions/analytics/slow-apis?days=30&limit=10 HTTP/1.1" 200
+2026-02-20 08:38:15,316 INFO app.request request_id=1080fd9c62c44736a70ff6ef27d54a31 user_id=None request_completed
+2026-02-20 08:38:15,316 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56705 - "GET /api/v1/executions/?skip=0&limit=50 HTTP/1.1" 200
+2026-02-20 08:38:15,317 INFO app.request request_id=86fec5ab39a44e85a0ac467432a23ef9 user_id=None request_completed
+2026-02-20 08:38:15,317 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56707 - "GET /api/v1/executions/analytics/overview?days=30 HTTP/1.1" 200
+2026-02-20 08:38:44,369 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56743 - "OPTIONS /api/v1/executions/analytics/note?note_type=signature&note_key=6e2fabd297e878ed HTTP/1.1" 200
+2026-02-20 08:38:44,448 INFO app.request request_id=56fe846f34d344e59d6b7e12d3e9fc03 user_id=None request_completed
+2026-02-20 08:38:44,448 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:56743 - "GET /api/v1/executions/analytics/note?note_type=signature&note_key=6e2fabd297e878ed HTTP/1.1" 200
+2026-02-20 09:02:39,792 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:58990 - "OPTIONS /api/v1/users/me HTTP/1.1" 200
+2026-02-20 09:02:39,806 INFO app.request request_id=f02c129fb693489e96299789244df2df user_id=None request_completed
+2026-02-20 09:02:39,807 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:58990 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-20 09:09:15,179 INFO app.request request_id=59228767a9854e14a4caab4fb086083d user_id=None request_completed
+2026-02-20 09:09:15,179 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:59667 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-20 09:09:18,012 INFO app.request request_id=5544be7897024426993655781c5c7469 user_id=None request_completed
+2026-02-20 09:09:18,012 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:59667 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-20 09:09:20,191 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:59667 - "OPTIONS /api/v1/scheduled-tasks/ HTTP/1.1" 200
+2026-02-20 09:09:20,192 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:59693 - "OPTIONS /api/v1/scheduled-tasks/logs/all?limit=100 HTTP/1.1" 200
+2026-02-20 09:09:20,193 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:59694 - "OPTIONS /api/v1/projects/ HTTP/1.1" 200
+2026-02-20 09:09:20,194 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:59695 - "OPTIONS /api/v1/notifications/rules HTTP/1.1" 200
+2026-02-20 09:09:20,276 INFO app.request request_id=f9adefb65c9642848dc7f5a9553bbea2 user_id=None request_completed
+2026-02-20 09:09:20,276 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:59693 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-20 09:09:20,278 INFO app.request request_id=f37034779c014bcab7cbd89a9413c216 user_id=None request_completed
+2026-02-20 09:09:20,279 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:59694 - "GET /api/v1/scheduled-tasks/logs/all?limit=100 HTTP/1.1" 200
+2026-02-20 09:09:20,279 INFO app.request request_id=80c1e624093c4b9c826edc473333838f user_id=None request_completed
+2026-02-20 09:09:20,279 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:59695 - "GET /api/v1/scheduled-tasks/ HTTP/1.1" 200
+2026-02-20 09:09:20,280 INFO app.request request_id=ab46a71b1bd44157a56a309dcf4000cb user_id=None request_completed
+2026-02-20 09:09:20,280 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:59667 - "GET /api/v1/notifications/rules HTTP/1.1" 200
+2026-02-20 09:09:20,302 INFO app.request request_id=47f21c9afef54a08a49d50b092d9d90c user_id=None request_completed
+2026-02-20 09:09:20,303 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:59696 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-20 09:09:20,311 INFO app.request request_id=36f0e0d230d14858b81107a344e0aa2d user_id=None request_completed
+2026-02-20 09:09:20,312 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:59693 - "GET /api/v1/scheduled-tasks/logs/all?limit=100 HTTP/1.1" 200
+2026-02-20 09:09:20,315 INFO app.request request_id=07e6ecd1fe34439ead74df022e05272c user_id=None request_completed
+2026-02-20 09:09:20,315 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:59697 - "GET /api/v1/scheduled-tasks/ HTTP/1.1" 200
+2026-02-20 09:09:20,317 INFO app.request request_id=fb6ed87c1d8e4cd1837073b4f7176614 user_id=None request_completed
+2026-02-20 09:09:20,317 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:59694 - "GET /api/v1/notifications/rules HTTP/1.1" 200
+2026-02-20 09:31:08,591 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60910 - "OPTIONS /api/v1/users/me HTTP/1.1" 200
+2026-02-20 09:31:08,654 INFO app.request request_id=f2fcf1d1c10e43969d1151d2e476220d user_id=None request_completed
+2026-02-20 09:31:08,655 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60910 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-20 09:32:27,423 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60963 - "OPTIONS /api/v1/scheduled-tasks/ HTTP/1.1" 200
+2026-02-20 09:32:27,426 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60964 - "OPTIONS /api/v1/scheduled-tasks/logs/all?limit=100 HTTP/1.1" 200
+2026-02-20 09:32:27,427 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60965 - "OPTIONS /api/v1/projects/ HTTP/1.1" 200
+2026-02-20 09:32:27,428 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60966 - "OPTIONS /api/v1/notifications/rules HTTP/1.1" 200
+2026-02-20 09:32:27,482 INFO app.request request_id=0164a74ffb65498cb18c827d6229ffef user_id=None request_completed
+2026-02-20 09:32:27,483 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60964 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-20 09:32:27,485 INFO app.request request_id=26bb2d7e4c454dcd9d2958b5cbd444f1 user_id=None request_completed
+2026-02-20 09:32:27,485 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60965 - "GET /api/v1/scheduled-tasks/logs/all?limit=100 HTTP/1.1" 200
+2026-02-20 09:32:27,485 INFO app.request request_id=5c4a9d44e2d84f78bc10301237c54323 user_id=None request_completed
+2026-02-20 09:32:27,485 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60963 - "GET /api/v1/notifications/rules HTTP/1.1" 200
+2026-02-20 09:32:27,485 INFO app.request request_id=f26892b64ae34a039231f830add519ba user_id=None request_completed
+2026-02-20 09:32:27,486 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60966 - "GET /api/v1/scheduled-tasks/ HTTP/1.1" 200
+2026-02-20 09:32:27,504 INFO app.request request_id=75553c4874284e1983e967ec940e7a0d user_id=None request_completed
+2026-02-20 09:32:27,505 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60967 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-20 09:32:27,512 INFO app.request request_id=5067f384ea2644ad845119ea61e3fda7 user_id=None request_completed
+2026-02-20 09:32:27,512 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60965 - "GET /api/v1/scheduled-tasks/ HTTP/1.1" 200
+2026-02-20 09:32:27,513 INFO app.request request_id=ea95d9097d77426e9afe5e9b7ba175cf user_id=None request_completed
+2026-02-20 09:32:27,513 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60964 - "GET /api/v1/scheduled-tasks/logs/all?limit=100 HTTP/1.1" 200
+2026-02-20 09:32:27,514 INFO app.request request_id=4bc0d5fd31bf462ca239a8d47c2090f2 user_id=None request_completed
+2026-02-20 09:32:27,514 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60968 - "GET /api/v1/notifications/rules HTTP/1.1" 200
+2026-02-20 09:32:28,597 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60968 - "OPTIONS /api/v1/projects/ HTTP/1.1" 200
+2026-02-20 09:32:28,597 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60964 - "OPTIONS /api/v1/defects/enums HTTP/1.1" 200
+2026-02-20 09:32:28,611 INFO app.request request_id=df0e7e34f96a46cba02802314d939ca6 user_id=None request_completed
+2026-02-20 09:32:28,612 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60964 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-20 09:32:28,614 INFO app.request request_id=8e211cf6bd024f4ebb874b2946aaa71e user_id=None request_completed
+2026-02-20 09:32:28,614 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60968 - "GET /api/v1/defects/enums HTTP/1.1" 200
+2026-02-20 09:32:28,627 INFO app.request request_id=633616e34b28453ca9bf3448c674420c user_id=None request_completed
+2026-02-20 09:32:28,627 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60965 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-20 09:32:28,628 INFO app.request request_id=7a7f546d23f24216be8709663477fa9b user_id=None request_completed
+2026-02-20 09:32:28,628 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60964 - "GET /api/v1/defects/enums HTTP/1.1" 200
+2026-02-20 09:32:28,689 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60964 - "OPTIONS /api/v1/defects/?project_id=eaf5835f-88d3-4d0e-80d9-1189ff8f5115 HTTP/1.1" 200
+2026-02-20 09:32:28,689 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60965 - "OPTIONS /api/v1/defects/stats?project_id=eaf5835f-88d3-4d0e-80d9-1189ff8f5115 HTTP/1.1" 200
+2026-02-20 09:32:28,690 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60968 - "OPTIONS /api/v1/defects/modules?project_id=eaf5835f-88d3-4d0e-80d9-1189ff8f5115 HTTP/1.1" 200
+2026-02-20 09:32:28,705 INFO app.request request_id=f176bc3170b748658b9924fd7b6a89f8 user_id=None request_completed
+2026-02-20 09:32:28,705 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60965 - "GET /api/v1/defects/modules?project_id=eaf5835f-88d3-4d0e-80d9-1189ff8f5115 HTTP/1.1" 200
+2026-02-20 09:32:28,713 INFO app.request request_id=9c11d0eb8073473c90ba1b4582c591fa user_id=None request_completed
+2026-02-20 09:32:28,713 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60967 - "GET /api/v1/defects/?project_id=eaf5835f-88d3-4d0e-80d9-1189ff8f5115 HTTP/1.1" 200
+2026-02-20 09:32:28,715 INFO app.request request_id=1208184b552245df9c53dc13549d7529 user_id=None request_completed
+2026-02-20 09:32:28,715 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60968 - "GET /api/v1/defects/stats?project_id=eaf5835f-88d3-4d0e-80d9-1189ff8f5115 HTTP/1.1" 200
+G:\agent_eaplore\full-stack-fastapi-template-master\backend\app\core\config.py:227: UserWarning: The value of FIRST_SUPERUSER_PASSWORD is "changethis", for security, please change it, at least for deployments.
+  warnings.warn(message, stacklevel=1)
+2026-02-21 10:40:14,042 INFO app.mongodb request_id=None user_id=None mongodb_connected
+2026-02-21 10:40:14,271 INFO uvicorn.error request_id=None user_id=None Started server process [23996]
+2026-02-21 10:40:14,271 INFO uvicorn.error request_id=None user_id=None Waiting for application startup.
+2026-02-21 10:40:14,313 INFO apscheduler.scheduler request_id=None user_id=None Scheduler started
+2026-02-21 10:40:14,313 INFO app.scheduler request_id=None user_id=None scheduler_started
+2026-02-21 10:40:14,448 ERROR uvicorn.error request_id=None user_id=None Traceback (most recent call last):
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\pymysql\connections.py", line 575, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\pymysql\connections.py", line 826, in _read_query_result
+    result.read()
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\pymysql\connections.py", line 1203, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\pymysql\connections.py", line 782, in _read_packet
+    packet.raise_for_error()
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1054, "Unknown column 'scheduled_tasks.max_retries' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\starlette\routing.py", line 694, in lifespan
+    async with self.lifespan_context(app) as maybe_state:
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 204, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\fastapi\routing.py", line 203, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\fastapi\routing.py", line 228, in __aenter__
+    await self._router._startup()
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\fastapi\routing.py", line 4557, in _startup
+    await handler()
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\app\main.py", line 174, in startup_event
+    restore_scheduled_tasks()
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\app\services\scheduler_service.py", line 515, in restore_scheduled_tasks
+    tasks = get_enabled_tasks(session=session)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\app\crud\scheduled_task.py", line 109, in get_enabled_tasks
+    return list(session.exec(statement).all())
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\sqlmodel\orm\session.py", line 81, in exec
+    results = super().execute(
+              ^^^^^^^^^^^^^^^^
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2249, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+           ^^^^^
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\pymysql\connections.py", line 575, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\pymysql\connections.py", line 826, in _read_query_result
+    result.read()
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\pymysql\connections.py", line 1203, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\pymysql\connections.py", line 782, in _read_packet
+    packet.raise_for_error()
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1054, "Unknown column 'scheduled_tasks.max_retries' in 'field list'")
+[SQL: SELECT scheduled_tasks.name, scheduled_tasks.description, scheduled_tasks.project_id, scheduled_tasks.collection_id, scheduled_tasks.collection_type, scheduled_tasks.environment, scheduled_tasks.trigger_type, scheduled_tasks.trigger_config, scheduled_tasks.is_enabled, scheduled_tasks.notification_rule_id, scheduled_tasks.max_retries, scheduled_tasks.retry_interval, scheduled_tasks.timeout_seconds, scheduled_tasks.id, scheduled_tasks.last_run_at, scheduled_tasks.next_run_at, scheduled_tasks.created_at, scheduled_tasks.updated_at 
+FROM scheduled_tasks 
+WHERE scheduled_tasks.is_enabled = true]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+
+2026-02-21 10:40:14,519 ERROR uvicorn.error request_id=None user_id=None Application startup failed. Exiting.
+G:\agent_eaplore\full-stack-fastapi-template-master\backend\app\core\config.py:227: UserWarning: The value of FIRST_SUPERUSER_PASSWORD is "changethis", for security, please change it, at least for deployments.
+  warnings.warn(message, stacklevel=1)
+2026-02-21 10:41:45,097 INFO app.mongodb request_id=None user_id=None mongodb_connected
+2026-02-21 10:41:45,239 INFO uvicorn.error request_id=None user_id=None Started server process [24400]
+2026-02-21 10:41:45,239 INFO uvicorn.error request_id=None user_id=None Waiting for application startup.
+2026-02-21 10:41:45,281 INFO apscheduler.scheduler request_id=None user_id=None Scheduler started
+2026-02-21 10:41:45,282 INFO app.scheduler request_id=None user_id=None scheduler_started
+2026-02-21 10:41:45,405 ERROR uvicorn.error request_id=None user_id=None Traceback (most recent call last):
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\pymysql\connections.py", line 575, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\pymysql\connections.py", line 826, in _read_query_result
+    result.read()
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\pymysql\connections.py", line 1203, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\pymysql\connections.py", line 782, in _read_packet
+    packet.raise_for_error()
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1054, "Unknown column 'scheduled_tasks.max_retries' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\starlette\routing.py", line 694, in lifespan
+    async with self.lifespan_context(app) as maybe_state:
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 204, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\fastapi\routing.py", line 203, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\fastapi\routing.py", line 228, in __aenter__
+    await self._router._startup()
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\fastapi\routing.py", line 4557, in _startup
+    await handler()
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\app\main.py", line 174, in startup_event
+    restore_scheduled_tasks()
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\app\services\scheduler_service.py", line 515, in restore_scheduled_tasks
+    tasks = get_enabled_tasks(session=session)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\app\crud\scheduled_task.py", line 109, in get_enabled_tasks
+    return list(session.exec(statement).all())
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\sqlmodel\orm\session.py", line 81, in exec
+    results = super().execute(
+              ^^^^^^^^^^^^^^^^
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2249, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+           ^^^^^
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\pymysql\connections.py", line 575, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\pymysql\connections.py", line 826, in _read_query_result
+    result.read()
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\pymysql\connections.py", line 1203, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\pymysql\connections.py", line 782, in _read_packet
+    packet.raise_for_error()
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1054, "Unknown column 'scheduled_tasks.max_retries' in 'field list'")
+[SQL: SELECT scheduled_tasks.name, scheduled_tasks.description, scheduled_tasks.project_id, scheduled_tasks.collection_id, scheduled_tasks.collection_type, scheduled_tasks.environment, scheduled_tasks.trigger_type, scheduled_tasks.trigger_config, scheduled_tasks.is_enabled, scheduled_tasks.notification_rule_id, scheduled_tasks.max_retries, scheduled_tasks.retry_interval, scheduled_tasks.timeout_seconds, scheduled_tasks.id, scheduled_tasks.last_run_at, scheduled_tasks.next_run_at, scheduled_tasks.created_at, scheduled_tasks.updated_at 
+FROM scheduled_tasks 
+WHERE scheduled_tasks.is_enabled = true]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+
+2026-02-21 10:41:45,413 ERROR uvicorn.error request_id=None user_id=None Application startup failed. Exiting.
+G:\agent_eaplore\full-stack-fastapi-template-master\backend\app\core\config.py:227: UserWarning: The value of FIRST_SUPERUSER_PASSWORD is "changethis", for security, please change it, at least for deployments.
+  warnings.warn(message, stacklevel=1)
+2026-02-21 10:44:18,428 INFO app.mongodb request_id=None user_id=None mongodb_connected
+2026-02-21 10:44:18,576 INFO uvicorn.error request_id=None user_id=None Started server process [9784]
+2026-02-21 10:44:18,576 INFO uvicorn.error request_id=None user_id=None Waiting for application startup.
+2026-02-21 10:44:18,605 INFO apscheduler.scheduler request_id=None user_id=None Scheduler started
+2026-02-21 10:44:18,605 INFO app.scheduler request_id=None user_id=None scheduler_started
+2026-02-21 10:44:18,734 INFO apscheduler.scheduler request_id=None user_id=None Added job "每日回归" to job store "default"
+2026-02-21 10:44:18,736 INFO app.scheduler request_id=None user_id=None task_scheduled
+2026-02-21 10:44:18,742 INFO app.scheduler request_id=None user_id=None tasks_restored
+2026-02-21 10:44:18,744 WARNING apscheduler.executors.default request_id=None user_id=None Run time of job "每日回归 (trigger: date[2026-02-19 20:10:00 CST], next run at: 2026-02-19 20:10:00 CST)" was missed by 1 day, 14:34:18.744731
+2026-02-21 10:44:18,784 INFO apscheduler.scheduler request_id=None user_id=None Removed job 0ace97a8-b6cc-4aa5-95e0-6df9cefd11a2
+2026-02-21 10:44:18,789 INFO uvicorn.error request_id=None user_id=None Application startup complete.
+2026-02-21 10:44:18,789 INFO uvicorn.error request_id=None user_id=None Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2026-02-21 10:47:34,920 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60300 - "OPTIONS /api/v1/users/me HTTP/1.1" 200
+2026-02-21 10:47:35,251 INFO app.request request_id=3cf05552d96c4a7eb77b617b824ceab9 user_id=None request_completed
+2026-02-21 10:47:35,253 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60300 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-21 10:47:42,604 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60832 - "OPTIONS /api/v1/projects/ HTTP/1.1" 200
+2026-02-21 10:47:42,643 INFO app.request request_id=1c111e6770ca407bace09805b5dccb93 user_id=None request_completed
+2026-02-21 10:47:42,643 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60832 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-21 10:47:42,664 INFO app.request request_id=0f4d13ae812844bb96f34fd4a1d7bc9e user_id=None request_completed
+2026-02-21 10:47:42,664 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60833 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-21 10:47:44,349 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60833 - "OPTIONS /api/v1/executions/?skip=0&limit=10 HTTP/1.1" 200
+2026-02-21 10:47:44,366 INFO app.request request_id=a9ad599835e0464cadaa9243a033d5c4 user_id=None request_completed
+2026-02-21 10:47:44,366 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60832 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-21 10:47:44,384 INFO app.request request_id=ce98ccb8bbc944edacc6cdc2f2a4f09e user_id=None request_completed
+2026-02-21 10:47:44,385 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60842 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-21 10:47:44,387 INFO app.request request_id=13697ef2855a455eba3c152e9915d9ec user_id=None request_completed
+2026-02-21 10:47:44,387 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60833 - "GET /api/v1/executions/?skip=0&limit=10 HTTP/1.1" 200
+2026-02-21 10:47:44,400 INFO app.request request_id=08928bd947ca4ce2b784a6d56c032f33 user_id=None request_completed
+2026-02-21 10:47:44,400 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60842 - "GET /api/v1/executions/?skip=0&limit=10 HTTP/1.1" 200
+2026-02-21 10:47:50,865 INFO app.request request_id=6b271d2d69544edd933f1c11bcf4e770 user_id=None request_completed
+2026-02-21 10:47:50,865 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60862 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-21 10:47:51,229 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60862 - "OPTIONS /api/v1/users/?skip=0&limit=100 HTTP/1.1" 200
+2026-02-21 10:47:51,241 INFO app.request request_id=8a81cc9f8e39432f99f3c7f688a3d614 user_id=None request_completed
+2026-02-21 10:47:51,242 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60862 - "GET /api/v1/users/?skip=0&limit=100 HTTP/1.1" 200
+2026-02-21 10:47:51,527 INFO app.request request_id=aa7e36d8454849a69ee0cac56fb89a9c user_id=None request_completed
+2026-02-21 10:47:51,527 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60862 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-21 10:47:54,148 INFO app.request request_id=4d1bd3c218fc452aad3651ff1ab2c6bf user_id=None request_completed
+2026-02-21 10:47:54,148 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60862 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-21 10:47:54,305 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60862 - "OPTIONS /api/v1/audit-logs/?skip=0&limit=200 HTTP/1.1" 200
+2026-02-21 10:47:54,326 INFO app.request request_id=29cebc7ba6084ecd802605cf861b0aa4 user_id=None request_completed
+2026-02-21 10:47:54,327 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60862 - "GET /api/v1/audit-logs/?skip=0&limit=200 HTTP/1.1" 200
+2026-02-21 10:47:54,340 INFO app.request request_id=d9407fcfa6e14e40a7c7ea280ffb2363 user_id=None request_completed
+2026-02-21 10:47:54,340 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60874 - "GET /api/v1/audit-logs/?skip=0&limit=200 HTTP/1.1" 200
+2026-02-21 10:47:58,543 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60862 - "OPTIONS /api/v1/defects/enums HTTP/1.1" 200
+2026-02-21 10:47:58,564 INFO app.request request_id=da4a4b2da61a4d10a9bdc5bbc8250067 user_id=None request_completed
+2026-02-21 10:47:58,565 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60874 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-21 10:47:58,587 INFO app.request request_id=ac5d94b4d3e0474a90e06b84b207cc51 user_id=None request_completed
+2026-02-21 10:47:58,587 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60862 - "GET /api/v1/defects/enums HTTP/1.1" 200
+2026-02-21 10:47:58,600 INFO app.request request_id=b6f0236f3b694e15aaf09c1fd75fa54e user_id=None request_completed
+2026-02-21 10:47:58,601 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60900 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-21 10:47:58,608 INFO app.request request_id=05e0f7ab37b8441c9e8f28333ca4990e user_id=None request_completed
+2026-02-21 10:47:58,608 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60874 - "GET /api/v1/defects/enums HTTP/1.1" 200
+2026-02-21 10:47:58,690 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60874 - "OPTIONS /api/v1/defects/?project_id=eaf5835f-88d3-4d0e-80d9-1189ff8f5115 HTTP/1.1" 200
+2026-02-21 10:47:58,691 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60900 - "OPTIONS /api/v1/defects/stats?project_id=eaf5835f-88d3-4d0e-80d9-1189ff8f5115 HTTP/1.1" 200
+2026-02-21 10:47:58,692 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60862 - "OPTIONS /api/v1/defects/modules?project_id=eaf5835f-88d3-4d0e-80d9-1189ff8f5115 HTTP/1.1" 200
+2026-02-21 10:47:58,716 INFO app.request request_id=f71660c2e98947d1a56abea4b299c7b9 user_id=None request_completed
+2026-02-21 10:47:58,716 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60874 - "GET /api/v1/defects/modules?project_id=eaf5835f-88d3-4d0e-80d9-1189ff8f5115 HTTP/1.1" 200
+2026-02-21 10:47:58,739 INFO app.request request_id=dd0b75749c804250ad74f0d6b0d1b4b0 user_id=None request_completed
+2026-02-21 10:47:58,739 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60862 - "GET /api/v1/defects/stats?project_id=eaf5835f-88d3-4d0e-80d9-1189ff8f5115 HTTP/1.1" 200
+2026-02-21 10:47:58,741 INFO app.request request_id=7814e1770e1d40e7a3e0e138db770ff3 user_id=None request_completed
+2026-02-21 10:47:58,741 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:60900 - "GET /api/v1/defects/?project_id=eaf5835f-88d3-4d0e-80d9-1189ff8f5115 HTTP/1.1" 200
+2026-02-21 10:51:00,720 INFO app.request request_id=f39c7881a7ab4b43960fd956040f14a5 user_id=None request_completed
+2026-02-21 10:51:00,720 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61328 - "POST /api/v1/login/access-token HTTP/1.1" 200
+2026-02-21 10:51:00,861 INFO app.request request_id=9e3129d60c27417b871bdd6571c96131 user_id=None request_completed
+2026-02-21 10:51:00,861 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61328 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-21 10:51:04,011 INFO app.request request_id=a67c31dda9594fc68257e85b4ac00f53 user_id=None request_completed
+2026-02-21 10:51:04,011 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61328 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-21 10:51:04,027 INFO app.request request_id=3c1150c7d9ec4b03b1d8cc8c70057447 user_id=None request_completed
+2026-02-21 10:51:04,027 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61331 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-21 10:51:04,922 INFO app.request request_id=0dcd829f7cbe4fa795572c0e62b82bf2 user_id=None request_completed
+2026-02-21 10:51:04,922 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61328 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-21 10:51:04,942 INFO app.request request_id=78dadc26153a4a98a6eacaa50953a887 user_id=None request_completed
+2026-02-21 10:51:04,942 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61332 - "GET /api/v1/projects/ HTTP/1.1" 200
+2026-02-21 10:51:04,944 INFO app.request request_id=2288139c378d4546b505724c6e103280 user_id=None request_completed
+2026-02-21 10:51:04,944 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61331 - "GET /api/v1/executions/?skip=0&limit=10 HTTP/1.1" 200
+2026-02-21 10:51:04,955 INFO app.request request_id=bc778ba6dbeb45c7aa26e3ebc8f68306 user_id=None request_completed
+2026-02-21 10:51:04,955 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61332 - "GET /api/v1/executions/?skip=0&limit=10 HTTP/1.1" 200
+2026-02-21 10:53:37,286 INFO app.request request_id=883afca2953f45d58dea93d5611813a2 user_id=None request_completed
+2026-02-21 10:53:37,287 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61475 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-21 10:53:50,287 INFO app.request request_id=c1821eb56cc64a29a1b52f643d07147d user_id=None request_completed
+2026-02-21 10:53:50,287 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61496 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-21 10:57:56,670 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61766 - "OPTIONS /api/v1/users/me HTTP/1.1" 200
+2026-02-21 10:57:56,676 INFO app.request request_id=6647e80d29544de495da54f03afd8d43 user_id=None request_completed
+2026-02-21 10:57:56,677 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:61766 - "GET /api/v1/users/me HTTP/1.1" 200
+2026-02-21 11:24:57,474 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:63094 - "OPTIONS /api/v1/users/me HTTP/1.1" 200
+2026-02-21 11:24:57,497 INFO app.request request_id=cabb1d3848d244cca9929451771a131a user_id=None request_completed
+2026-02-21 11:24:57,497 INFO uvicorn.access request_id=None user_id=None 127.0.0.1:63094 - "GET /api/v1/users/me HTTP/1.1" 200
+G:\agent_eaplore\full-stack-fastapi-template-master\backend\app\core\config.py:230: UserWarning: The value of FIRST_SUPERUSER_PASSWORD is "changethis", for security, please change it, at least for deployments.
+  warnings.warn(message, stacklevel=1)
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\uvicorn\__main__.py", line 4, in <module>
+    uvicorn.main()
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\click\core.py", line 1485, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\click\core.py", line 1406, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\click\core.py", line 1269, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\click\core.py", line 824, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\uvicorn\main.py", line 424, in main
+    run(
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\uvicorn\main.py", line 594, in run
+    server.run()
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\uvicorn\server.py", line 67, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 664, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\uvicorn\server.py", line 71, in serve
+    await self._serve(sockets)
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\uvicorn\server.py", line 78, in _serve
+    config.load()
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\uvicorn\config.py", line 439, in load
+    self.loaded_app = import_from_string(self.app)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\venv\Lib\site-packages\uvicorn\importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1381, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1354, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1325, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 929, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\app\main.py", line 45, in <module>
+    from app.api.main import api_router
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\app\api\main.py", line 4, in <module>
+    from app.api.routes.executions import router as executions_router
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\app\api\routes\executions\__init__.py", line 2, in <module>
+    from app.api.routes.executions.routes import router
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\app\api\routes\executions\routes.py", line 30, in <module>
+    from app.services.apifox import apifox_service, ApifoxCliError
+  File "G:\agent_eaplore\full-stack-fastapi-template-master\backend\app\services\apifox.py", line 1
+    """
+    ^^^
+SyntaxError: (unicode error) 'utf-8' codec can't decode bytes in position 95-96: invalid continuation byte

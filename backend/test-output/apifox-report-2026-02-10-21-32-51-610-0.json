@@ -1,0 +1,508 @@
+{
+  "result": {
+    "stats": {
+      "steps": {
+        "total": 2,
+        "passed": 2,
+        "failed": 0
+      },
+      "iterations": {
+        "total": 1,
+        "pending": 0,
+        "failed": 0
+      },
+      "items": {},
+      "scripts": {
+        "total": 0,
+        "pending": 0,
+        "failed": 0
+      },
+      "prerequests": {
+        "total": 2,
+        "pending": 0,
+        "failed": 0
+      },
+      "requests": {
+        "total": 2,
+        "pending": 0,
+        "failed": 0
+      },
+      "socketRequests": {
+        "total": 0,
+        "pending": 0,
+        "failed": 0
+      },
+      "tests": {
+        "total": 2,
+        "pending": 0,
+        "failed": 0
+      },
+      "assertions": {
+        "total": 0,
+        "pending": 0,
+        "failed": 0
+      },
+      "testScripts": {
+        "total": 0,
+        "pending": 0,
+        "failed": 0
+      },
+      "prerequestScripts": {
+        "total": 0,
+        "pending": 0,
+        "failed": 0
+      }
+    },
+    "timings": {
+      "responseTime": 821,
+      "responseAverage": 220.25,
+      "responseMin": 60,
+      "responseMax": 761,
+      "responseSd": 313.16159965742924,
+      "dnsAverage": 0,
+      "dnsMin": 0,
+      "dnsMax": 0,
+      "dnsSd": 0,
+      "firstByteAverage": 0,
+      "firstByteMin": 0,
+      "firstByteMax": 0,
+      "firstByteSd": 0,
+      "started": 1770730384020,
+      "completed": 1770730385115
+    },
+    "transfers": {
+      "responseTotal": 909
+    },
+    "failures": [],
+    "stepTree": [
+      {
+        "ref": "86f4497f-60f3-4255-a4f6-1eab61b07b51",
+        "type": "http"
+      },
+      {
+        "ref": "300e267b-fb5f-4e6f-b1c1-b2c6912fa325",
+        "type": "http"
+      }
+    ],
+    "error": null
+  },
+  "isTestFlowControl": false,
+  "run": {
+    "stats": {
+      "steps": {
+        "total": 2,
+        "passed": 2,
+        "failed": 0
+      },
+      "iterations": {
+        "total": 1,
+        "pending": 0,
+        "failed": 0
+      },
+      "items": {},
+      "scripts": {
+        "total": 0,
+        "pending": 0,
+        "failed": 0
+      },
+      "prerequests": {
+        "total": 2,
+        "pending": 0,
+        "failed": 0
+      },
+      "requests": {
+        "total": 2,
+        "pending": 0,
+        "failed": 0
+      },
+      "socketRequests": {
+        "total": 0,
+        "pending": 0,
+        "failed": 0
+      },
+      "tests": {
+        "total": 2,
+        "pending": 0,
+        "failed": 0
+      },
+      "assertions": {
+        "total": 0,
+        "pending": 0,
+        "failed": 0
+      },
+      "testScripts": {
+        "total": 0,
+        "pending": 0,
+        "failed": 0
+      },
+      "prerequestScripts": {
+        "total": 0,
+        "pending": 0,
+        "failed": 0
+      }
+    },
+    "timings": {
+      "responseTime": 821,
+      "responseAverage": 220.25,
+      "responseMin": 60,
+      "responseMax": 761,
+      "responseSd": 313.16159965742924,
+      "dnsAverage": 0,
+      "dnsMin": 0,
+      "dnsMax": 0,
+      "dnsSd": 0,
+      "firstByteAverage": 0,
+      "firstByteMin": 0,
+      "firstByteMax": 0,
+      "firstByteSd": 0,
+      "started": 1770730384020,
+      "completed": 1770730385115
+    },
+    "transfers": {
+      "responseTotal": 909
+    },
+    "failures": [],
+    "stepTree": [
+      {
+        "ref": "86f4497f-60f3-4255-a4f6-1eab61b07b51",
+        "type": "http"
+      },
+      {
+        "ref": "300e267b-fb5f-4e6f-b1c1-b2c6912fa325",
+        "type": "http"
+      }
+    ],
+    "error": null
+  },
+  "options": {
+    "reporters": [
+      "json"
+    ],
+    "outDir": "./test-output",
+    "outFile": "apifox-report-2026-02-10-21-32-51-610-0",
+    "globalVar": [],
+    "envVar": [],
+    "color": "auto",
+    "delayRequest": 0,
+    "timeoutRequest": 0,
+    "timeoutScript": 0,
+    "bigint": false,
+    "lang": "zh",
+    "disableRejectUnauthorized": false,
+    "testScenario": [
+      7936775
+    ],
+    "accessToken": "afxp_1955b9i15JyKW2eJ73yEz8PB3wkBsup321Xo",
+    "environment": 42511518,
+    "reporterOptions": {},
+    "reporter": {
+      "json": {}
+    },
+    "originalOutFile": "apifox-report-2026-02-10-21-32-51-610-0",
+    "apifoxVersion": "2.1.1",
+    "globals": {},
+    "teamGlobals": {}
+  },
+  "collection": {
+    "apifoxCli": "1.1.0",
+    "item": [
+      {
+        "item": [
+          {
+            "id": "952a77cf-c2fa-49cf-b077-3b3cb7ea4b80",
+            "name": "节气判断 (判断当前节气)",
+            "request": {
+              "url": {
+                "protocol": "http",
+                "path": [
+                  "api",
+                  "za",
+                  "nl.php"
+                ],
+                "host": [
+                  "shanhe",
+                  "kim"
+                ],
+                "query": [
+                  {
+                    "disabled": false,
+                    "key": "type",
+                    "value": "json"
+                  }
+                ],
+                "variable": []
+              },
+              "header": [
+                {
+                  "key": "User-Agent",
+                  "value": "app/1.0.0"
+                }
+              ],
+              "method": "GET",
+              "body": {},
+              "type": "http"
+            },
+            "response": [],
+            "event": [],
+            "type": "http",
+            "metaInfo": {
+              "blockId": "04598a80-73dc-48bc-baf0-6ea3e6926288",
+              "id": "04598a80-73dc-48bc-baf0-6ea3e6926288",
+              "type": "http",
+              "name": "节气判断 (判断当前节气)",
+              "projectId": 7822130,
+              "relatedId": 7936775,
+              "environmentId": 42511518,
+              "blockNumber": 1,
+              "tags": [],
+              "httpApiId": 417732804,
+              "httpApiCaseId": 346799041,
+              "httpApiName": "节气判断",
+              "httpApiPath": "http://shanhe.kim/api/za/nl.php",
+              "httpApiMethod": "get",
+              "httpApiCaseName": "判断当前节气",
+              "moduleId": 7121784,
+              "serverId": "default"
+            },
+            "protocolProfileBehavior": {
+              "useWhatWGUrlParser": false,
+              "disableUrlEncoding": false,
+              "disabledSystemHeaders": {},
+              "disableCookies": false
+            },
+            "responseDefinition": {
+              "name": "成功",
+              "code": 200,
+              "contentType": "json",
+              "jsonSchema": {
+                "type": "object",
+                "properties": {}
+              },
+              "itemSchema": {},
+              "tempId": "1770716730985",
+              "id": "108330362",
+              "schemaDefinitions": {}
+            },
+            "requestDefinition": {
+              "jsonSchema": {}
+            },
+            "overrideRequesterOptions": {
+              "strictSSL": false
+            }
+          },
+          {
+            "id": "780f7fd8-28f0-4d8d-8c1f-b18ea219d45e",
+            "name": "随机签 (签)",
+            "request": {
+              "url": {
+                "protocol": "http",
+                "path": [
+                  "api",
+                  "za",
+                  "chouq.php"
+                ],
+                "host": [
+                  "shanhe",
+                  "kim"
+                ],
+                "query": [
+                  {
+                    "disabled": false,
+                    "key": "type",
+                    "value": "json"
+                  }
+                ],
+                "variable": []
+              },
+              "header": [
+                {
+                  "key": "User-Agent",
+                  "value": "app/1.0.0"
+                }
+              ],
+              "method": "GET",
+              "body": {},
+              "type": "http"
+            },
+            "response": [],
+            "event": [],
+            "type": "http",
+            "metaInfo": {
+              "blockId": "c78f8f4d-82db-44c2-b40e-7ddffe1ffae7",
+              "id": "c78f8f4d-82db-44c2-b40e-7ddffe1ffae7",
+              "type": "http",
+              "name": "随机签 (签)",
+              "projectId": 7822130,
+              "relatedId": 7936775,
+              "environmentId": 42511518,
+              "blockNumber": 2,
+              "tags": [],
+              "httpApiId": 417766308,
+              "httpApiCaseId": 346799040,
+              "httpApiName": "随机签",
+              "httpApiPath": "http://shanhe.kim/api/za/chouq.php",
+              "httpApiMethod": "get",
+              "httpApiCaseName": "签",
+              "moduleId": 7121784,
+              "serverId": "default"
+            },
+            "protocolProfileBehavior": {
+              "useWhatWGUrlParser": false,
+              "disableUrlEncoding": false,
+              "disabledSystemHeaders": {},
+              "disableCookies": false
+            },
+            "responseDefinition": {
+              "name": "成功",
+              "code": 200,
+              "contentType": "json",
+              "jsonSchema": {
+                "type": "object",
+                "properties": {}
+              },
+              "itemSchema": {},
+              "tempId": "1770723865033",
+              "id": "181684474",
+              "schemaDefinitions": {}
+            },
+            "requestDefinition": {
+              "jsonSchema": {}
+            },
+            "overrideRequesterOptions": {
+              "strictSSL": false
+            }
+          }
+        ],
+        "name": "山河"
+      }
+    ],
+    "info": {
+      "name": "山河",
+      "folderName": "根目录"
+    },
+    "dataSchemas": {},
+    "mockRules": {
+      "rules": [],
+      "enableSystemRule": true
+    },
+    "environment": {
+      "id": 42511518,
+      "name": "本地 Mock",
+      "type": "mock",
+      "baseUrls": {
+        "default": "http://127.0.0.1:4523/mock/7822130"
+      },
+      "websocketBaseUrls": {},
+      "socketioBaseUrls": {},
+      "baseUrl": "http://127.0.0.1:4523/mock/7822130",
+      "variable": {
+        "id": "a96d3b4a-f632-4982-963e-9c0fac526c47",
+        "name": "本地 Mock",
+        "baseUrl": "http://127.0.0.1:4523/mock/7822130",
+        "baseUrls": {
+          "default": "http://127.0.0.1:4523/mock/7822130"
+        },
+        "values": []
+      },
+      "parameter": {
+        "header": [],
+        "query": [],
+        "body": [],
+        "cookie": []
+      },
+      "advancedSettings": {}
+    },
+    "globals": {
+      "baseUrls": {},
+      "websocketBaseUrls": {},
+      "socketioBaseUrls": {},
+      "baseUrl": "",
+      "variable": {
+        "id": "5efe3d6c-f826-4655-b143-e2e3d50e6b5d",
+        "baseUrl": "",
+        "baseUrls": {},
+        "values": []
+      },
+      "parameter": {
+        "header": [],
+        "query": [],
+        "body": [],
+        "cookie": []
+      }
+    },
+    "teamGlobals": {
+      "baseUrls": {},
+      "websocketBaseUrls": {},
+      "socketioBaseUrls": {},
+      "baseUrl": "",
+      "variable": {
+        "id": "d657efc8-71c7-4611-b6a6-cd5859a4fdf5",
+        "baseUrl": "",
+        "baseUrls": {},
+        "values": []
+      },
+      "parameter": {
+        "header": [],
+        "query": [],
+        "body": [],
+        "cookie": []
+      }
+    },
+    "moduleVariablesMap": {
+      "7121784": []
+    },
+    "isServerBuild": true,
+    "isTestFlowControl": false,
+    "projectOptions": {
+      "enableJsonc": false,
+      "enableBigint": false,
+      "responseValidate": true,
+      "enableTestScenarioSetting": false,
+      "enableYAPICompatScript": false,
+      "isDefaultUrlEncoding": 2,
+      "publishedDocUrlRules": {
+        "defaultRule": "RESOURCE_KEY_ONLY",
+        "resourceKeyStandard": "NEW"
+      },
+      "mockSettings": {},
+      "language": "zh-CN"
+    },
+    "ciRunningOptions": {
+      "environmentId": 42511518,
+      "useDataSetId": -1,
+      "iterationCount": 1,
+      "threadCount": 1,
+      "runnerId": 0,
+      "onError": "ignore",
+      "delayItem": 0,
+      "saveReportDetail": "all",
+      "saveVariables": true,
+      "readGlobalCookie": false,
+      "saveGlobalCookie": false
+    },
+    "projectId": 7822130,
+    "databaseConnectionMap": {},
+    "reportUrlTemplate": "https://app.apifox.com/link/project/{{projectId}}/api-test/test-report/{{id}}",
+    "reportExtra": {
+      "runOptions": {
+        "environmentId": 42511518,
+        "useDataSetId": -1,
+        "iterationCount": 1,
+        "threadCount": 1,
+        "runnerId": 0,
+        "onError": "ignore",
+        "delayItem": 0,
+        "saveReportDetail": "all",
+        "saveVariables": true,
+        "readGlobalCookie": false,
+        "saveGlobalCookie": false
+      },
+      "testScenario": {
+        "id": 7936775,
+        "name": "山河"
+      }
+    },
+    "runnerId": "84b36606-ef22-4b2e-b927-566d4d94f8e3",
+    "name": "山河"
+  }
+}

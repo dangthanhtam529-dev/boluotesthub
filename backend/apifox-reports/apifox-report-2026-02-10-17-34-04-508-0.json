@@ -1,0 +1,662 @@
+{
+  "result": {
+    "stats": {
+      "steps": {
+        "total": 1,
+        "passed": 0,
+        "failed": 1
+      },
+      "iterations": {
+        "total": 1,
+        "pending": 0,
+        "failed": 1
+      },
+      "items": {},
+      "scripts": {
+        "total": 0,
+        "pending": 0,
+        "failed": 0
+      },
+      "prerequests": {
+        "total": 1,
+        "pending": 0,
+        "failed": 0
+      },
+      "requests": {
+        "total": 1,
+        "pending": 0,
+        "failed": 1
+      },
+      "socketRequests": {
+        "total": 0,
+        "pending": 0,
+        "failed": 0
+      },
+      "tests": {
+        "total": 1,
+        "pending": 0,
+        "failed": 0
+      },
+      "assertions": {
+        "total": 0,
+        "pending": 0,
+        "failed": 0
+      },
+      "testScripts": {
+        "total": 0,
+        "pending": 0,
+        "failed": 0
+      },
+      "prerequestScripts": {
+        "total": 0,
+        "pending": 0,
+        "failed": 0
+      }
+    },
+    "timings": {
+      "responseTime": 352,
+      "responseAverage": 352,
+      "responseMin": 352,
+      "responseMax": 352,
+      "responseSd": 0,
+      "dnsAverage": 0,
+      "dnsMin": 0,
+      "dnsMax": 0,
+      "dnsSd": 0,
+      "firstByteAverage": 0,
+      "firstByteMin": 0,
+      "firstByteMax": 0,
+      "firstByteSd": 0,
+      "started": 1770716057135,
+      "completed": 1770716057613
+    },
+    "transfers": {
+      "responseTotal": 133831
+    },
+    "failures": [
+      {
+        "error": {
+          "name": "返回数据结构与接口定义不一致",
+          "test": "搜索 (搜索手机)",
+          "message": "返回的数据格式应当是 JSON"
+        },
+        "cursor": {
+          "position": 0,
+          "iteration": 0,
+          "length": 1,
+          "cycles": 1,
+          "empty": false,
+          "eof": false,
+          "bof": true,
+          "cr": false,
+          "ref": "4708213c-75a4-4b07-950f-2a67ebc67252",
+          "requestIndex": 0,
+          "httpRequestId": "16968fa1-30fe-4684-8191-247f74e67e0b"
+        }
+      }
+    ],
+    "stepTree": [
+      {
+        "ref": "4708213c-75a4-4b07-950f-2a67ebc67252",
+        "type": "http"
+      }
+    ],
+    "error": null
+  },
+  "isTestFlowControl": true,
+  "run": {
+    "stats": {
+      "steps": {
+        "total": 1,
+        "passed": 0,
+        "failed": 1
+      },
+      "iterations": {
+        "total": 1,
+        "pending": 0,
+        "failed": 1
+      },
+      "items": {},
+      "scripts": {
+        "total": 0,
+        "pending": 0,
+        "failed": 0
+      },
+      "prerequests": {
+        "total": 1,
+        "pending": 0,
+        "failed": 0
+      },
+      "requests": {
+        "total": 1,
+        "pending": 0,
+        "failed": 1
+      },
+      "socketRequests": {
+        "total": 0,
+        "pending": 0,
+        "failed": 0
+      },
+      "tests": {
+        "total": 1,
+        "pending": 0,
+        "failed": 0
+      },
+      "assertions": {
+        "total": 0,
+        "pending": 0,
+        "failed": 0
+      },
+      "testScripts": {
+        "total": 0,
+        "pending": 0,
+        "failed": 0
+      },
+      "prerequestScripts": {
+        "total": 0,
+        "pending": 0,
+        "failed": 0
+      }
+    },
+    "timings": {
+      "responseTime": 352,
+      "responseAverage": 352,
+      "responseMin": 352,
+      "responseMax": 352,
+      "responseSd": 0,
+      "dnsAverage": 0,
+      "dnsMin": 0,
+      "dnsMax": 0,
+      "dnsSd": 0,
+      "firstByteAverage": 0,
+      "firstByteMin": 0,
+      "firstByteMax": 0,
+      "firstByteSd": 0,
+      "started": 1770716057135,
+      "completed": 1770716057613
+    },
+    "transfers": {
+      "responseTotal": 133831
+    },
+    "failures": [
+      {
+        "error": {
+          "name": "返回数据结构与接口定义不一致",
+          "test": "搜索 (搜索手机)",
+          "message": "返回的数据格式应当是 JSON",
+          "source": {
+            "id": "5a3f417a-4f8f-48ee-88b5-4f25c472a39f",
+            "name": "搜索 (搜索手机)"
+          }
+        },
+        "source": {
+          "id": "5a3f417a-4f8f-48ee-88b5-4f25c472a39f",
+          "name": "搜索 (搜索手机)"
+        },
+        "cursor": {
+          "position": 0,
+          "iteration": 0,
+          "length": 1,
+          "cycles": 1,
+          "empty": false,
+          "eof": false,
+          "bof": true,
+          "cr": false,
+          "ref": "4708213c-75a4-4b07-950f-2a67ebc67252",
+          "requestIndex": 0,
+          "httpRequestId": "16968fa1-30fe-4684-8191-247f74e67e0b"
+        }
+      }
+    ],
+    "stepTree": [
+      {
+        "ref": "4708213c-75a4-4b07-950f-2a67ebc67252",
+        "type": "http"
+      }
+    ],
+    "error": null
+  },
+  "options": {
+    "accessToken": "afxp_1955b9i15JyKW2eJ73yEz8PB3wkBsup321Xo",
+    "apiBaseUrl": "https://api.apifox.com",
+    "testSuite": [
+      8126
+    ],
+    "environment": {},
+    "reporters": [
+      "json"
+    ],
+    "outDir": "./apifox-reports",
+    "outFile": "apifox-report-2026-02-10-17-34-04-508-0-搜索 -2026-02-10-17-34-16-345-",
+    "originalOutFile": "apifox-report-2026-02-10-17-34-04-508-0",
+    "envVar": [],
+    "globalVar": [],
+    "color": "auto",
+    "delayRequest": 0,
+    "timeoutRequest": 0,
+    "timeoutScript": 0,
+    "enableBigInt": false,
+    "disableRejectUnauthorized": false,
+    "reporterOptions": {
+      "name": "电商网站",
+      "runnerId": "a6063a38-7e36-4bf7-9bc5-479757d0c740"
+    },
+    "isUploadReportSummary": false,
+    "apifoxVersion": "2.1.1",
+    "globals": {},
+    "teamGlobals": {}
+  },
+  "collection": {
+    "apifoxCli": "1.2.21",
+    "item": [
+      {
+        "item": [
+          {
+            "id": "5a3f417a-4f8f-48ee-88b5-4f25c472a39f",
+            "name": "搜索 (搜索手机)",
+            "request": {
+              "url": {
+                "protocol": "http",
+                "path": [
+                  "Home",
+                  "Goods",
+                  "search.html"
+                ],
+                "host": [
+                  "hmshop-test",
+                  "itheima",
+                  "net"
+                ],
+                "query": [
+                  {
+                    "disabled": false,
+                    "key": "q",
+                    "value": "手机"
+                  }
+                ],
+                "variable": []
+              },
+              "header": [
+                {
+                  "key": "User-Agent",
+                  "value": "app/1.0.0"
+                }
+              ],
+              "method": "GET",
+              "body": {},
+              "auth": {
+                "type": "noauth",
+                "noauth": []
+              },
+              "type": "http"
+            },
+            "response": [],
+            "event": [],
+            "type": "http",
+            "metaInfo": {
+              "blockId": "fb8e1553-be0d-48bc-a075-0144b041cfe1",
+              "id": "fb8e1553-be0d-48bc-a075-0144b041cfe1",
+              "type": "http",
+              "projectId": 7822130,
+              "relatedId": 417518439,
+              "environmentId": 42511515,
+              "blockNumber": 1,
+              "tags": [],
+              "httpApiId": 417518439,
+              "httpApiCaseId": 346720777,
+              "httpApiName": "搜索 ",
+              "httpApiPath": "http://hmshop-test.itheima.net/Home/Goods/search.html",
+              "httpApiMethod": "get",
+              "httpApiCaseName": "搜索手机",
+              "moduleId": 7121784,
+              "serverId": "default"
+            },
+            "protocolProfileBehavior": {
+              "useWhatWGUrlParser": false,
+              "disableUrlEncoding": false,
+              "disabledSystemHeaders": {},
+              "disableCookies": false
+            },
+            "responseDefinition": {
+              "name": "成功",
+              "code": 200,
+              "contentType": "json",
+              "jsonSchema": {
+                "type": "object",
+                "properties": {}
+              },
+              "itemSchema": {},
+              "tempId": "1770701368097",
+              "id": "183645539",
+              "schemaDefinitions": {}
+            },
+            "requestDefinition": {
+              "jsonSchema": {}
+            },
+            "overrideRequesterOptions": {
+              "strictSSL": false
+            }
+          }
+        ],
+        "name": "搜索 "
+      }
+    ],
+    "info": {
+      "name": "搜索 "
+    },
+    "dataSchemas": {},
+    "mockRules": {
+      "rules": [],
+      "enableSystemRule": true
+    },
+    "environment": {
+      "id": 42511515,
+      "name": "开发环境",
+      "type": "normal",
+      "baseUrls": {
+        "default": "http://dev-cn.your-api-server.com"
+      },
+      "websocketBaseUrls": {},
+      "socketioBaseUrls": {},
+      "baseUrl": "http://dev-cn.your-api-server.com",
+      "variable": {
+        "id": "0b3e28f6-b46a-4f55-8269-2648580756f9",
+        "name": "开发环境",
+        "baseUrl": "http://dev-cn.your-api-server.com",
+        "baseUrls": {
+          "default": "http://dev-cn.your-api-server.com"
+        },
+        "values": []
+      },
+      "parameter": {
+        "header": [],
+        "query": [],
+        "body": [],
+        "cookie": []
+      },
+      "advancedSettings": {}
+    },
+    "globals": {
+      "baseUrls": {},
+      "websocketBaseUrls": {},
+      "socketioBaseUrls": {},
+      "baseUrl": "",
+      "variable": {
+        "id": "2871146c-33e5-4d99-94b0-669f9c02ebed",
+        "baseUrl": "",
+        "baseUrls": {},
+        "values": []
+      },
+      "parameter": {
+        "header": [],
+        "query": [],
+        "body": [],
+        "cookie": []
+      }
+    },
+    "teamGlobals": {
+      "baseUrls": {},
+      "websocketBaseUrls": {},
+      "socketioBaseUrls": {},
+      "baseUrl": "",
+      "variable": {
+        "id": "df3f39d4-087c-4ab8-86e6-b677c97331ee",
+        "baseUrl": "",
+        "baseUrls": {},
+        "values": []
+      },
+      "parameter": {
+        "header": [],
+        "query": [],
+        "body": [],
+        "cookie": []
+      }
+    },
+    "moduleVariablesMap": {
+      "7121784": []
+    },
+    "isServerBuild": true,
+    "isTestFlowControl": true,
+    "collectionDefinition": {
+      "apifoxCli": "1.2.21",
+      "item": [
+        {
+          "item": [
+            {
+              "id": "5a3f417a-4f8f-48ee-88b5-4f25c472a39f",
+              "name": "搜索 (搜索手机)",
+              "request": {
+                "url": {
+                  "protocol": "http",
+                  "path": [
+                    "Home",
+                    "Goods",
+                    "search.html"
+                  ],
+                  "host": [
+                    "hmshop-test",
+                    "itheima",
+                    "net"
+                  ],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "key": "q",
+                      "value": "手机"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "User-Agent",
+                    "value": "app/1.0.0"
+                  }
+                ],
+                "method": "GET",
+                "body": {},
+                "auth": {
+                  "type": "noauth",
+                  "noauth": []
+                },
+                "type": "http"
+              },
+              "response": [],
+              "event": [],
+              "type": "http",
+              "metaInfo": {
+                "blockId": "fb8e1553-be0d-48bc-a075-0144b041cfe1",
+                "id": "fb8e1553-be0d-48bc-a075-0144b041cfe1",
+                "type": "http",
+                "projectId": 7822130,
+                "relatedId": 417518439,
+                "environmentId": 42511515,
+                "blockNumber": 1,
+                "tags": [],
+                "httpApiId": 417518439,
+                "httpApiCaseId": 346720777,
+                "httpApiName": "搜索 ",
+                "httpApiPath": "http://hmshop-test.itheima.net/Home/Goods/search.html",
+                "httpApiMethod": "get",
+                "httpApiCaseName": "搜索手机",
+                "moduleId": 7121784,
+                "serverId": "default"
+              },
+              "protocolProfileBehavior": {
+                "useWhatWGUrlParser": false,
+                "disableUrlEncoding": false,
+                "disabledSystemHeaders": {},
+                "disableCookies": false
+              },
+              "responseDefinition": {
+                "name": "成功",
+                "code": 200,
+                "contentType": "json",
+                "jsonSchema": {
+                  "type": "object",
+                  "properties": {}
+                },
+                "itemSchema": {},
+                "tempId": "1770701368097",
+                "id": "183645539",
+                "schemaDefinitions": {}
+              },
+              "requestDefinition": {
+                "jsonSchema": {}
+              },
+              "overrideRequesterOptions": {
+                "strictSSL": false
+              }
+            }
+          ],
+          "name": "搜索 "
+        }
+      ],
+      "info": {
+        "name": "搜索 "
+      },
+      "dataSchemas": {},
+      "mockRules": {
+        "rules": [],
+        "enableSystemRule": true
+      },
+      "environment": {
+        "id": 42511515,
+        "name": "开发环境",
+        "type": "normal",
+        "baseUrls": {
+          "default": "http://dev-cn.your-api-server.com"
+        },
+        "websocketBaseUrls": {},
+        "socketioBaseUrls": {},
+        "baseUrl": "http://dev-cn.your-api-server.com",
+        "variable": {
+          "id": "0b3e28f6-b46a-4f55-8269-2648580756f9",
+          "name": "开发环境",
+          "baseUrl": "http://dev-cn.your-api-server.com",
+          "baseUrls": {
+            "default": "http://dev-cn.your-api-server.com"
+          },
+          "values": []
+        },
+        "parameter": {
+          "header": [],
+          "query": [],
+          "body": [],
+          "cookie": []
+        },
+        "advancedSettings": {}
+      },
+      "globals": {
+        "baseUrls": {},
+        "websocketBaseUrls": {},
+        "socketioBaseUrls": {},
+        "baseUrl": "",
+        "variable": {
+          "id": "2871146c-33e5-4d99-94b0-669f9c02ebed",
+          "baseUrl": "",
+          "baseUrls": {},
+          "values": []
+        },
+        "parameter": {
+          "header": [],
+          "query": [],
+          "body": [],
+          "cookie": []
+        }
+      },
+      "teamGlobals": {
+        "baseUrls": {},
+        "websocketBaseUrls": {},
+        "socketioBaseUrls": {},
+        "baseUrl": "",
+        "variable": {
+          "id": "df3f39d4-087c-4ab8-86e6-b677c97331ee",
+          "baseUrl": "",
+          "baseUrls": {},
+          "values": []
+        },
+        "parameter": {
+          "header": [],
+          "query": [],
+          "body": [],
+          "cookie": []
+        }
+      },
+      "moduleVariablesMap": {
+        "7121784": []
+      },
+      "defaultModuleId": 7121784,
+      "isServerBuild": true,
+      "isTestFlowControl": true,
+      "testDataMap": {},
+      "databaseConnectionMap": {}
+    },
+    "runOptions": {
+      "environmentId": 42511515,
+      "useDataSetId": -1,
+      "threadCount": 1,
+      "iterationCount": 1,
+      "delayItem": 0,
+      "saveVariables": true,
+      "saveReportDetail": "all",
+      "readGlobalCookie": false,
+      "saveGlobalCookie": false,
+      "onError": "ignore",
+      "runnerId": 0
+    },
+    "projectOptions": {
+      "enableJsonc": false,
+      "enableBigint": false,
+      "responseValidate": true,
+      "enableTestScenarioSetting": false,
+      "enableYAPICompatScript": false,
+      "isDefaultUrlEncoding": 2,
+      "publishedDocUrlRules": {
+        "defaultRule": "RESOURCE_KEY_ONLY",
+        "resourceKeyStandard": "NEW"
+      },
+      "mockSettings": {},
+      "language": "zh-CN"
+    },
+    "ciRunningOptions": {
+      "environmentId": 42511515,
+      "useDataSetId": -1,
+      "threadCount": 1,
+      "iterationCount": 1,
+      "delayItem": 0,
+      "saveVariables": true,
+      "saveReportDetail": "all",
+      "readGlobalCookie": false,
+      "saveGlobalCookie": false,
+      "onError": "ignore",
+      "runnerId": 0
+    },
+    "projectId": 7822130,
+    "databaseConnectionMap": {},
+    "reportUrlTemplate": "https://app.apifox.com/link/project/{{projectId}}/api-test/test-report/{{id}}",
+    "reportExtra": {
+      "runOptions": {
+        "environmentId": 42511515,
+        "useDataSetId": -1,
+        "threadCount": 1,
+        "iterationCount": 1,
+        "delayItem": 0,
+        "saveVariables": true,
+        "saveReportDetail": "all",
+        "readGlobalCookie": false,
+        "saveGlobalCookie": false,
+        "onError": "ignore",
+        "runnerId": 0
+      },
+      "endpoint": {
+        "id": 417518439,
+        "name": "搜索 ",
+        "path": "http://hmshop-test.itheima.net/Home/Goods/search.html",
+        "method": "get"
+      }
+    },
+    "runnerId": "b68df666-daf2-4263-9f19-14c5dc585da8",
+    "name": "搜索 "
+  }
+}
