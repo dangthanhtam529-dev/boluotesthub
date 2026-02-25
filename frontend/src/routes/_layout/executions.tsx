@@ -63,59 +63,7 @@ interface Project {
   apifox_project_id: string | null
 }
 
-// 模拟数据
-const mockExecutions: ExecutionRecord[] = [
-  {
-    id: "1",
-    apifox_collection_id: "proj_123456",
-    project_name: "用户模块测试",
-    status: "completed",
-    total_cases: 5,
-    passed_cases: 4,
-    failed_cases: 1,
-    created_at: "2025-02-09T10:00:00",
-    started_at: "2025-02-09T10:00:05",
-    completed_at: "2025-02-09T10:00:30",
-    error_message: null,
-    report_json: JSON.stringify({
-      details: [
-        { name: "登录接口", status: "passed", time: 120 },
-        { name: "获取用户信息", status: "passed", time: 80 },
-        { name: "更新用户信息", status: "passed", time: 150 },
-        { name: "创建订单", status: "failed", time: 200, error: "参数错误" },
-        { name: "查询订单", status: "passed", time: 90 },
-      ],
-    }),
-  },
-  {
-    id: "2",
-    apifox_collection_id: "proj_789012",
-    project_name: "订单模块测试",
-    status: "completed",
-    total_cases: 8,
-    passed_cases: 8,
-    failed_cases: 0,
-    created_at: "2025-02-09T09:30:00",
-    started_at: "2025-02-09T09:30:02",
-    completed_at: "2025-02-09T09:30:45",
-    error_message: null,
-    report_json: null,
-  },
-  {
-    id: "3",
-    apifox_collection_id: "proj_345678",
-    project_name: "支付接口测试",
-    status: "failed",
-    total_cases: 3,
-    passed_cases: 1,
-    failed_cases: 2,
-    created_at: "2025-02-09T08:00:00",
-    started_at: "2025-02-09T08:00:03",
-    completed_at: "2025-02-09T08:00:20",
-    error_message: "连接超时",
-    report_json: null,
-  },
-]
+
 
 export const Route = createFileRoute("/_layout/executions")({
   component: ExecutionsPage,

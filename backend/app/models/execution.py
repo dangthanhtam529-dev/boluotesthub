@@ -6,6 +6,7 @@ from datetime import datetime
 from pydantic import computed_field
 from sqlmodel import Field, SQLModel
 from sqlalchemy import DateTime, Text
+from sqlalchemy.dialects.mysql import LONGTEXT
 from app.models.base import get_datetime_china
 
 
@@ -76,10 +77,10 @@ class TestExecution(TestExecutionBase, table=True):
     # 错误信息
     error_message: str | None = Field(default=None, description="错误信息（执行失败时）")
     
-    # 详细报告（JSON 格式存储）- 使用大文本类型
+    # 详细报告（JSON 格式存储）- 使用 LONGTEXT 类型支持大报告
     report_json: str | None = Field(
         default=None,
-        sa_type=Text,
+        sa_type=LONGTEXT,
         description="Apifox 返回的完整报告（JSON）- 已迁移到 MongoDB，此字段保留兼容"
     )
     

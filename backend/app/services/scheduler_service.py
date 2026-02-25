@@ -52,7 +52,7 @@ from app.crud.scheduled_task import (
 )
 from app.crud.execution import create_execution, update_execution
 from app.crud.project import get_project
-from app.services.apifox import apifox_service
+from app.services.apifox import apifox_service, ApifoxCliError
 from app.services.notification_trigger import trigger_execution_notification
 
 
@@ -80,6 +80,27 @@ def cleanup_task_lock(task_id: str):
     """清理任务锁（任务删除时调用）"""
     with _locks_lock:
         _task_locks.pop(task_id, None)
+
+
+def safe_async_run(coro):
+    """
+    安全地运行异步协程，自动检测是否在事件循环中运行
+    
+    在定时任务线程池中运行时，主线程可能已经有事件循环，
+    直接调用 asyncio.run() 会报 "got Future attached to a different loop" 错误。
+    此函数自动检测并选择合适的执行方式。
+    """
+    try:
+        # 尝试获取当前事件循环
+        loop = asyncio.get_running_loop()
+        # 如果在事件循环中，需要在新线程中运行
+        import concurrent.futures
+        with concurrent.futures.ThreadPoolExecutor(max_workers=1) as executor:
+            future = executor.submit(asyncio.run, coro)
+            return future.result()
+    except RuntimeError:
+        # 没有运行的事件循环，直接使用 asyncio.run
+        return asyncio.run(coro)
 
 
 class SchedulerService:
@@ -278,6 +299,48 @@ def run_scheduled_task(task_id: str):
     
     包含执行锁检查，防止同一任务并发执行。
     """
+    import os
+    
+    # 关键修复：定时任务环境下需要显式设置工作目录和重新加载环境变量
+    # Windows 定时任务默认工作目录是 C:\Windows\System32，需要切换到项目目录
+    backend_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+    project_root = os.path.dirname(backend_dir)
+    
+    logger.info(f"定时任务开始执行 - 任务 ID: {task_id}")
+    logger.info(f"定时任务环境信息 - 当前工作目录：{os.getcwd()}")
+    logger.info(f"定时任务环境信息 - 切换到项目目录：{project_root}")
+    logger.info(f"定时任务环境信息 - 当前用户：{os.environ.get('USERNAME', 'N/A')}")
+    logger.info(f"定时任务环境信息 - APIFOX_ACCESS_TOKEN 是否存在：{'APIFOX_ACCESS_TOKEN' in os.environ}")
+    
+    # 切换工作目录到项目根目录，确保 .env 文件能被正确读取
+    os.chdir(project_root)
+    logger.info(f"定时任务环境信息 - 切换后工作目录：{os.getcwd()}")
+    
+    # 关键修复 1：设置字符编码为 UTF-8，防止 CLI 输出乱码
+    os.environ['PYTHONIOENCODING'] = 'utf-8'
+    os.environ['PYTHONUTF8'] = '1'
+    
+    # 关键修复 2：确保 npx/npm 能找到
+    # Windows 定时任务环境下 PATH 可能不完整，需要显式添加 npm 全局路径
+    npm_global_path = os.path.join(os.environ.get('APPDATA', ''), 'npm')
+    node_path = r"C:\Program Files\nodejs"
+    current_path = os.environ.get('PATH', '')
+    
+    new_paths = [p for p in [node_path, npm_global_path] if os.path.exists(p) and p not in current_path]
+    if new_paths:
+        os.environ['PATH'] = os.pathsep.join(new_paths + [current_path])
+        logger.info(f"定时任务环境信息 - 已添加 PATH: {new_paths}")
+    
+    logger.info(f"定时任务环境信息 - 更新后 PATH 前缀：{os.environ.get('PATH', '')[:200]}...")
+    
+    # 重新加载环境变量（定时任务环境下 .env 可能未被加载）
+    from dotenv import load_dotenv
+    env_file_path = os.path.join(project_root, ".env")
+    logger.info(f"定时任务环境信息 - 尝试重新加载 .env 文件：{env_file_path}")
+    load_dotenv(env_file_path, override=True)
+    logger.info(f"定时任务环境信息 - 重新加载后 APIFOX_ACCESS_TOKEN 是否存在：{'APIFOX_ACCESS_TOKEN' in os.environ}")
+    logger.info(f"定时任务环境信息 - 重新加载后 APIFOX_PROJECT_ID: {os.environ.get('APIFOX_PROJECT_ID', 'NOT SET')}")
+    
     task_lock = get_task_lock(task_id)
     
     if not task_lock.acquire(blocking=False):
@@ -291,7 +354,7 @@ def run_scheduled_task(task_id: str):
         return
     
     try:
-        asyncio.run(execute_scheduled_task_with_retry(task_id))
+        safe_async_run(execute_scheduled_task_with_retry(task_id))
     finally:
         task_lock.release()
 
@@ -306,6 +369,8 @@ async def execute_scheduled_task_with_retry(task_id: str):
     3. 执行任务（带超时控制）
     4. 失败时按配置重试（指数退避）
     5. 更新执行日志和任务状态
+    
+    关键修复：添加超时自动恢复机制，防止任务永久卡住
     """
     task_uuid = uuid.UUID(task_id)
     
@@ -332,6 +397,20 @@ async def execute_scheduled_task_with_retry(task_id: str):
         
         execution = None
         last_error = None
+        start_time = datetime.now()
+        
+        # 关键修复：检查是否有卡住的旧执行记录（超过 2 倍超时时间仍在运行）
+        if task_log.execution_id:
+            from app.crud.execution import get_execution
+            old_execution = get_execution(session=session, execution_id=task_log.execution_id)
+            if old_execution and old_execution.status == "running" and old_execution.started_at:
+                elapsed = (datetime.now() - old_execution.started_at.replace(tzinfo=None)).total_seconds()
+                if elapsed > timeout_seconds * 2:
+                    logger.warning(f"检测到卡住的执行记录 {task_log.execution_id}，已运行 {elapsed:.0f}秒，标记为失败")
+                    old_execution.status = "failed"
+                    old_execution.error_message = "任务执行超时，自动终止"
+                    old_execution.completed_at = get_datetime_china()
+                    session.commit()
         
         for attempt in range(max_retries + 1):
             try:
@@ -374,11 +453,18 @@ async def execute_scheduled_task_with_retry(task_id: str):
                 
                 if task.notification_rule_id and execution:
                     project_name = _get_project_name(session, task.project_id)
-                    await trigger_execution_notification(
-                        session=session,
-                        execution=execution,
-                        project_name=project_name,
-                    )
+                    try:
+                        logger.info(f"开始触发钉钉通知 - execution_id: {execution.id}, status: {execution.status}")
+                        await trigger_execution_notification(
+                            session=session,
+                            execution=execution,
+                            project_name=project_name,
+                            notification_rule_id=task.notification_rule_id,
+                        )
+                        logger.info("钉钉通知触发完成")
+                    except Exception as notify_err:
+                        logger.error(f"触发钉钉通知失败：{notify_err}", exc_info=True)
+                        # 通知失败不影响任务状态，只记录日志
                 
                 next_run = scheduler_service.get_next_run_time(task_uuid)
                 update_task_run_times(
@@ -400,6 +486,15 @@ async def execute_scheduled_task_with_retry(task_id: str):
                         "timeout_seconds": timeout_seconds,
                     }
                 )
+                # 关键修复：超时后立即恢复执行记录状态
+                if execution and execution.status == "running":
+                    try:
+                        execution.status = "failed"
+                        execution.error_message = last_error
+                        execution.completed_at = get_datetime_china()
+                        session.commit()
+                    except Exception:
+                        session.rollback()
                 
             except Exception as e:
                 last_error = str(e)
@@ -411,6 +506,15 @@ async def execute_scheduled_task_with_retry(task_id: str):
                         "error": last_error,
                     }
                 )
+                # 关键修复：异常后立即恢复执行记录状态
+                if execution and execution.status == "running":
+                    try:
+                        execution.status = "failed"
+                        execution.error_message = f"执行异常：{last_error}"
+                        execution.completed_at = get_datetime_china()
+                        session.commit()
+                    except Exception:
+                        session.rollback()
             
             if attempt < max_retries:
                 backoff = retry_interval * (RETRY_BACKOFF_FACTOR ** attempt)
@@ -457,7 +561,12 @@ async def _execute_task_internal(
     执行任务的内部实现
     
     创建执行记录并调用 Apifox CLI 执行测试
+    
+    关键修复：定时任务环境下需要显式传递 access_token 和 project_id，
+    因为 settings 可能在定时任务环境下读取不到 .env 配置。
     """
+    import os
+    
     project_name = _get_project_name(session, task.project_id)
     
     execution_in = TestExecutionCreate(
@@ -486,12 +595,74 @@ async def _execute_task_internal(
     elif collection_type == "test-suite" and collection_id.startswith("suite-"):
         collection_id = collection_id[6:]
     
+    # 关键修复：定时任务环境下，settings 可能读取不到 .env 配置
+    # 需要直接从环境变量获取，确保能读取到最新的配置
+    apifox_project_id = os.environ.get("APIFOX_PROJECT_ID") or settings.APIFOX_PROJECT_ID
+    access_token = os.environ.get("APIFOX_ACCESS_TOKEN")
+    
+    logger.info(
+        "scheduled_task_apifox_config",
+        extra={
+            "task_id": str(task.id),
+            "apifox_project_id": apifox_project_id,
+            "access_token_exists": bool(access_token),
+            "access_token_prefix": access_token[:10] + "..." if access_token else "N/A",
+        }
+    )
+    
+    if not access_token:
+        logger.error("scheduled_task_missing_access_token", extra={"task_id": str(task.id)})
+        raise ApifoxCliError("缺少 Apifox access_token，请检查 .env 文件或环境变量配置")
+    
+    if not apifox_project_id:
+        logger.error("scheduled_task_missing_project_id", extra={"task_id": str(task.id)})
+        raise ApifoxCliError("缺少 Apifox project_id，请检查 .env 文件或环境变量配置")
+    
+    # 显式传递 access_token 和 project_id，确保 apifox_service 能正确执行
+    # 关键修复：将 access_token 和 project_id 同时设置到环境变量中，确保 CLI 能正确读取
+    os.environ["APIFOX_ACCESS_TOKEN"] = access_token
+    os.environ["APIFOX_PROJECT_ID"] = apifox_project_id
+    os.environ["PYTHONIOENCODING"] = "utf-8"
+    os.environ["PYTHONUTF8"] = "1"
+    
+    # 关键修复：确保 npx 能找到
+    npm_global_path = os.path.join(os.environ.get('APPDATA', ''), 'npm')
+    node_path = r"C:\Program Files\nodejs"
+    current_path = os.environ.get('PATH', '')
+    new_paths = [p for p in [node_path, npm_global_path] if os.path.exists(p) and p not in current_path]
+    if new_paths:
+        os.environ['PATH'] = os.pathsep.join(new_paths + [current_path])
+    
+    logger.info(f"[定时任务执行] task_id: {task.id}")
+    logger.info(f"[定时任务执行] collection_id (原始): {task.collection_id}")
+    logger.info(f"[定时任务执行] collection_id (处理后): {collection_id}")
+    logger.info(f"[定时任务执行] collection_type: {collection_type}")
+    logger.info(f"[定时任务执行] environment: {task.environment}")
+    logger.info(f"[定时任务执行] apifox_project_id: {apifox_project_id}")
+    logger.info(f"[定时任务执行] access_token 前缀：{access_token[:10]}..." if access_token else "[定时任务执行] access_token: 空")
+    logger.info(f"[定时任务执行] 当前工作目录：{os.getcwd()}")
+    logger.info(f"[定时任务执行] PATH 前缀：{os.environ.get('PATH', '')[:200]}...")
+    
+    logger.info(
+        "scheduled_task_before_execute",
+        extra={
+            "task_id": str(task.id),
+            "collection_id": collection_id,
+            "collection_type": collection_type,
+            "environment_id": task.environment,
+            "access_token_prefix": access_token[:15] + "..." if access_token else "N/A",
+            "project_id": apifox_project_id,
+        }
+    )
+    
     execution = await apifox_service.execute_and_save(
         session=session,
         execution=execution,
         collection_id=collection_id,
         environment_id=task.environment,
         collection_type=collection_type,
+        access_token=access_token,  # 显式传递 access_token
+        project_id=apifox_project_id,  # 显式传递 project_id
     )
     
     return execution

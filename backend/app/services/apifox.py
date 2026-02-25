@@ -220,13 +220,13 @@ class ApifoxService:
 
         """
 
-        初始�?Apifox 服务
+        初始?Apifox 服务
 
         
 
         从配置中读取默认值：
 
-        - cli_command: CLI 命令前缀（默�?npx apifox�?
+        - cli_command: CLI 命令前缀（默?npx apifox?
 
         - access_token: 访问令牌
 
@@ -234,11 +234,16 @@ class ApifoxService:
 
         """
 
+        import os
+        
+        # 关键修复：定时任务环境下 settings 可能读取不到 .env，需要直接从环境变量获取
         self.cli_command = "npx apifox"
-
-        self.access_token = settings.APIFOX_ACCESS_TOKEN
-
-        self.project_id = settings.APIFOX_PROJECT_ID
+        
+        # 优先从环境变量直接获取，确保定时任务环境下也能读取到
+        self.access_token = os.environ.get("APIFOX_ACCESS_TOKEN") or settings.APIFOX_ACCESS_TOKEN
+        self.project_id = os.environ.get("APIFOX_PROJECT_ID") or settings.APIFOX_PROJECT_ID
+        
+        logger.info(f"ApifoxService 初始化 - access_token 是否存在：{bool(self.access_token)}, project_id: {self.project_id}")
 
 
 
@@ -310,21 +315,21 @@ class ApifoxService:
 
         
 
-        这是核心执行方法，通过调用 Apifox CLI 来运行测试�?
+        这是核心执行方法，通过调用 Apifox CLI 来运行测试?
 
         
 
         Args:
 
-            collection_id: 集合 ID（测试套件或场景�?ID�?
+            collection_id: 集合 ID（测试套件或场景?ID?
 
-            environment_id: 环境 ID（可选，指定测试环境�?
+            environment_id: 环境 ID（可选，指定测试环境?
 
-            timeout: 超时时间（秒），默认 300 �?
+            timeout: 超时时间（秒），默认 300 ?
 
-            access_token: 访问令牌（可选，覆盖默认配置�?
+            access_token: 访问令牌（可选，覆盖默认配置?
 
-            project_id: 项目 ID（可选，覆盖默认配置�?
+            project_id: 项目 ID（可选，覆盖默认配置?
 
             collection_type: 集合类型
 
@@ -332,53 +337,76 @@ class ApifoxService:
 
                 - "test-scenario": 测试场景
 
-                - "test-scenario-folder": 测试场景文件�?
+                - "test-scenario-folder": 测试场景文件?
 
         
 
         Returns:
 
-            dict: CLI 返回�?JSON 报告
+            dict: CLI 返回?JSON 报告
 
         
 
         Raises:
 
-            ApifoxCliError: CLI 执行失败或超�?
+            ApifoxCliError: CLI 执行失败或超?
 
         
 
-        执行流程�?
+        执行流程?
 
-        1. 构建命令行参�?
+        1. 构建命令行参?
 
         2. 创建临时目录存放报告
 
         3. 执行 CLI 命令
 
-        4. 读取生成�?JSON 报告
+        4. 读取生成?JSON 报告
 
         5. 返回报告数据
 
         
 
-        CLI 命令示例�?
+        CLI 命令示例?
 
             npx apifox run --test-suite 12345 --project 67890 -e dev -r json --verbose --out-dir /tmp/xxx
 
         
 
-        报告文件位置�?
+        报告文件位置?
 
             CLI 会在 --out-dir 指定的目录下生成 JSON 报告文件
 
         """
 
-        # 使用传入�?token 或配置中�?token
-
-        token = access_token or self.access_token
-
-        pid = project_id or self.project_id
+        # 关键修复：定时任务环境下，每次执行前都强制从 .env 文件读取最新的 token
+        # 因为 apifox_service 全局实例是在模块导入时创建的，此时 .env 可能还未加载
+        # 或者环境变量中可能有旧值，需要强制覆盖
+        import os
+        from dotenv import load_dotenv
+        
+        # 获取项目根目录
+        current_file = os.path.abspath(__file__)
+        backend_dir = os.path.dirname(current_file)
+        app_dir = os.path.dirname(backend_dir)
+        project_root = os.path.dirname(app_dir)
+        env_file_path = os.path.join(project_root, ".env")
+        
+        # 总是重新加载 .env 文件，确保获取最新的 token
+        logger.info(f"run_collection 重新加载 .env 文件：{env_file_path}")
+        load_dotenv(env_file_path, override=True, verbose=True)
+        
+        # 强制从环境变量获取最新的 token 和 project_id
+        token = os.environ.get("APIFOX_ACCESS_TOKEN")
+        pid = os.environ.get("APIFOX_PROJECT_ID")
+        
+        # 如果传入的 access_token/project_id 不为空，优先使用传入的值
+        if access_token:
+            token = access_token
+        if project_id:
+            pid = project_id
+        
+        logger.info(f"run_collection 重新加载后 - token 是否存在：{bool(token)}, token 前缀：{token[:15] if token else 'N/A'}..., project_id: {pid}")
 
 
 
@@ -451,116 +479,129 @@ class ApifoxService:
 
 
         # ====================================================================
-
         # 执行命令
-
         # ====================================================================
-
         # 使用临时目录存放报告文件
-
         with tempfile.TemporaryDirectory() as temp_dir:
-
             cmd_parts.extend(["--out-dir", temp_dir])
-
-
 
             cmd = " ".join(cmd_parts)
 
-
-
             try:
-
-                # 记录执行开始日�?
-
+                # 关键日志：记录 token 状态，便于排查定时任务环境问题
                 logger.info(
+                    f"Apifox CLI 执行前检查 - token 是否存在：{bool(token)}, project_id: {pid}, 当前工作目录：{os.getcwd()}"
+                )
+                
+                if not token:
+                    logger.error("Apifox CLI 执行失败：缺少 access_token，请检查 .env 文件或环境变量配置")
+                    raise ApifoxCliError("缺少 Apifox access_token，请检查配置")
+                
+                if not pid:
+                    logger.error("Apifox CLI 执行失败：缺少 project_id，请检查 .env 文件或环境变量配置")
+                    raise ApifoxCliError("缺少 Apifox project_id，请检查配置")
 
+                # 记录执行开始日志
+                logger.info(f"[DEBUG] Apifox CLI 命令参数 - collection_type: {collection_type}, collection_id: {collection_id}, environment_id: {environment_id}, project_id: {pid}, cmd_parts: {cmd_parts}")
+                
+                logger.info(
                     "apifox_run_started",
-
                     extra={
-
                         "collection_type": collection_type,
-
                         "collection_id": collection_id,
-
                         "environment_id": environment_id,
-
                         "project_id": pid,
-
                         "timeout_sec": timeout,
-
                         "cmd": self._mask_token(cmd, token),
-
+                        "cmd_parts": cmd_parts,
                     },
-
                 )
 
                 
 
                 # 执行命令
 
-                # subprocess.run 会等待命令完�?
+                # subprocess.run 会等待命令完?
 
-                # capture_output=True 捕获 stdout �?stderr
+                # capture_output=True 捕获 stdout ?stderr
+                
+                # 关键修复：定时任务环境下需要传递完整的环境变量
+                # 获取当前环境变量，并确保包含正确的 PATH
+                exec_env = os.environ.copy()
+                
+                # 确保 UTF-8 编码
+                exec_env['PYTHONIOENCODING'] = 'utf-8'
+                exec_env['PYTHONUTF8'] = '1'
+                # 关键修复：设置控制台代码页为 UTF-8，防止 CLI 输出乱码
+                exec_env['PYTHONLEGACYWINDOWSSTDIO'] = '0'
 
+                # 关键修复：不使用 text=True 和 encoding，而是捕获原始字节后智能解码
+                # 因为 Windows 定时任务的代码页是 GBK，CLI 输出可能是 GBK 或 UTF-8
                 result = subprocess.run(
 
                     cmd,
 
                     shell=True,
 
-                    capture_output=True,
-
-                    text=True,
-
-                    encoding='utf-8',
-
-                    errors='replace',
+                    capture_output=True,  # 捕获原始字节
 
                     timeout=timeout,
+                    
+                    env=exec_env,  # 传递完整的环境变量
 
                 )
+                
+                # 智能解码：尝试 UTF-8，失败则尝试 GBK
+                def smart_decode(data: bytes) -> str:
+                    if not data:
+                        return ""
+                    # 先尝试 UTF-8
+                    try:
+                        return data.decode('utf-8')
+                    except UnicodeDecodeError:
+                        pass
+                    # 再尝试 GBK
+                    try:
+                        return data.decode('gbk')
+                    except UnicodeDecodeError:
+                        pass
+                    # 最后使用 replace 模式
+                    return data.decode('utf-8', errors='replace')
+                
+                stdout_full = smart_decode(result.stdout)
+                stderr_full = smart_decode(result.stderr)
 
 
 
                 # 记录失败日志
 
                 if result.returncode != 0:
-
-                    logger.warning(
-
-                        "apifox_run_failed",
-
-                        extra={
-
-                            "collection_type": collection_type,
-
-                            "collection_id": collection_id,
-
-                            "environment_id": environment_id,
-
-                            "project_id": pid,
-
-                            "return_code": result.returncode,
-
-                            "stderr": self._mask_token(result.stderr or "", token)[:4000],
-
-                            "stdout": self._mask_token(result.stdout or "", token)[:4000],
-
-                        },
-
-                    )
+                    # 关键修复：记录完整的 stderr 和 stdout，便于排查问题
+                    # stdout_full 和 stderr_full 已经在上面智能解码
+                    masked_stderr = self._mask_token(stderr_full, token)
+                    masked_stdout = self._mask_token(stdout_full, token)
+                    
+                    # 使用 logger.error 直接记录完整错误到日志文件
+                    logger.error(f"Apifox CLI 执行失败 - returncode: {result.returncode}")
+                    logger.error(f"stderr: {masked_stderr[:5000]}")
+                    logger.error(f"stdout: {masked_stdout[:5000]}")
+                    
+                    # 同时打印到控制台，便于立即查看
+                    print(f"[ERROR] Apifox CLI 执行失败 - returncode: {result.returncode}")
+                    print(f"[ERROR] stderr: {masked_stderr[:2000]}")
+                    print(f"[ERROR] stdout: {masked_stdout[:2000]}")
 
 
 
-                # 记录详细输出（调试用�?
+                # 记录详细输出（调试用?
 
-                if result.stdout:
+                if stdout_full:
 
                     logger.debug(
 
                         "apifox_run_stdout",
 
-                        extra={"stdout": self._mask_token(result.stdout, token)[:4000]},
+                        extra={"stdout": self._mask_token(stdout_full, token)[:4000]},
 
                     )
 
@@ -632,7 +673,7 @@ class ApifoxService:
 
                     try:
 
-                        report = json.loads(result.stdout)
+                        report = json.loads(stdout_full)
 
                         logger.info(
 
@@ -660,16 +701,13 @@ class ApifoxService:
 
                         if result.returncode != 0:
 
-                            error_msg = result.stderr.strip() if result.stderr else "CLI 返回�?0 且未产出 JSON 报告文件"
+                            error_msg = stderr_full.strip() if stderr_full else "CLI 返回非 0 且未产出 JSON 报告文件"
 
-                            raise ApifoxCliError(f"CLI 执行失败: {error_msg}")
+                            raise ApifoxCliError(f"CLI 执行失败：{error_msg}")
 
-                        raise ApifoxCliError(f"无法找到 JSON 报告文件，stdout: {result.stdout[:500]}")
-
-
+                        raise ApifoxCliError(f"无法找到 JSON 报告文件，stdout: {stdout_full[:500]}")
 
             except subprocess.TimeoutExpired:
-
                 raise ApifoxCliError(f"执行超时（{timeout}秒）")
 
 
@@ -956,19 +994,19 @@ class ApifoxService:
 
         """
 
-        执行测试并保存结�?
+        执行测试并保存结?
 
         
 
-        这是完整的执行流程方法，包括�?
+        这是完整的执行流程方法，包括?
 
-        1. 更新状态为执行�?
+        1. 更新状态为执行?
 
         2. 调用 CLI 执行测试
 
         3. 解析报告
 
-        4. 保存�?MySQL �?MongoDB
+        4. 保存?MySQL ?MongoDB
 
         5. 更新执行记录
 
@@ -976,9 +1014,9 @@ class ApifoxService:
 
         Args:
 
-            session: 数据库会�?
+            session: 数据库会?
 
-            execution: 执行记录（已创建�?
+            execution: 执行记录（已创建?
 
             collection_id: 集合 ID
 
@@ -998,7 +1036,7 @@ class ApifoxService:
 
         
 
-        数据存储策略�?
+        数据存储策略?
 
         - MySQL: 存储执行元数据（状态、统计、摘要）
 
@@ -1006,18 +1044,43 @@ class ApifoxService:
 
         
 
-        错误处理�?
+        错误处理?
 
-        - CLI 执行失败：记录错误信息，状态设�?FAILED
+        - CLI 执行失败：记录错误信息，状态设?FAILED
 
-        - MongoDB 保存失败：回退�?MySQL 存储
+        - MongoDB 保存失败：回退?MySQL 存储
 
         """
 
         from app.services.mongodb_report import MongoDBReportService
-
         
-
+        # 关键修复：定时任务环境下，强制从 .env 文件读取最新的 token
+        import os
+        from dotenv import load_dotenv
+        
+        # 获取项目根目录
+        current_file = os.path.abspath(__file__)
+        backend_dir = os.path.dirname(current_file)
+        app_dir = os.path.dirname(backend_dir)
+        project_root = os.path.dirname(app_dir)
+        env_file_path = os.path.join(project_root, ".env")
+        
+        # 总是重新加载 .env 文件
+        logger.info(f"execute_and_save 重新加载 .env 文件：{env_file_path}")
+        load_dotenv(env_file_path, override=True, verbose=True)
+        
+        # 强制从环境变量获取最新的 token 和 project_id
+        env_token = os.environ.get("APIFOX_ACCESS_TOKEN")
+        env_project_id = os.environ.get("APIFOX_PROJECT_ID")
+        
+        # 优先使用传入的值，如果没有则使用环境变量的值
+        if not access_token:
+            access_token = env_token
+        if not project_id:
+            project_id = env_project_id
+        
+        logger.info(f"execute_and_save 重新加载后 - token 是否存在：{bool(access_token)}, token 前缀：{access_token[:15] if access_token else 'N/A'}..., project_id: {project_id}")
+        
         try:
 
             # ====================================================================
@@ -1188,7 +1251,47 @@ class ApifoxService:
 
                 )
 
-                execution.report_json = json.dumps(report, ensure_ascii=False)
+                # 截断报告数据以适应 MySQL TEXT 字段（最大 65535 字符）
+
+                report_str = json.dumps(report, ensure_ascii=False)
+
+                if len(report_str) > 60000:  # 留一些余量
+
+                    logger.warning(
+
+                        "report_truncated_for_mysql",
+
+                        extra={
+
+                            "execution_id": str(execution.id),
+
+                            "original_size": len(report_str),
+
+                            "truncated_size": 60000,
+
+                        },
+
+                    )
+
+                    # 创建截断版本的报告
+
+                    truncated_report = {
+
+                        "truncated": True,
+
+                        "original_size": len(report_str),
+
+                        "note": "报告数据过大，已截断。完整报告请检查 MongoDB 或 Apifox 平台",
+
+                        "preview": report_str[:60000],
+
+                    }
+
+                    execution.report_json = json.dumps(truncated_report, ensure_ascii=False)
+
+                else:
+
+                    execution.report_json = report_str
 
                 execution.has_mongodb_report = False
 

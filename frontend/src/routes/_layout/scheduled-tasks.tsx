@@ -358,6 +358,10 @@ function ScheduledTasksPage() {
         toast.success("已触发执行")
         fetchTasks()
         fetchLogs()
+      } else {
+        const errorData = await response.json().catch(() => ({}))
+        const errorMsg = errorData.detail || `请求失败 (${response.status})`
+        toast.error(errorMsg)
       }
     } catch (error) {
       toast.error("触发失败")

@@ -91,6 +91,11 @@ def setup_logging() -> None:
     log_level = os.getenv("LOG_LEVEL", "INFO").upper()
     log_format = os.getenv("LOG_FORMAT", "console").lower()
     log_file = os.getenv("LOG_FILE")
+    # 默认日志文件路径
+    if not log_file:
+        log_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "logs")
+        os.makedirs(log_dir, exist_ok=True)
+        log_file = os.path.join(log_dir, "app.log")
     rotation_bytes = int(os.getenv("LOG_ROTATION_BYTES", str(10 * 1024 * 1024)))
     rotation_backups = int(os.getenv("LOG_ROTATION_BACKUPS", "5"))
 

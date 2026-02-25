@@ -13,6 +13,7 @@
 """
 
 import uuid
+import logging
 from typing import Any
 
 from fastapi import APIRouter, HTTPException, Depends
@@ -43,6 +44,7 @@ from app.crud.scheduled_task import (
     count_task_logs,
 )
 from app.services.scheduler_service import scheduler_service, cleanup_task_lock
+from app.models.base import get_datetime_china
 
 
 router = APIRouter(prefix="/scheduled-tasks", tags=["scheduled-tasks"])
@@ -153,8 +155,13 @@ def delete_task_endpoint(
     session: Session = Depends(get_db),
     current_user: User = Depends(get_current_active_user),
     task_id: uuid.UUID,
+    force: bool = False,
 ) -> Any:
-    """删除定时任务"""
+    """删除定时任务
+    
+    Args:
+        force: 是否强制删除（即使任务正在运行）
+    """
     task = get_task(session=session, task_id=task_id)
     if not task:
         raise HTTPException(status_code=404, detail="定时任务不存在")
@@ -162,6 +169,7 @@ def delete_task_endpoint(
     scheduler_service.remove_job(task_id)
     cleanup_task_lock(str(task_id))
     
+    # delete_task 内部已处理关联执行日志的级联删除
     delete_task(session=session, db_task=task)
     return Message(message="删除成功")
 

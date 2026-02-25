@@ -83,6 +83,9 @@ def update_task(
 
 def delete_task(*, session: Session, db_task: ScheduledTask) -> None:
     """删除定时任务"""
+    from app.models.scheduled_task import TaskExecutionLog
+    # 先删除所有关联的执行日志，避免外键约束错误
+    session.query(TaskExecutionLog).filter(TaskExecutionLog.task_id == db_task.id).delete(synchronize_session=False)
     session.delete(db_task)
     session.commit()
 
@@ -173,6 +176,12 @@ def update_task_log(
     attempt_number: int | None = None,
 ) -> TaskExecutionLog:
     """更新任务执行日志"""
+    # 关键修复：如果会话处于 rollback 状态，先执行 rollback
+    try:
+        session.commit()
+    except Exception:
+        session.rollback()
+    
     if status:
         db_log.status = status
     if execution_id:

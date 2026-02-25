@@ -219,14 +219,53 @@ class CsvParser(ImportParser):
             raise ValueError("无法识别文件编码，请使用 UTF-8 或 GBK 编码")
         
         from io import StringIO
-        df = pd.read_csv(StringIO(decoded))
+        
+        # 先读取第一行获取表头列数
+        lines = decoded.strip().split('\n')
+        header_line = lines[0]
+        # 计算表头列数（按 CSV 格式解析）
+        try:
+            header_df = pd.read_csv(StringIO(header_line))
+            expected_cols = len(header_df.columns)
+        except:
+            expected_cols = len(header_line.split(','))
+        
+        # 处理数据行，移除多余的列
+        fixed_lines = [header_line]
+        for line in lines[1:]:
+            if not line.strip():
+                continue
+            # 计算当前行的逗号数量
+            comma_count = line.count(',')
+            # 如果逗号数量超过预期（expected_cols - 1），说明有多余的列
+            if comma_count > expected_cols - 1:
+                # 从后往前移除多余的空列（以,""结尾的）
+                while line.endswith(',""') and line.count(',') > expected_cols - 1:
+                    line = line[:-3]
+                # 如果还是多了，直接截断
+                if line.count(',') > expected_cols - 1:
+                    parts = line.split(',')
+                    line = ','.join(parts[:expected_cols])
+            fixed_lines.append(line)
+        
+        cleaned_csv = '\n'.join(fixed_lines)
+        
+        df = pd.read_csv(StringIO(cleaned_csv))
         df = df.fillna("")
+        
+        # 清理列名和数据中的空白字符
+        df.columns = df.columns.str.strip()
+        for col in df.columns:
+            if df[col].dtype == 'object':
+                df[col] = df[col].astype(str).str.strip().replace('', None)
         
         result = []
         for _, row in df.iterrows():
             item = {}
             for col in df.columns:
                 value = row[col]
+                if pd.isna(value) or value == "" or value == "nan":
+                    continue
                 if isinstance(value, list):
                     item[col] = value
                 elif isinstance(value, str) and value.startswith("["):
