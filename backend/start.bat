@@ -18,8 +18,8 @@ set SMTP_PASSWORD=your-password
 set EMAILS_FROM_EMAIL=your-email@qq.com
 set ENVIRONMENT=local
 set FRONTEND_HOST=http://localhost:5173
-set APIFOX_ACCESS_TOKEN=afxp_8a53312G2fCZen2C4pyPor0MGME8wT9eWe7B
-set APIFOX_PROJECT_ID=7822130
+set APIFOX_ACCESS_TOKEN=your_apifox_token_here
+set APIFOX_PROJECT_ID=your_project_id_here
 set LOG_FILE=logs\app.log
 set LOG_LEVEL=INFO
 
