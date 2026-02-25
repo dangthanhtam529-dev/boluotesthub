@@ -25,3 +25,9 @@ backend/logs/
 *.pid
 *.seed
 *.pid.lock
+
+# Local startup scripts with sensitive data
+backend/start.bat
+backend/start.sh
+backend/.env
+!backend/.env.example

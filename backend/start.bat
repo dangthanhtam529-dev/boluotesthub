@@ -1,26 +1,23 @@
 @echo off
-set PROJECT_NAME=缺陷管理系统
-set MYSQL_SERVER=localhost
-set MYSQL_PORT=3306
-set MYSQL_DB=qa_assistant
-set MYSQL_USER=root
-set MYSQL_PASSWORD=123456
-set MONGODB_URL=mongodb://localhost:27017
-set MONGODB_DB_NAME=test_platform
-set SECRET_KEY=changethis
-set ACCESS_TOKEN_EXPIRE_MINUTES=11520
-set FIRST_SUPERUSER=admin@example.com
-set FIRST_SUPERUSER_PASSWORD=changethis
-set SMTP_HOST=smtp.qq.com
-set SMTP_PORT=465
-set SMTP_USER=your-email@qq.com
-set SMTP_PASSWORD=your-password
-set EMAILS_FROM_EMAIL=your-email@qq.com
-set ENVIRONMENT=local
-set FRONTEND_HOST=http://localhost:5173
-set APIFOX_ACCESS_TOKEN=your_apifox_token_here
-set APIFOX_PROJECT_ID=your_project_id_here
-set LOG_FILE=logs\app.log
-set LOG_LEVEL=INFO
+chcp 65001 >nul
+
+REM 检查 .env 文件是否存在
+if not exist .env (
+    echo [错误] 找不到 .env 文件！
+    echo 请复制 .env.example 为 .env 并填写您的配置
+    echo.
+    echo 命令: copy .env.example .env
+    pause
+    exit /b 1
+)
+
+echo [启动] 正在启动后端服务...
+echo [提示] 配置将从 .env 文件加载
 
 .\venv\Scripts\python.exe -m uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+
+if errorlevel 1 (
+    echo.
+    echo [错误] 启动失败！
+    pause
+)
