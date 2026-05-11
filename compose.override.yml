@@ -21,7 +21,7 @@ services:
   # http://dashboard.localhost.tiangolo.com - 前端
   # ============================================
   proxy:
-    image: traefik:3.6
+    image: traefik:v3.7
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     ports:
